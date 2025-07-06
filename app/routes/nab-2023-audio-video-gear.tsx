@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router";
-import soundguy1 from "../../public/soundsguy1.jpeg";
+import soundguy1 from "/soundsguy1.jpeg";
 
 export default function Article4() {
   return (

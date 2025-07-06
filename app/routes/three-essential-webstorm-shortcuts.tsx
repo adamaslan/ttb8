@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import webstorm1 from "../../public/webstorm1.jpeg";
+import webstorm1 from "/webstorm1.jpeg";
 
 export default function Article12() {
   return (

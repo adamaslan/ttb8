@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import studio from "../../public/studio.jpg";
+import studio from "/studio.jpg";
 
 export default function Article4() {
   return (

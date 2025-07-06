@@ -2,8 +2,8 @@ import { Link } from 'react-router';
 import { lazy, Suspense } from 'react';
 
 // Lazy load components for better performance
-const MovingObject = lazy(() => import('../components/chicken'));
-const MovingObject1 = lazy(() => import('../components/Cloud'));
+// const MovingObject = lazy(() => import('../components/chicken'));
+// const MovingObject1 = lazy(() => import('../components/Cloud'));
 
 export default function Article4() {
   return (
@@ -12,9 +12,9 @@ export default function Article4() {
         <div className="mx-3 lg:mx-36">
           
           {/* Lazy loaded component with better fallback */}
-          <Suspense fallback={<div className="h-20 animate-pulse bg-gray-200 rounded"></div>}>
+          {/* <Suspense fallback={<div className="h-20 animate-pulse bg-gray-200 rounded"></div>}>
             <MovingObject />
-          </Suspense>
+          </Suspense> */}
           
           <h1 className="tracking-light text-center text-2xl font-extrabold text-blue-500 sm:text-4xl lg:text-5xl">
             ThreeJS, the old Web3?
@@ -47,10 +47,10 @@ export default function Article4() {
             </p>
             
             {/* Lazy loaded component with better fallback */}
-            <Suspense fallback={<div className="h-32 animate-pulse bg-gray-200 rounded my-4"></div>}>
+            {/* <Suspense fallback={<div className="h-32 animate-pulse bg-gray-200 rounded my-4"></div>}>
               <MovingObject1 />
             </Suspense>
-            
+             */}
             <br />
             
             <p className="text-left text-lg tracking-tight sm:text-2xl lg:text-3xl font-serif font-bold">

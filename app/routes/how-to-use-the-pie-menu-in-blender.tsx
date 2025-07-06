@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router";
-import blender1 from "../../public/blender1.jpeg";
+import blender1 from "/blender1.jpeg";
 
 export default function Article4() {
   return (

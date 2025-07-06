@@ -1,5 +1,5 @@
 import { Link } from "react-router"; 
-import huggingface1 from "../../public/huggingface1.png";
+import huggingface1 from "/huggingface1.png";
 import type { MetaFunction } from "react-router";
 export const meta: MetaFunction = () => {
   return {

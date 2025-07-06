@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import box from "../../public/boxchicken2.jpeg";
+import box from "/boxchicken2.jpeg";
 export default function Article5() {
   return (
     <div>

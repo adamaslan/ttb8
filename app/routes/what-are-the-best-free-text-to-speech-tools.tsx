@@ -2,25 +2,25 @@
 
 import React from 'react';
 import { Link } from 'react-router';
-import bit from "../../public/text2speech.png"; // Keeping existing image, consider replacing with a relevant one
+import bit from "/text2speech.png"; // Keeping existing image, consider replacing with a relevant one
 import type { MetaFunction } from 'react-router';
 
 export const meta: MetaFunction = () => {
-  return {
-    title: "Best Free Text-to-Speech (TTS) Tools & Apps",
-    "og:image": bit, // Consider updating this image
-    "og:title": "Best Free Text-to-Speech (TTS) Tools & Apps",
-    "og:description": "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks.",
-    "og:type": "article",
-    "twitter:card": "summary_large_image",
-    "twitter:title": "Best Free Text-to-Speech (TTS) Tools & Apps",
-    "twitter:description": "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks.",
-    "twitter:image": bit, // Consider updating this image
-    "linkedin:title": "Best Free Text-to-Speech (TTS) Tools & Apps",
-    "linkedin:description": "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks.",
-    "linkedin:image": bit, // Consider updating this image
-    "keywords": "Text-to-Speech, TTS, Free TTS, NaturalReader, Voice Dream, Speak4Me, Audiobooks, Accessibility, Text to Voice"
-  };
+  return [
+    { title: "Best Free Text-to-Speech (TTS) Tools & Apps" },
+    { name: "og:image", content: bit }, // Consider updating this image
+    { name: "og:title", content: "Best Free Text-to-Speech (TTS) Tools & Apps" },
+    { name: "og:description", content: "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks." },
+    { name: "og:type", content: "article" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Best Free Text-to-Speech (TTS) Tools & Apps" },
+    { name: "twitter:description", content: "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks." },
+    { name: "twitter:image", content: bit }, // Consider updating this image
+    { name: "linkedin:title", content: "Best Free Text-to-Speech (TTS) Tools & Apps" },
+    { name: "linkedin:description", content: "Discover the best free text-to-speech (TTS) software and apps like NaturalReader, Voice Dream Reader, and built-in OS features for listening to text and audiobooks." },
+    { name: "linkedin:image", content: bit }, // Consider updating this image
+    { name: "keywords", content: "Text-to-Speech, TTS, Free TTS, NaturalReader, Voice Dream, Speak4Me, Audiobooks, Accessibility, Text to Voice" }
+  ];
 };
 
 const RemixPage = () => {
