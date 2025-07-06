@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import burden from "../../public/js-burden.jpeg";
+import burden from "/js-burden.jpeg";
 
 export default function Article4() {
   return (

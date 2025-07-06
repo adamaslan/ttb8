@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import analytics from "../../public/analytics1.jpeg"
+import analytics from "/analytics1.jpeg"
 
 
 export default function Article2() {

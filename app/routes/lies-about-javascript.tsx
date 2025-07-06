@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import js1 from "../../public/js1.jpeg"
+import js1 from "/js1.jpeg"
 
 export default function Article3() {
   return (

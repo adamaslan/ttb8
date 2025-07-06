@@ -62,7 +62,7 @@ export default function Art2() {
 
         </div>
       </Link>
-      <Link to="/artihow-to-use-the-pie-menu-in-blender">
+      <Link to="/how-to-use-the-pie-menu-in-blender">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
         <div className="rounded-full bg-purple-900 p-1 text-lg font-bold tracking-tight text-white">
             3D World - Helpful

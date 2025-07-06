@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import banner from "../../public/old-comp1.jpeg"
+import banner from "/old-comp1.jpeg"
 
 export default function Article1() {
   return (

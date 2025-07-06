@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
-import dspyprompt from "../../public/fish1.png";
+import dspyprompt from "/fish1.png";
 import type { MetaFunction } from 'react-router';
 export const meta: MetaFunction = () => {
-  return {
-    title: "DSPy 101 Tutorial: Prompting Guide",
-    "og:image": dspyprompt,
-    "keywords": "DSPy, Python, AI, AI Agent, AI Tutorial, AI Chatbot"};
+  return [
+    { title: "DSPy 101 Tutorial: Prompting Guide" },
+    { property: "og:image", content: dspyprompt },
+    { name: "keywords", content: "DSPy, Python, AI, AI Agent, AI Tutorial, AI Chatbot" }
+  ];
 };
 const RemixPage = () => {
   return (

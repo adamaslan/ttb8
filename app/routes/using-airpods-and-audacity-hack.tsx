@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router";
-import airpods from "../../public/airpods.jpeg";
+import airpods from "/airpods.jpeg";
 
 export default function Article4() {
   return (

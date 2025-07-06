@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import letters1 from "../../public/letters1.png";
+import letters1 from "/letters1.png";
 export default function Article12() {
   return (
     <div>

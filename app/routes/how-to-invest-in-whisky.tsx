@@ -1,12 +1,12 @@
 import { Link } from "react-router"; 
-import cask from "../../public/cask1.jpeg";
+import cask from "/cask1.jpeg";
 import type { MetaFunction } from "react-router";
 export const meta: MetaFunction = () => {
-  return {
-    title: "3 Ways to Invest in Whiskey",
-    "og:image": cask,
-    "keywords": "Whiskey, Investment, Rare Whiskey, Whiskey Barrels, Whiskey Casks, BlockApps, Vino Vest, Whiskey Appreciation, Whiskey History, Whiskey Market, Japanese Whiskey, Ardbeg, Bowmore, Glenfarclas, Glenfiddich, Laphroaig, Lagavulin, Rosebank, Yamazaki"
-  };
+  return [
+    { title: "3 Ways to Invest in Whiskey" },
+    { property: "og:image", content: cask },
+    { name: "keywords", content: "Whiskey, Investment, Rare Whiskey, Whiskey Barrels, Whiskey Casks, BlockApps, Vino Vest, Whiskey Appreciation, Whiskey History, Whiskey Market, Japanese Whiskey, Ardbeg, Bowmore, Glenfarclas, Glenfiddich, Laphroaig, Lagavulin, Rosebank, Yamazaki" }
+  ];
 };
 
 export default function Article5() {
@@ -19,7 +19,7 @@ export default function Article5() {
           {" "}
           3 Ways to Invest in Whiskey{" "}
         </h1>{" "}
-        <h2>By Adam Aslan</h2>
+        <h2 className="tracking-light  text-center text-xl font-extrabold text-blue-500 sm:text-4xl lg:text-2xl">By Adam Aslan</h2>
         <img
           className="mx-auto my-auto h-1/2 w-1/2 "
           src={cask}

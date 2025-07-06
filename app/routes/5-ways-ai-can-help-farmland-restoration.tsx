@@ -3,27 +3,64 @@
 import React from 'react';
 import { Link } from 'react-router';
 // Consider adding a relevant image import here if available
-import restorationImage from "../../public/restoration.png";  
+import restorationImage from "/restoration.png";  
 import type { MetaFunction } from 'react-router';
 
 export const meta: MetaFunction = () => {
-  return {
-    title: "5 Ways AI Can Help Farmland Restoration",
-    "og:image": restorationImage, // Add relevant image URL or path
-    "og:title": "5 Ways AI Can Help Farmland Restoration",
-    "og:description": "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
-    "og:type": "article",
-    "twitter:card": "summary_large_image",
-    "twitter:title": "5 Ways AI Can Help Farmland Restoration",
-    "twitter:description": "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
-    "twitter:image": restorationImage, // Add relevant image URL or path
-    "linkedin:title": "5 Ways AI Can Help Farmland Restoration",
-    "linkedin:description": "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
-    "linkedin:image": restorationImage, // Add relevant image URL or path
-    "keywords": "AI, Artificial Intelligence, Farmland Restoration, Soil Health, Precision Agriculture, Predictive Modeling, Soil Conservation, Sustainable Agriculture, AgTech"
-  };
+  return [
+    {
+      title: "5 Ways AI Can Help Farmland Restoration",
+    },
+    {
+      property: "og:image",
+      content: restorationImage,
+    },
+    {
+      property: "og:title",
+      content: "5 Ways AI Can Help Farmland Restoration",
+    },
+    {
+      property: "og:description",
+      content: "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      property: "twitter:title",
+      content: "5 Ways AI Can Help Farmland Restoration",
+    },
+    {
+      property: "twitter:description",
+      content: "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
+    },
+    {
+      property: "twitter:image",
+      content: restorationImage,
+    },
+    {
+      property: "linkedin:title",
+      content: "5 Ways AI Can Help Farmland Restoration",
+    },
+    {
+      property: "linkedin:description",
+      content: "Learn how AI technologies like precision agriculture, soil monitoring, and predictive modeling are aiding farmland restoration and promoting soil health.",
+    },
+    {
+      property: "linkedin:image",
+      content: restorationImage,
+    },
+    {
+      name: "keywords",
+      content: "AI, Artificial Intelligence, Farmland Restoration, Soil Health, Precision Agriculture, Predictive Modeling, Soil Conservation, Sustainable Agriculture, AgTech",
+    },
+  ];
 };
-
 const FarmlandRestorationPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">

@@ -1,24 +1,62 @@
 import React from 'react';
 import { Link } from 'react-router';
-import dspyprompt from "../../public/dspyprompt.png";
+import dspyprompt from "/dspyprompt.png";
 import type { MetaFunction } from 'react-router';
 
 export const meta: MetaFunction = () => {
-  return {
-    title: "What is RAG (Retrieval-Augmented Generation)?",
-    "og:image": dspyprompt,
-    "og:title": "What is RAG (Retrieval-Augmented Generation)?",
-    "og:description": "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
-    "og:type": "article",
-    "twitter:card": "summary_large_image",
-    "twitter:title": "What is RAG (Retrieval-Augmented Generation)?",
-    "twitter:description": "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
-    "twitter:image": dspyprompt,
-    "linkedin:title": "What is RAG (Retrieval-Augmented Generation)?",
-    "linkedin:description": "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
-    "linkedin:image": dspyprompt,
-    "keywords": "RAG, AI, LLM, Retrieval-Augmented Generation, AI Tutorial, Machine Learning, Natural Language Processing"
-  };
+  return [
+    {
+      title: "What is RAG (Retrieval-Augmented Generation)?",
+    },
+    {
+      property: "og:image",
+      content: dspyprompt,
+    },
+    {
+      property: "og:title",
+      content: "What is RAG (Retrieval-Augmented Generation)?",
+    },
+    {
+      property: "og:description",
+      content: "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
+    },
+    {
+      property: "og:type",
+      content: "article",
+    },
+    {
+      property: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      property: "twitter:title",
+      content: "What is RAG (Retrieval-Augmented Generation)?",
+    },
+    {
+      property: "twitter:description",
+      content: "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
+    },
+    {
+      property: "twitter:image",
+      content: dspyprompt,
+    },
+    {
+      property: "linkedin:title",
+      content: "What is RAG (Retrieval-Augmented Generation)?",
+    },
+    {
+      property: "linkedin:description",
+      content: "Learn about Retrieval-Augmented Generation (RAG), the AI framework that enhances LLM outputs with external knowledge for better accuracy and context.",
+    },
+    {
+      property: "linkedin:image",
+      content: dspyprompt,
+    },
+    {
+      property: "keywords",
+      content: "RAG, AI, LLM, Retrieval-Augmented Generation, AI Tutorial, Machine Learning, Natural Language Processing",
+    },
+  ];
 };
 
 const RemixPage = () => {

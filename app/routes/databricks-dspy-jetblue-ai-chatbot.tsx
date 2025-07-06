@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import databricks from "../../public/databricks.png";
+import databricks from "/databricks.png";
 
 export default function Article12() {
   return (
