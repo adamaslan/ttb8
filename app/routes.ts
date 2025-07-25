@@ -14,8 +14,11 @@ export default [index("routes/_index.tsx"),
   route("what-is-rag", "./routes/what-is-rag.tsx"),
   route("what-are-the-best-free-text-to-speech-tools", "./routes/what-are-the-best-free-text-to-speech-tools.tsx"),
   route("dspy101", "./routes/dspy101.tsx"),
+  route("ai-articles", "./routes/ai-articles.tsx"),
+  route("about", "./routes/about.tsx"),
   route("threejs-and-web3", "./routes/threejs-and-web3.tsx"),
   route("databricks-dspy-jetblue-ai-chatbot", "./routes/databricks-dspy-jetblue-ai-chatbot.tsx"),
+  route("5-ways-ai-can-help-farmland-restoration", "./routes/5-ways-ai-can-help-farmland-restoration.tsx"),
   route("5-ways-to-enhance-rag-efficiency-with-dspy", "./routes/5-ways-to-enhance-rag-efficiency-with-dspy.tsx"),
   ] satisfies RouteConfig;
 
