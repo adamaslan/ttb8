@@ -2,11 +2,10 @@ import { Link } from "react-router";
 import huggingface1 from "/huggingface1.png";
 import type { MetaFunction } from "react-router";
 export const meta: MetaFunction = () => {
-  return {
-    title: "The Easy Way to Publish on Hugging Face Spaces",
-    "og:image": huggingface1,
-    "keywords": "hugging face, spaces, machine learning, AI, deep learning, natural language processing, computer vision, speech recognition, computer vision, computer vision, computer vision, computer vision, computer vision"
-  };
+  return [
+    {title: "The Easy Way to Publish on Hugging Face Spaces"},
+        { name: "description", content: "Hugging Face Spaces offer a simple way to host not just ML demo apps directly on your profile or your organization’s profile, but really any Python code you want. This is especially helpful for apps that use Gradio, Streamlit, Docker, or static HTML, which can allow you to create a decent looking UI fast." },
+  ];
 };
 
 export default function Article5() {
