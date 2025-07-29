@@ -23,6 +23,7 @@ export default [index("routes/_index.tsx"),
   route("5-ways-to-enhance-rag-efficiency-with-dspy", "./routes/5-ways-to-enhance-rag-efficiency-with-dspy.tsx"),
   ] satisfies RouteConfig;
 
+  // the-ultimate-guide-to-flyers-in-blender-with-the-node-editor.tsx
   //   route("threejs-and-web3", "./routes/threejs-and-web3.tsx"),
   /**
  * Optimized Route Configuration for React Router
