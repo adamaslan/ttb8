@@ -8,7 +8,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "A procedural 1–40 step Geometry Nodes workflow in Blender that breaks flyer creation into modular phases, exposing inputs for rapid prototyping, reusability, and precise renders.",
+        "A procedural 40 step Geometry Nodes workflow in Blender that breaks flyer creation into modular phases, exposing inputs for rapid prototyping, reusability, and precise renders.",
     },
     { name: "keywords", content: "Blender, Geometry Nodes, Procedural Design, Workflow, Flyers" },
     { name: "author", content: "Adam Aslan" },
@@ -22,7 +22,7 @@ export default function Article5() {
     <div>
       <div className="mx-3 lg:mx-36">
         <h1 className="tracking-light text-center text-2xl font-extrabold text-blue-500 sm:text-4xl lg:text-5xl">
-          1–40 Step Geometry Nodes Pipeline: Clarity, Flexibility, and Precision
+          40 Step Geometry Nodes Pipeline: Clarity, Flexibility, and Precision
         </h1>
         <br />
         <img
@@ -32,7 +32,7 @@ export default function Article5() {
         />
         <div>
           <p className="text-left font-serif text-lg tracking-tight sm:text-2xl lg:text-3xl mb-6">
-            The 1–40 step Geometry Nodes pipeline in Blender transforms what can often feel like a sprawling, manual design process into a streamlined, repeatable workflow. By breaking flyer creation into discrete, well‑labeled phases—base setup, text processing, decorative scattering, shader styling, and final render—artists gain clarity over the entire system at a glance. Each step builds logically on the last, allowing even complex operations (like converting live text into curves, extruding them, or procedurally scattering accents) to be abstracted behind clear, exposed inputs. This modular structure not only demystifies the inner workings of the node tree but also reduces cognitive load, letting you focus on creative choices rather than rote technical operations.
+            Our 40 step Geometry Nodes pipeline in Blender transforms what can often feel like a sprawling, manual design process into a streamlined, repeatable workflow. By breaking flyer creation into discrete, well‑labeled phases—base setup, text processing, decorative scattering, shader styling, and final render—artists gain clarity over the entire system at a glance. Each step builds logically on the last, allowing even complex operations (like converting live text into curves, extruding them, or procedurally scattering accents) to be abstracted behind clear, exposed inputs. This modular structure not only demystifies the inner workings of the node tree but also reduces cognitive load, letting you focus on creative choices rather than rote technical operations.
           </p>
           <p className="text-left font-serif text-lg tracking-tight sm:text-2xl lg:text-3xl mb-6">
             A key advantage of the pipeline is its adaptability. Exposing parameters such as “Primary_Text,” “Text_Color,” and “Accent_Color” on the Group Input means that a single node group can power endless flyer variations simply by tweaking those inputs. Want to swap fonts, change color schemes, or reposition text? No need to rebuild the node network—instead, drag sliders or type new strings in the modifier panel. This makes the pipeline ideal for rapid prototyping or for designers who need to deliver multiple versions under tight deadlines, as the core structure remains intact while the visible output morphs instantly.
@@ -44,8 +44,11 @@ export default function Article5() {
             The inclusion of shader‑level controls further elevates the pipeline’s power. By pairing the Geometry Nodes network with a Shader Editor stack—complete with Attribute nodes to pull in exposed colors, gradient and noise textures for stylistic flourishes, and ColorRamps for contrast control—you maintain full end‑to‑end control over both form and surface. This ensures that the flyer not only has the right layout and decorative touches but also carries the precise visual aesthetic you envision, all within the same Blender file.
           </p>
           <p className="text-left font-serif text-lg tracking-tight sm:text-2xl lg:text-3xl mb-6">
-            Finally, the clear rendering and scene setup steps (camera alignment, orthographic projection, output resolution, transparency settings) guarantee that the final export matches professional print or web specifications without last‑minute guesswork. By codifying these choices into steps 33–40, the pipeline closes the loop on production, delivering high‑quality renders at consistent dimensions, resolutions, and file formats. In sum, this 1–40 step approach embodies the best of procedural design—offering clarity, flexibility, reusability, and precision in a single, user‑friendly system.
+            Finally, the clear rendering and scene setup steps (camera alignment, orthographic projection, output resolution, transparency settings) guarantee that the final export matches professional print or web specifications without last‑minute guesswork. By codifying these choices into steps 33–40, the pipeline closes the loop on production, delivering high‑quality renders at consistent dimensions, resolutions, and file formats. In sum, this 40 step approach embodies the best of procedural design—offering clarity, flexibility, reusability, and precision in a single, user‑friendly system.
           </p>
+          <p className="text-left font-serif text-lg tracking-tight sm:text-2xl lg:text-3xl mb-6">
+        Check out our next article for more specifics on the 40 step pipeline. 
+         </p>
           <p className="text-center text-lg font-extrabold tracking-tight text-yellow-500 sm:text-2xl lg:text-4xl">
             Go back{' '}
             <Link to="/" className="text-blue-500">
