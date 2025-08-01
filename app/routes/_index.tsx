@@ -24,10 +24,11 @@ import pipe1 from "/pipeline1.png";
 export const meta = () => {
   return [{ property: "og:image", content: box }];
 };
-
+   {/* small little tabs with small photos to the right */}
 export default function Art2() {
 
   return (
+    
     <main className="items-left justify-left mx-4 min-h-screen bg-white lg:mx-36 md:mx-16">
     
       <h1 className="text-left text-2xl font-extrabold tracking-tight sm:text-4xl lg:text-6xl">
@@ -221,7 +222,9 @@ export default function Art2() {
       </div>
 
       {/* Bigger articles */}
-{/* make articles smaller */}
+{/* make articles smaller this is part 2 - return everything 
+but with thiner margins and padding and a grid that puts articles to the left two thirds 
+on some rows and right two thirds on other rows for lg and md screens */}
 
    <Link to="/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
