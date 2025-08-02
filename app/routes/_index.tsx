@@ -225,7 +225,8 @@ export default function Art2() {
 {/* make articles smaller this is part 2 - return everything 
 but with thiner margins and padding and a grid that puts articles to the left two thirds 
 on some rows and right two thirds on other rows for lg and md screens */}
-
+<div className="px-1 py-2 md:grid md:grid-cols-3 md:gap-2">
+  <div className="mb-2 md:col-span-2 md:col-start-1">
    <Link to="/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-900 p-1 text-lg font-bold tracking-tight text-white">
@@ -242,8 +243,8 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>   
-
-
+</div>
+  <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/what-is-rag">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
@@ -260,7 +261,8 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>   
-
+</div>
+  <div className="mb-2 md:col-span-2 md:col-start-1">
       <Link to="/what-are-the-best-free-text-to-speech-tools">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
@@ -277,7 +279,8 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>   
-
+</div>
+  <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/dspy101">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
@@ -294,7 +297,10 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>   
+</div>
+  <div className="mb-2 md:col-span-2 md:col-start-1">
 
+  
       <Link to="/databricks-dspy-jetblue-ai-chatbot">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
@@ -311,7 +317,8 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>   
-
+</div>
+    <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
@@ -328,7 +335,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>
-      
+    </div>
+
+    <div className="mb-2 md:col-span-2 md:col-start-1">
       <Link to="/threejs-and-web3">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-green-800 p-1 text-lg font-bold tracking-tight text-white">
@@ -345,7 +354,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>
-
+    </div>
+    
+    <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/easy-domain-verification-with-google">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
@@ -362,7 +373,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>
-      
+    </div>
+
+    <div className="mb-2 md:col-span-2 md:col-start-1">
       <Link to="/lies-about-javascript">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
@@ -379,7 +392,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>
-      
+    </div>
+
+    <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/create-your-own-huggingface-space-easy">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
@@ -397,7 +412,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
 
         </div>
       </Link>
+    </div>
       
+    <div className="mb-2 md:col-span-2 md:col-start-1">
       <Link to="/5-ways-ai-can-help-farmland-restoration">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-green-700 p-1 text-lg font-bold tracking-tight text-white">
@@ -414,9 +431,10 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
         </div>
       </Link>
-      
+    </div>
+
       {/* New Link for Models Table */}
-      <Link to="/models-table">
+      {/* <Link to="/models-table">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-indigo-600 p-1 text-lg font-bold tracking-tight text-white">
             AI Models
@@ -432,8 +450,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </h1>
 
         </div>
-      </Link>
+      </Link> */}
 
+    <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/using-airpods-and-audacity-hack">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
           <div className="rounded-full bg-pink-600 p-1 text-lg font-bold tracking-tight text-white">
@@ -451,6 +470,9 @@ on some rows and right two thirds on other rows for lg and md screens */}
 
         </div>
       </Link>
-    </main>
+    </div>
+    </div>
+</main>
+     
   );
 }
