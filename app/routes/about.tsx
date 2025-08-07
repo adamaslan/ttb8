@@ -8,7 +8,7 @@ export default function About() {
       </h1>
       <div className="mt-8 text-lg leading-relaxed">
         <p className="mb-4">
-          Tasty Tech Bytes is more than just a blog—it's a new kind of tech publication that breaks the boundaries between traditional media, hands-on tutorials, and deep technical research. We're building a space where newsworthy breakthroughs in AI, modern web development, and software culture collide with in-depth walkthroughs and research-grade explorations.
+          Tasty Tech Bytes is more than just a blog. TTB is a new kind of tech publication that breaks the boundaries between traditional media, hands-on tutorials, and deep technical research. We're building a space where newsworthy breakthroughs in AI, modern web development, and software culture collide with in-depth walkthroughs and research-grade explorations.
         </p>
         <p className="mb-4">
           Our content spans from cutting-edge innovations in Artificial Intelligence and Machine Learning—like Retrieval-Augmented Generation (RAG) and DSPy—to hands-on guides using frameworks like Astro and Vue.js. Whether we’re building Hugging Face Spaces or decoding the nuances of JavaScript, every piece is crafted to blur the lines between insight, instruction, and inspiration. We're not just covering trends—we’re experimenting, explaining, and amplifying them.
