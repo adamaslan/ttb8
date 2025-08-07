@@ -1,4 +1,4 @@
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 
 export default function About() {
   return (
@@ -8,13 +8,16 @@ export default function About() {
       </h1>
       <div className="mt-8 text-lg leading-relaxed">
         <p className="mb-4">
-          This collection of articles covers a diverse range of topics, from cutting-edge advancements in Artificial Intelligence and Machine Learning, including detailed explorations of RAG (Retrieval-Augmented Generation) and DSPy, to practical guides on web development frameworks like Astro, Vue.js, and the nuances of JavaScript. Thus, we parallel as a news publication, a source for research, and a tutorial platform. Readers can delve into the specifics of enhancing AI efficiency, creating Hugging Face Spaces, and understanding the intricacies of modern web technologies. The AI-focused content provides insights into how AI is being applied in various fields, such as farmland restoration and business optimization, demonstrating the broad impact of these technologies.
+          Tasty Tech Bytes is more than just a blog. TTB is a new kind of tech publication that breaks the boundaries between traditional media, hands-on tutorials, and deep technical research. We're building a space where newsworthy breakthroughs in AI, modern web development, and software culture collide with in-depth walkthroughs and research-grade explorations.
         </p>
         <p className="mb-4">
-          Beyond the technical deep dives, the articles also offer valuable advice for developers, such as essential WebStorm shortcuts and strategies for securing frontend and full-stack engineering jobs. There are also unique pieces that blend technology with everyday life, like tips for using AirPods with Audacity and intriguing facts about the internet's history. The content aims to equip readers with both theoretical knowledge and practical skills, fostering continuous learning and professional growth in the ever-evolving tech landscape.
+          Our content spans from cutting-edge innovations in Artificial Intelligence and Machine Learning—like Retrieval-Augmented Generation (RAG) and DSPy—to hands-on guides using frameworks like Astro and Vue.js. Whether we’re building Hugging Face Spaces or decoding the nuances of JavaScript, every piece is crafted to blur the lines between insight, instruction, and inspiration. We're not just covering trends—we’re experimenting, explaining, and amplifying them.
         </p>
         <p className="mb-4">
-          Overall, the articles provide a rich tapestry of information for anyone interested in technology, software development, and the transformative power of AI. They serve as a resource for staying updated on industry trends, improving coding practices, and exploring the diverse applications of technology in various domains. Whether you're a seasoned developer or an enthusiastic beginner, this collection offers something valuable for your journey.
+          Unlike legacy tech media, which often separates tutorials from journalism and overlooks the practical struggles of developers, we weave it all together. You'll find sharp developer advice (like WebStorm shortcut mastery or how to land full-stack jobs), alongside offbeat cultural pieces (like using AirPods with Audacity or exploring lost corners of internet history). We're here to equip developers and technologists with the skills, context, and curiosity to thrive.
+        </p>
+        <p className="mb-4">
+          Tasty Tech Bytes is a manifesto as much as a media platform. We're challenging the old silos of tech coverage by offering an integrated, hacker-minded, research-informed lens on where code, culture, and creativity intersect. Whether you're scaling your startup or writing your first script, you're not just reading—you’re joining a movement.
         </p>
       </div>
       <p className="text-center text-lg font-extrabold tracking-tight text-yellow-500 sm:text-2xl lg:text-4xl mt-8">
