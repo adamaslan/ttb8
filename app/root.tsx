@@ -17,8 +17,6 @@ import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import box from "../public/boxchicken2.jpeg";
 import Nav from "./components/Navbar"; // Import the Nav component
-import Art2 from "./routes/_index"
-import Art3 from "./routes/intro-to-neural-networks";
 export const meta: MetaFunction = () => ({
   title: "Putting the Sass n Fun in Tech" ,
    "og:image": "box"});
@@ -47,7 +45,6 @@ export default function App() {
         <Nav /> {/* Add the Nav component here */}
         <Outlet />
         <ScrollRestoration />
-        <Art3 />
         <Scripts />
         <LiveReload />
       </body>
