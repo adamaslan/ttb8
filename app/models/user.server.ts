@@ -3,6 +3,9 @@ import { createClient } from "@supabase/supabase-js";
 import invariant from "tiny-invariant";
 
 export type User = { id: string; email: string };
+import dotenv from "dotenv";
+dotenv.config();
+
 
 // Abstract this away
 const supabaseUrl = process.env.SUPABASE_URL;

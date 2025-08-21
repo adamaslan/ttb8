@@ -60,7 +60,7 @@ const MovingObject: React.FC<{children?: React.ReactNode}> = ({ children }) => {
       {/*<ambientLight />*/}
       <pointLight position={[10, 10, 10]} />
       {/* Add a light pinkish light to the scene */}
-      <hemisphereLight skyColor="#ffcccc" groundColor="#000000" intensity={0.5} />
+      <hemisphereLight color="#ffcccc" groundColor="#000000" intensity={0.5} />
       <Sphere1 />
       <Torus1 />
       {children}
