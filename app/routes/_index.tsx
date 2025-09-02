@@ -493,7 +493,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
       </Link>   
 </div>
   <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/using-airpods-and-audacity-hack">
+      <Link to="/introduction-to-neural-networks">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
       <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
             AI Tips
