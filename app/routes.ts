@@ -13,6 +13,8 @@ export default [index("routes/_index.tsx"),
   route("the-art-of-the-clean-install", "./routes/the-art-of-the-clean-install.tsx"),
   route("what-is-rag", "./routes/what-is-rag.tsx"),
   route("what-are-the-best-free-text-to-speech-tools", "./routes/what-are-the-best-free-text-to-speech-tools.tsx"),
+  route("10-essential-pytorch-elements-in-a-rnn", "./routes/10-essential-pytorch-elements-in-a-rnn.tsx"),
+  
   route("dspy101", "./routes/dspy101.tsx"),
   route("create-your-own-huggingface-space-easy", "./routes/create-your-own-huggingface-space-easy.tsx"),
   route("the-ultimate-guide-to-flyers-in-blender-with-the-node-editor", "./routes/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor.tsx"),
