@@ -20,6 +20,7 @@ import fish1 from "/fish1.png";
 import text2speech from "/text2speech.png";
 import restorationImage from "/restoration.png";
 import pipe1 from "/pipeline1.png";
+import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -280,6 +281,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
         </div>
       </Link>   
 </div>
+
   <div className="mb-2 md:col-span-2 md:col-start-2">
       <Link to="/dspy101">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
@@ -471,6 +473,24 @@ on some rows and right two thirds on other rows for lg and md screens */}
         </div>
       </Link>
     </div>
+    <div className="mb-2 md:col-span-2 md:col-start-1">
+      <Link to="/10-essential-pytorch-elements-in-a-rnn">
+        <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
+          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
+            AI Tips
+          </div>
+
+          <img
+            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full object-cover"
+            src={pytorch_elements_in_rnn}
+            alt="text to speech"
+          />
+          <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
+          The 10 essential pytorch elements in a rnn
+          </h1>
+        </div>
+      </Link>   
+</div>
     </div>
 </main>
      
