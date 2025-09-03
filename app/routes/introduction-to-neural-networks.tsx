@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import intro_to_neural_networks from "/intro_to_neural_networks.png";
+import intro_to_neural_networks from "/intro_to_Neural_Network.png";
 
 export default function ArticleNN() {
   return (
