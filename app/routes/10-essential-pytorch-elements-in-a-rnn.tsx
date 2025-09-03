@@ -8,6 +8,7 @@ export default function ArticleRNN() {
         <h1 className="tracking-light text-center text-2xl font-extrabold text-blue-500 sm:text-4xl lg:text-5xl">
          10 Essential PyTorch Elements in RNNs
         </h1>
+        <h2 className="tracking-light text-center text-xl font-extrabold text-blue-500 sm:text-4xl lg:text-2xl">By Rajesh Kumar Reddy Avula</h2>
         <img
           className="mx-auto my-auto h-1/2 w-1/2"
           src={pytorch_elements_in_rnn}

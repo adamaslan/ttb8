@@ -20,7 +20,7 @@ import fish1 from "/fish1.png";
 import text2speech from "/text2speech.png";
 import restorationImage from "/restoration.png";
 import pipe1 from "/pipeline1.png";
-import NeuralNetworks from "/nn.png";
+import NeuralNetworks from "/intro_to_neural_networks.png";
 import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
 
 export const meta = () => {
