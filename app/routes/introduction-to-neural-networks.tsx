@@ -23,7 +23,7 @@ export default function ArticleNN() {
             Key Insights on Neural Networks
           </p>
           <ul className="list-disc pl-5 text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
-            <li>Neural networks use artificial neurons arranged in structured layers to process information.</li>
+            <li>Neural networks use artificial neurons arranged in structured layers to process vast amounts of information.</li>
             <li>They learn by adjusting weights using backpropagation and optimization techniques like gradient descent.</li>
             <li>Common architectures include feedforward, convolutional, and recurrent neural networks.</li>
             <li>PyTorch provides dynamic computational graphs that make neural network development intuitive and flexible.</li>
