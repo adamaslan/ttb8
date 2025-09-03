@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
+import pytorch_elements_in_rnn_img from "/10_pytorch_elements_in_rnn.png";
 
 export default function ArticleRNN() {
   return (
@@ -10,7 +10,7 @@ export default function ArticleRNN() {
         </h1>
         <img
           className="mx-auto my-auto h-1/2 w-1/2"
-          src={pytorch_elements_in_rnn}
+          src={pytorch_elements_in_rnn_img}
           alt="pytorch-rnn"
         />
         <div>
