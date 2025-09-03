@@ -1,6 +1,5 @@
-import { Link } from "@remix-run/react";
-import NeuralNetworks from "../../public/nn.png";
-
+import { Link } from "react-router";
+import intro_to_neural_networks from "/intro_to_neural_networks.png";
 
 export default function ArticleNN() {
   return (
@@ -11,7 +10,7 @@ export default function ArticleNN() {
         </h1>
         <img
           className="mx-auto my-auto h-1/2 w-1/2"
-          src={NeuralNetworks}
+          src={intro_to_neural_networks}
           alt="Neural Networks"
         />
         <div>
@@ -84,3 +83,6 @@ export default function ArticleNN() {
     </div>
   );
 }
+
+
+

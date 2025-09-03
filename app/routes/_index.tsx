@@ -21,7 +21,7 @@ import text2speech from "/text2speech.png";
 import restorationImage from "/restoration.png";
 import pipe1 from "/pipeline1.png";
 import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
-
+import NeuralNetworks from "../../public/intro_to_neural_networks.png";
 export const meta = () => {
   return [{ property: "og:image", content: box }];
 };
@@ -491,6 +491,26 @@ on some rows and right two thirds on other rows for lg and md screens */}
         </div>
       </Link>   
 </div>
+
+<div className="mb-2 md:col-span-2 md:col-start-2">
+      <Link to="/introduction-to-neural-networks">
+        <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
+          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
+            AI Tips
+          </div>
+
+          <img
+            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full object-cover"
+            src={NeuralNetworks}
+            alt="text to speech"
+          />
+          <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
+          introduction-to-neural-networks
+          </h1>
+        </div>
+      </Link>   
+</div>
+
     </div>
 </main>
      
