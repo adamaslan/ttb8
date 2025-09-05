@@ -1,6 +1,5 @@
 import { Link } from "react-router";
-import NeuralNetworks from "../../public/nn.png";
-
+import intro_to_neural_networks from "/intro_to_Neural_Network.png";
 
 export default function ArticleNN() {
   return (
@@ -9,9 +8,10 @@ export default function ArticleNN() {
         <h1 className="tracking-light text-center text-2xl font-extrabold text-blue-500 sm:text-4xl lg:text-5xl">
           Introduction to Neural Networks
         </h1>
+        <h2 className="tracking-light text-center text-xl font-extrabold text-blue-500 sm:text-4xl lg:text-2xl">By Rajesh Kumar Reddy Avula</h2>
         <img
           className="mx-auto my-auto h-1/2 w-1/2"
-          src={NeuralNetworks}
+          src={intro_to_neural_networks}
           alt="Neural Networks"
         />
         <div>
@@ -23,7 +23,7 @@ export default function ArticleNN() {
             Key Insights on Neural Networks
           </p>
           <ul className="list-disc pl-5 text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
-            <li>Neural networks use artificial neurons arranged in structured layers to process vast amounts of information.</li>
+            <li>Neural networks use artificial neurons arranged in structured layers to process information.</li>
             <li>They learn by adjusting weights using backpropagation and optimization techniques like gradient descent.</li>
             <li>Common architectures include feedforward, convolutional, and recurrent neural networks.</li>
             <li>PyTorch provides dynamic computational graphs that make neural network development intuitive and flexible.</li>
@@ -84,3 +84,6 @@ export default function ArticleNN() {
     </div>
   );
 }
+
+
+
