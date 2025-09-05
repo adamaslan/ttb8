@@ -22,6 +22,7 @@ import restorationImage from "/restoration.png";
 import pipe1 from "/pipeline1.png";
 import NeuralNetworks from "/intro_to_Neural_Network.png";
 import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
+import pytorch_elements_in_lstm from "/10_pytorch_elements_in_lstm.png";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -511,6 +512,26 @@ on some rows and right two thirds on other rows for lg and md screens */}
         </div>
       </Link>
     </div>
+    <div className="mb-2 md:col-span-2 md:col-start-1">
+      <Link to="/10_Essential_PyTorch_Elements_in_LSTMs">
+        <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
+      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
+            AI Tips
+          </div>
+
+          <img
+            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            src={pytorch_elements_in_lstm}
+            alt="10_Essential_PyTorch_Elements_in_LSTMs"
+          />
+          <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
+          10_Essential_PyTorch_Elements_in_LSTMs
+          </h1>
+
+        </div>
+      </Link>
+    </div>
+    
     </div>
 </main>
      
