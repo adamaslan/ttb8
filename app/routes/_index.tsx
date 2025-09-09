@@ -23,6 +23,7 @@ import pipe1 from "/pipeline1.png";
 import NeuralNetworks from "/intro_to_Neural_Network.png";
 import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
 import pytorch_elements_in_lstm from "/10_pytorch_elements_in_lstm.png";
+import sqlite_to_postgres from "/sqlite_to_postgres.png";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -526,6 +527,26 @@ on some rows and right two thirds on other rows for lg and md screens */}
           />
           <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
           10_Essential_PyTorch_Elements_in_LSTMs
+          </h1>
+
+        </div>
+      </Link>
+    </div>
+
+    <div className="mb-2 md:col-span-2 md:col-start-2">
+      <Link to="/10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL">
+        <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
+      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
+            AI Tips
+          </div>
+
+          <img
+            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            src={sqlite_to_postgres}
+            alt="10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL"
+          />
+          <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
+          10 Ways to Optimize SQLite Before Migrating to PostgreSQL
           </h1>
 
         </div>
