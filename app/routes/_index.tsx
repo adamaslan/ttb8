@@ -24,6 +24,7 @@ import NeuralNetworks from "/intro_to_Neural_Network.png";
 import pytorch_elements_in_rnn from "/10_pytorch_elements_in_rnn.png";
 import pytorch_elements_in_lstm from "/10_pytorch_elements_in_lstm.png";
 import sqlite_to_postgres from "/sqlite_to_postgres.png";
+import finetuning_costs from "/finetuning_costs.png";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -552,6 +553,27 @@ on some rows and right two thirds on other rows for lg and md screens */}
         </div>
       </Link>
     </div>
+
+    <div className="mb-2 md:col-span-2 md:col-start-1">
+      <Link to="/10_ways_to_reduce_fine_tuning_costs">
+        <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
+      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
+            AI Tips
+          </div>
+
+          <img
+            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            src={finetuning_costs}
+            alt="10_ways_to_reduce_fine_tuning_costs"
+          />
+          <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
+          10_ways_to_reduce_fine_tuning_costs
+          </h1>
+
+        </div>
+      </Link>
+    </div>
+
     
     </div>
 </main>
