@@ -1,5 +1,12 @@
 import { Link } from "react-router";
 import React, { useState } from "react";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/react-router";
 
 const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -94,6 +101,30 @@ const Nav: React.FC = () => {
           <span className="inline-block transform group-hover:rotate-2">u</span>
           <span className="inline-block transform group-hover:-rotate-1">t</span>
         </Link>
+
+        <div className="flex items-center gap-4 py-2 px-4">
+          <SignedOut>
+            <SignInButton mode="modal">
+              <button className="px-4 py-2 text-lg font-bold rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition-transform duration-200">
+                Sign In
+              </button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button className="px-4 py-2 text-lg font-bold rounded-lg border-2 border-current hover:bg-gradient-to-r hover:from-pink-400 hover:to-purple-400 hover:text-white hover:border-transparent hover:scale-105 transition-all duration-200">
+                Sign Up
+              </button>
+            </SignUpButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton
+              appearance={{
+                elements: {
+                  avatarBox: "w-10 h-10",
+                },
+              }}
+            />
+          </SignedIn>
+        </div>
       </div>
     </div>
   );

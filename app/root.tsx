@@ -6,10 +6,17 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { ClerkProvider } from "@clerk/react-router";
+import { rootAuthLoader } from "@clerk/react-router/server";
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import Nav from "./components/Navbar"; 
+import Nav from "./components/Navbar";
+
+export async function loader(args: Route.LoaderArgs) {
+  return rootAuthLoader(args);
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -31,9 +38,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7800672743081561"
+          crossOrigin="anonymous"
+        />
       </head>
       <body>
-        <Nav />
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -42,8 +53,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function App() {
-  return <Outlet />;
+export default function App({ loaderData }: Route.ComponentProps) {
+  return (
+    <ClerkProvider loaderData={loaderData}>
+      <Nav />
+      <Outlet />
+    </ClerkProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
