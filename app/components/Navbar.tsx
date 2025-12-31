@@ -105,12 +105,12 @@ const Nav: React.FC = () => {
         <div className="flex items-center gap-4 py-2 px-4">
           <SignedOut>
             <SignInButton>
-              <button className="px-4 py-2 text-lg font-bold rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition-transform duration-200 cursor-pointer">
+              <button className="px-4 py-2 text-lg font-bold rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-105 transition-transform duration-200">
                 Sign In
               </button>
             </SignInButton>
             <SignUpButton>
-              <button className="px-4 py-2 text-lg font-bold rounded-lg border-2 border-current hover:bg-gradient-to-r hover:from-pink-400 hover:to-purple-400 hover:text-white hover:border-transparent hover:scale-105 transition-all duration-200 cursor-pointer">
+              <button className="px-4 py-2 text-lg font-bold rounded-lg border-2 border-current hover:bg-gradient-to-r hover:from-pink-400 hover:to-purple-400 hover:text-white hover:border-transparent hover:scale-105 transition-all duration-200">
                 Sign Up
               </button>
             </SignUpButton>
