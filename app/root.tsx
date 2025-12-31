@@ -55,7 +55,29 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App({ loaderData }: Route.ComponentProps) {
   return (
-    <ClerkProvider loaderData={loaderData}>
+    <ClerkProvider
+      loaderData={loaderData}
+      appearance={{
+        layout: {
+          socialButtonsPlacement: "bottom",
+          socialButtonsVariant: "iconButton",
+        },
+      }}
+      localization={{
+        signIn: {
+          start: {
+            title: "Sign in to Tasty Tech Bytes",
+            subtitle: "Welcome back! Sign in to continue",
+          },
+        },
+        signUp: {
+          start: {
+            title: "Create your account",
+            subtitle: "Join Tasty Tech Bytes today",
+          },
+        },
+      }}
+    >
       <Nav />
       <Outlet />
     </ClerkProvider>
