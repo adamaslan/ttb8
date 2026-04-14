@@ -26,6 +26,7 @@ export default [index("routes/_index.tsx"),
   route("databricks-dspy-jetblue-ai-chatbot", "./routes/databricks-dspy-jetblue-ai-chatbot.tsx"),
   route("5-ways-ai-can-help-farmland-restoration", "./routes/5-ways-ai-can-help-farmland-restoration.tsx"),
   route("5-ways-to-enhance-rag-efficiency-with-dspy", "./routes/5-ways-to-enhance-rag-efficiency-with-dspy.tsx"),
+  route("articles/:slug", "./routes/articles.$slug.tsx"),
   ] satisfies RouteConfig;
 
   // the-ultimate-guide-to-flyers-in-blender-with-the-node-editor.tsx
