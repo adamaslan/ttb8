@@ -1,3 +1,4 @@
+import DOMPurify from "isomorphic-dompurify";
 import { Link, data } from "react-router";
 import type { LoaderFunctionArgs, MetaFunction } from "react-router";
 import { getAllArticleCards, getArticleByType, getArticleTypes } from "~/lib/articles-static.server";
@@ -68,7 +69,7 @@ export default function ArticlePage({
       {article.contentFormat === "html" ? (
         <div
           className="prose prose-lg max-w-none"
-          dangerouslySetInnerHTML={{ __html: article.content }}
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(article.content) }}
         />
       ) : (
         // Plain-text / prose body from story_picker — render as paragraphs

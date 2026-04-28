@@ -17,7 +17,16 @@ function initAdmin() {
   const credJson = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON;
 
   if (credJson) {
-    const serviceAccount = JSON.parse(credJson);
+    let serviceAccount: Record<string, unknown>;
+    try {
+      serviceAccount = JSON.parse(credJson);
+    } catch (err) {
+      throw new Error(
+        `GOOGLE_APPLICATION_CREDENTIALS_JSON is not valid JSON: ${
+          err instanceof Error ? err.message : String(err)
+        }`,
+      );
+    }
     initializeApp({ credential: cert(serviceAccount), projectId });
   } else {
     // Fallback to ADC (works when deployed on GCP or with gcloud auth locally)
