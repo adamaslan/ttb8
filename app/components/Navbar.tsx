@@ -91,6 +91,13 @@ const Nav: React.FC = () => {
           <span className="inline-block transform group-hover:-rotate-1">s</span>
         </Link>
         <Link
+          to="/archive"
+          className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:bg-clip-text hover:text-transparent group"
+        >
+          <span className="inline-block group-hover:animate-pulse">📚</span>
+          <span className="inline-block ml-1">Archive</span>
+        </Link>
+        <Link
           to="/about"
           className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:-rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-pink-400 hover:to-purple-400 hover:bg-clip-text hover:text-transparent group"
         >

@@ -1,4 +1,18 @@
-import { Link } from "react-router";
+import { Link, data } from "react-router";
+import type { LoaderFunctionArgs } from "react-router";
+import { getLatestStaticArticle } from "~/lib/articles-static.server";
+
+export async function loader(_args: LoaderFunctionArgs) {
+  const dailyArticle = getLatestStaticArticle();
+  return data(
+    { dailyArticle },
+    {
+      headers: {
+        "Cache-Control": "public, max-age=600, stale-while-revalidate=1800",
+      },
+    }
+  );
+}
 import analytics from "/analytics1.jpeg";
 import banner from "/old-comp1.jpeg";
 import studio from "/studio.jpg";
@@ -29,12 +43,34 @@ export const meta = () => {
   return [{ property: "og:image", content: box }];
 };
    {/* small little tabs with small photos to the right */}
-export default function Art2() {
+export default function Art2({ loaderData }: { loaderData: { dailyArticle: ReturnType<typeof getLatestStaticArticle> } }) {
+  const { dailyArticle } = loaderData;
 
   return (
-    
+
     <main className="items-left justify-left mx-4 min-h-screen bg-white lg:mx-36 md:mx-16">
-    
+
+      {dailyArticle && (
+        <div className="mb-6 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 p-4 text-white">
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-sm font-bold uppercase tracking-widest">Daily Article</p>
+            <Link
+              to="/correlations-archive"
+              className="text-xs font-bold uppercase tracking-wider underline opacity-90 hover:opacity-100"
+            >
+              View Archive →
+            </Link>
+          </div>
+          <Link
+            to={`/articles/${dailyArticle.slug}`}
+            className="text-xl font-extrabold hover:underline lg:text-2xl"
+          >
+            {dailyArticle.title}
+          </Link>
+          <p className="mt-1 text-sm opacity-90">{dailyArticle.summary}</p>
+        </div>
+      )}
+
       <h1 className="text-left text-2xl font-extrabold tracking-tight sm:text-4xl lg:text-6xl">
         <span className="block uppercase text-blue-500 drop-shadow-md">
           Tasty Tech Bytes
