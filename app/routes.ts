@@ -27,6 +27,9 @@ export default [index("routes/_index.tsx"),
   route("5-ways-ai-can-help-farmland-restoration", "./routes/5-ways-ai-can-help-farmland-restoration.tsx"),
   route("5-ways-to-enhance-rag-efficiency-with-dspy", "./routes/5-ways-to-enhance-rag-efficiency-with-dspy.tsx"),
   route("articles/:slug", "./routes/articles.$slug.tsx"),
+  route("correlations-archive", "./routes/correlations-archive.tsx"),
+  route("archive", "./routes/archive._index.tsx"),
+  route("archive/:type", "./routes/archive.$type.tsx"),
   ] satisfies RouteConfig;
 
   // the-ultimate-guide-to-flyers-in-blender-with-the-node-editor.tsx

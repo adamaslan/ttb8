@@ -1,14 +1,14 @@
 import { Link, data } from "react-router";
 import type { LoaderFunctionArgs } from "react-router";
-import { getLatestArticle } from "~/lib/articles.server";
+import { getLatestStaticArticle } from "~/lib/articles-static.server";
 
 export async function loader(_args: LoaderFunctionArgs) {
-  const dailyArticle = await getLatestArticle();
+  const dailyArticle = getLatestStaticArticle();
   return data(
     { dailyArticle },
     {
       headers: {
-        "Cache-Control": "public, max-age=300, stale-while-revalidate=600",
+        "Cache-Control": "public, max-age=600, stale-while-revalidate=1800",
       },
     }
   );
@@ -43,7 +43,7 @@ export const meta = () => {
   return [{ property: "og:image", content: box }];
 };
    {/* small little tabs with small photos to the right */}
-export default function Art2({ loaderData }: { loaderData: { dailyArticle: Awaited<ReturnType<typeof getLatestArticle>> } }) {
+export default function Art2({ loaderData }: { loaderData: { dailyArticle: ReturnType<typeof getLatestStaticArticle> } }) {
   const { dailyArticle } = loaderData;
 
   return (
@@ -52,7 +52,15 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Await
 
       {dailyArticle && (
         <div className="mb-6 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 p-4 text-white">
-          <p className="text-sm font-bold uppercase tracking-widest mb-1">Daily Article</p>
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-sm font-bold uppercase tracking-widest">Daily Article</p>
+            <Link
+              to="/correlations-archive"
+              className="text-xs font-bold uppercase tracking-wider underline opacity-90 hover:opacity-100"
+            >
+              View Archive →
+            </Link>
+          </div>
           <Link
             to={`/articles/${dailyArticle.slug}`}
             className="text-xl font-extrabold hover:underline lg:text-2xl"

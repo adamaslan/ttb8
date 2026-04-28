@@ -1,12 +1,18 @@
-import { data } from "react-router";
+import { Link, data } from "react-router";
 import type { LoaderFunctionArgs, MetaFunction } from "react-router";
-import { getArticleBySlug } from "~/lib/articles.server";
+import { getAllArticleCards, getArticleByType, getArticleTypes } from "~/lib/articles-static.server";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const slug = params.slug;
   if (!slug) throw data("Not found", { status: 404 });
 
-  const article = await getArticleBySlug(slug);
+  const cards = getAllArticleCards();
+  const card = cards.find((c) => c.slug === slug);
+  if (!card) throw data("Article not found", { status: 404 });
+
+  const types = getArticleTypes();
+  const matchedType = types.find((t) => t.category === card.category);
+  const article = matchedType ? getArticleByType(matchedType.id) : null;
   if (!article) throw data("Article not found", { status: 404 });
 
   return data(
@@ -44,10 +50,18 @@ export default function ArticlePage({
   return (
     <main className="max-w-3xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <span className="rounded-full bg-purple-400 px-3 py-1 text-sm font-bold text-white">
-          {article.category}
-        </span>
-        <p className="mt-2 text-sm text-gray-500">{publishDate}</p>
+        <Link
+          to="/correlations-archive"
+          className="text-sm font-bold text-purple-600 hover:underline"
+        >
+          ← All Correlations
+        </Link>
+        <div className="mt-3">
+          <span className="rounded-full bg-purple-400 px-3 py-1 text-sm font-bold text-white">
+            {article.category}
+          </span>
+          <p className="mt-2 text-sm text-gray-500">{publishDate}</p>
+        </div>
       </div>
       <h1 className="text-3xl font-bold mb-4 lg:text-4xl">{article.title}</h1>
       <p className="text-lg text-gray-600 mb-8">{article.summary}</p>

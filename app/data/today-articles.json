@@ -1,0 +1,533 @@
+{
+  "daily_story": {
+    "doc_id": "daily_story:2026-04-27",
+    "data": {
+      "all_pairs_count": 20,
+      "date": "2026-04-27",
+      "body": "Today's industry returns and technical signals are telling opposite stories for the same sectors \u2014 and that gap is where the risk lives.\n\nThe industry returns data shows Oil & Gas (+1.09%) and Automotive (+0.95%) leading today's session on price performance. The technical signals model, working independently from a six-signal confluence framework, flags Automotive as a HIGH-conviction BUY \u2014 momentum, trend, relative strength, and structure all aligned. But for Oil & Gas, there is no corresponding BUY signal in the technical model. The price is moving; the systematic signals are not confirming.\n\nThat divergence matters because it changes the trade. When price and signals agree, you have a thesis. When price leads but signals lag, you have a catalyst event \u2014 likely the Iran oil supply disruption reported today \u2014 that may reverse as quickly as it arrived. The difference between Automotive's +0.95% today and Oil & Gas's +1.09% is not just magnitude; it's signal quality. Automotive's gain is backed by six independently bullish technical reads spanning short, medium, and long-term timeframes. Oil & Gas's gain is backed by a headline. Watch whether Oil & Gas price holds through tomorrow's open \u2014 a fade back toward flat would confirm the catalyst-not-trend read and likely trigger the technical signals model to stay neutral or shift negative.",
+      "stale": false,
+      "extreme_pair": {
+        "source_b": "technical-signals",
+        "pair_id": "industry-1d-vs-signals-buy",
+        "signal": "divergence",
+        "score": -0.8,
+        "summary": "Today's top price performers vs technical signal BUY list: partial overlap only",
+        "source_a": "industry-returns-1d"
+      },
+      "title": "When Price Leads and Signals Don't Follow",
+      "slug": "price-leads-signals-dont-follow-2026-04-27"
+    }
+  },
+  "daily_blog": {
+    "doc_id": "daily_blog:2026-04-27",
+    "data": {
+      "date": "2026-04-27",
+      "market_snapshot": {
+        "tone": "Mixed",
+        "leaders_1d": [
+          {
+            "industry": "Oil & Gas",
+            "return": 1.09
+          },
+          {
+            "industry": "Automotive",
+            "return": 0.95
+          },
+          {
+            "industry": "Cloud Computing",
+            "return": 0.51
+          }
+        ],
+        "macro_regime": "Transitional",
+        "leaders_1y": [
+          {
+            "industry": "Semiconductors",
+            "return": 125.12
+          },
+          {
+            "industry": "Mining",
+            "return": 109.91
+          },
+          {
+            "industry": "Automotive",
+            "return": 88.88
+          }
+        ]
+      },
+      "body": "What does a year's worth of returns tell you about a single day? More than you'd think.\n\nToday is a useful case study in the gap between short-term noise and long-term signal. Oil & Gas is leading the session with a +1.09% move, and Automotive is right behind at +0.95%. Both look great on the daily chart. But zoom out to the one-year view and a different story emerges: Semiconductors have returned +125% over the past year, and Mining +110%. Today's leaders and last year's leaders barely overlap. That's the nature of markets \u2014 what's working right now is rarely what's been working for twelve months.\n\nThe multi-timeframe returns dashboard exists precisely to stop you from mistaking a daily surge for a structural trend. Industry returns across 1-day, 1-week, 1-month, 3-month, 6-month, and 1-year windows turn what looks like a simple \"what's up today\" question into a real diagnostic. When Oil & Gas runs today but shows a mediocre 6-month return, you're looking at a catalyst-driven pop, not a trend. When Automotive is both today's #2 performer and a top-3 winner over 12 months (+89%), that's a different signal entirely \u2014 the kind where institutional capital tends to follow conviction.\n\nTechnical signals add another layer. Three industries with the highest confluence today \u2014 Automotive, Infrastructure, Materials \u2014 all show multi-timeframe momentum alignment, not just a single-day blip. Automotive \u2014 1d +0.95%, 1m +5.1%, 1y +88.9% That's the kind of setup where short-term price action and long-term trend agree, which is rarer than it looks.\n\nOn the earnings side, MS, TSLA, BAC, JPM, META all beat estimates this cycle. Strong corporate fundamentals tend to give multi-timeframe momentum a longer runway \u2014 companies beating expectations are the ones where industry ETFs keep showing up in both the daily and annual leader boards.\n\nThe so-what: before acting on any sector's daily move, run the 1-day return alongside the 1-month and 1-year. If all three point the same direction, you have a trend. If only the daily does, you have a headline.",
+      "tool": "industry-returns",
+      "title": "1 Week to 10 Years",
+      "angle": "Multi-timeframe returns and why they matter",
+      "theme_id": "returns-multi-tf"
+    }
+  },
+  "daily_correlation": {
+    "doc_id": "daily_correlation:2026-04-27",
+    "data": {
+      "news_articles": [
+        {
+          "source": "Reuters",
+          "headline": "Iran oil tankers turned back by US blockade, Hormuz traffic sparse - Reuters",
+          "summary": "Iran oil tankers turned back by US blockade, Hormuz traffic sparse\u00a0\u00a0Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZVNYUGpiS2s3d0JQSGc2RTFWb0NFdlFTX1pVaE1Qbi1ySE5UTmJzQ1g0b0hMM2gzWGgxa0tBRko2cUd3bGNQNFNMbi1hbWI3REJXNy1UZ0EtQmpaMk1IaUVDbjV2TjNKNFV2Y1VlYW9sXzd2OGlJSVROZERMS3JCRDdpSnRoUDRyVVVSc3haWHQ4VDc2NDZXQXNjbjkyUk5UNlNCRzBVQmFFNGduSGVyZ3dnMDM4cUFqMGZLaDIxdlVvaHNSblY1bnN2Yw?oc=5"
+        },
+        {
+          "source": "CNBC",
+          "headline": "25% of Gen Z women think they must choose between love and career: It's 'the greatest challenge for women,' says expert",
+          "summary": "Many Gen Z women believe to build their careers properly, they must put romantic relationships on hold, according to a new survey.",
+          "url": "https://www.cnbc.com/2026/04/27/25percent-of-gen-z-women-think-they-must-choose-between-love-and-career.html"
+        },
+        {
+          "source": "Reuters",
+          "headline": "Renewables in vogue as Iran war drives up Europe power prices - Reuters",
+          "summary": "Renewables in vogue as Iran war drives up Europe power prices\u00a0\u00a0Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMG1vMGszUnhJWmVHaUtuSU1EM3pnV2JDRHU1NzRhUFd0TlpFbVZFVnpScl8yQmJ6NUY0Ql9pbVNQWjR2bXhKMVE2WVAtM0dEbFVZQnZuVnI2ay1HSHRsRE12SEQxLTYxQW9QYXBkR19BQ2ZkVlVDcmQ2QXpOcG9JbnJFUUxlNmNGamFuRERNVloybF9hbHczdWw3RVNBRkhWOHFpNjBCREFsWkpkVUIybzBSb1A1MDJUUWpQYUoyeUJrdnlia3ZKM0NjSQ?oc=5"
+        }
+      ],
+      "date": "2026-04-27",
+      "body": "## Market Intelligence Report: April 27, 2026 - Divergence Deepens Amidst Transitional Macro\n\nToday's market paints a confusing picture, characterized by stark divergences across various data points. While the overall market tone remains bullish and the macro regime is classified as \"transitional,\" a deeper dive reveals inconsistencies that demand careful attention. Most notably, there's zero overlap between industries leading the sector rotation and those topping the daily and monthly performance charts, suggesting underlying tensions are brewing beneath the surface.\n\n**A Bullish Facade?**\n\nThe headline numbers seem encouraging. Five out of ten industry ETFs are positive today. The screener, a broader cross-sector gauge of 216 stocks, shows 6.4% in positive territory. This aligns with the stated \"bullish\" market tone. Earnings reports are generally positive, with Pfizer, Morgan Stanley, and UnitedHealth exceeding expectations.\n\nHowever, the 7-day market trend shows a \"stable\" sentiment score of +0.0, indicating the recent optimism hasn't dramatically shifted the overall mood. This stability could be masking underlying anxieties or simply suggest the bullishness is still tentative.\n\n**Sector Rotation vs. Reality: A Critical Disconnect**\n\nThe biggest red flag comes from the sector rotation analysis. Ideally, sectors leading the rotation should align with the top-performing industries. Today, this is not the case. Industries attracting rotation funds (investors moving capital from one sector to another) bear no resemblance to either today's leading sectors (Oil & Gas, Automotive, Cloud Computing) or the prior month's outperformers (Semiconductors, Space, Lithium & Battery). This divergence suggests that investment flows are not tracking underlying market performance.\n\nWe also see divergence when comparing sectors receiving BUY signals to those attracting investor capital. Only one industry \u2013 Materials \u2013 appears on both lists. This lack of alignment between technical signals and rotation leaders raises questions about the sustainability of current market trends.\n\n**Technical Signals Tell a Divided Story**\n\nExamining the technical signals offers further complexity. Across 54 ETFs and 13 time periods, the regime is classified as \"mixed.\" While 20 ETFs generate BUY signals (including Automotive, Infrastructure, Materials, Renewable Energy, and Regional Banks), seven are flashing SELL signals (E-Commerce, Internet, Video Gaming, Cybersecurity, and Medical Devices). The sheer number of conflicting signals (266 in total) reflects the market's uncertainty.\n\nNotably, several sectors receiving SELL signals, such as E-Commerce, Internet, and Video Gaming, are in industries suffering from recent weakness and are trading in-line with macro transitional concerns. However, Cybersecurity stands out as being a sector where analysts have flagged long term bullish trends, highlighting potential contradictions.\n\n**Oil & Gas: A Short-Term Spike or a Sustainable Trend?**\n\nOil & Gas is a leader today, fueled perhaps by the news from Reuters about Iranian oil tankers being turned back due to a US blockade. This disruption, coupled with potentially tighter supply, could explain the price surge and the sector's outperformance. However, is this a temporary blip, or does it signal a more fundamental shift?\n\nWhile short-term bullish, this sector should be watched carefully. The recent rise in European power prices thanks to renewable alternatives is also putting pressure on Oil & Gas\u2019 position as a leading supplier. The industry returns and macro data will need to continue to be monitored for Oil & Gas for an ongoing picture.\n\n**The Gen Z Factor: A Long-Term Societal Shift**\n\nThe CNBC article about Gen Z women feeling forced to choose between love and career, while seemingly unrelated to the market, represents a potential long-term societal shift. It reflects evolving priorities and potential impacts on workforce participation and consumer spending down the line. While not directly affecting today's market, such trends highlight the importance of considering broader societal changes when assessing investment opportunities.\n\n**Tomorrow's Focus: Resolving the Divergences**\n\nThe key to navigating this market lies in understanding and resolving the existing divergences. Here are two crucial areas to monitor tomorrow:\n\n1.  **Sector Rotation Alignment:** Watch if the sectors leading in sector rotation begin to reflect recent performance trends. Consistent misalignment would suggest deeper structural problems.\n2.  **Technical Signal Confirmation:** Pay attention to whether the sectors with BUY signals start to outperform. Conversely, monitor the SELL-signal sectors for further weakness. A continuation of these trends would validate the technical signals.\n3.  **Oil & Gas Sustainability:** Watch for continuation of Oil & Gas\u2019s leadership position with respect to the latest Iran War developments. If the gains fade quickly, it confirms the rise was a temporary reaction to the news.\n\nThe current market is sending mixed signals. Navigating this uncertainty requires a vigilant approach, carefully monitoring the resolution of these key divergences. Only then can a clearer picture of the underlying market health emerge.\n",
+      "sources_used": [
+        "morning",
+        "rotation",
+        "macro",
+        "screener",
+        "news",
+        "earnings",
+        "industry_returns",
+        "signals",
+        "market_summary"
+      ],
+      "slug": "markets-at-a-crossroads-signals-and-fundamentals-pull-apart",
+      "signals_regime": "Mixed",
+      "focus_pairs": [
+        {
+          "pair_id": "industry-returns-vs-rotation",
+          "signal": "divergence",
+          "score": -1.0,
+          "summary": "1-month industry leaders overlap with sector rotation leaders: 0"
+        },
+        {
+          "pair_id": "summary-bullish-vs-signals-buy",
+          "signal": "divergence",
+          "score": -1.0,
+          "summary": "Market summary bullish list vs signals BUY list: 0 overlap"
+        },
+        {
+          "pair_id": "rotation-vs-screener",
+          "signal": "divergence",
+          "score": -1.0,
+          "summary": "Sector leaders overlapping with top gainers: 0 sectors"
+        },
+        {
+          "pair_id": "signals-vs-rotation",
+          "signal": "divergence",
+          "score": -0.9,
+          "summary": "BUY-signal industries vs rotation leaders: 1 overlap"
+        },
+        {
+          "pair_id": "industry-1d-vs-1y",
+          "signal": "divergence",
+          "score": -0.6,
+          "summary": "Today's leaders (Oil & Gas, Automotive) vs 1-year leaders (Semiconductors, Mining): 1 overlap"
+        }
+      ],
+      "industry_leaders_1m": [
+        "Semiconductors",
+        "Space",
+        "Lithium & Battery"
+      ],
+      "correlation_snapshot": {
+        "divergences": 5,
+        "agreements": 0,
+        "total_pairs": 20,
+        "neutral": 15
+      },
+      "market_trend_7d": "Stable",
+      "title": "Markets at a Crossroads: Signals and Fundamentals Pull Apart"
+    }
+  },
+  "blog_review": {
+    "doc_id": "blog_review:2026-04-27",
+    "data": {
+      "blog_theme_id": "returns-multi-tf",
+      "date": "2026-04-27",
+      "suggestions": "1. [HIGH] The hook opens with a question but answers it in the same breath \u2014 the tension dissolves before the reader is hooked. Consider opening with a concrete data point that creates surprise: \"Oil & Gas is today's leader. It's also been a mediocre 6-month performer. That contradiction is the whole story.\" Let the reader feel the gap before explaining it.\n\n2. [HIGH] The distinction between \"catalyst-driven pop\" and \"structural trend\" is the post's core insight, but it's introduced mid-paragraph without a clear marker. Pull it into its own short paragraph with a bolded callout or a concrete example of what each looks like in the data \u2014 readers will skim past the nuance if it's buried in a longer passage.\n\n3. [MEDIUM] The technical signals section references the confluence concept but doesn't explain what it means for a reader unfamiliar with the screener. One sentence \u2014 \"confluence means multiple timeframe signals all pointing the same direction, not just one\" \u2014 would make the paragraph land without requiring a detour.\n\n4. [MEDIUM] The earnings mention feels appended rather than integrated. The connection between earnings beats and multi-timeframe momentum durability is a real one \u2014 but it needs a transitional sentence explaining the mechanism, not just the correlation.\n\n5. [LOW] The closing \"so-what\" is solid but written as a rule. It would hit harder as a habit: \"Before acting on any sector's daily move, check its 1-month and 1-year returns. If all three point the same direction, you have a trend worth trading. If only the daily does, you have a headline worth ignoring.\"\n\n**Overall score: 7/10.** The core idea \u2014 multi-timeframe alignment as a filter for noise \u2014 is strong and timely. The post needs tighter structure in the first half and a cleaner bridge between the data sections and the takeaway.",
+      "focus_areas": [
+        "Clarity \u2014 concepts explained for retail investors?",
+        "Data grounding \u2014 does the post reference actual numbers?",
+        "Hook strength \u2014 does the opening grab attention?",
+        "Takeaway quality \u2014 is the closing actionable?",
+        "Missing angles \u2014 what market context was available but unused?"
+      ],
+      "blog_title": "1 Week to 10 Years"
+    }
+  },
+  "morning": {
+    "doc_id": "morning:2026-04-27",
+    "data": {
+      "metrics_52w": {
+        "IWM": {
+          "low_52week": 189.89,
+          "high_52week": 279.79
+        },
+        "SPY": {
+          "low_52week": 535.45,
+          "high_52week": 714.47
+        },
+        "QQQ": {
+          "low_52week": 455.83,
+          "high_52week": 664.51
+        },
+        "DIA": {
+          "low_52week": 393.8,
+          "high_52week": 505.3
+        }
+      },
+      "date": "2026-04-27",
+      "avg_change_pct": 0.08,
+      "indices": {
+        "Russell 2000": {
+          "high": 278.24,
+          "symbol": "IWM",
+          "prev_close": 276.65,
+          "price": 277.12,
+          "change_pct": 0.17,
+          "open": 276.59,
+          "low": 276.25,
+          "change": 0.47
+        },
+        "Nasdaq 100": {
+          "high": 664.09,
+          "symbol": "QQQ",
+          "prev_close": 663.88,
+          "price": 664.05,
+          "change_pct": 0.03,
+          "open": 663.6,
+          "low": 660.69,
+          "change": 0.17
+        },
+        "S&P 500": {
+          "high": 715.21,
+          "symbol": "SPY",
+          "prev_close": 713.94,
+          "price": 715.18,
+          "change_pct": 0.17,
+          "open": 713.2,
+          "low": 712.29,
+          "change": 1.24
+        },
+        "Dow Jones": {
+          "high": 493.55,
+          "symbol": "DIA",
+          "prev_close": 492.21,
+          "price": 491.95,
+          "change_pct": -0.05,
+          "open": 491.56,
+          "low": 490.29,
+          "change": -0.26
+        }
+      },
+      "market_tone": "neutral",
+      "summary": "Markets are neutral today with an average move of +0.08% across major indices."
+    }
+  },
+  "macro_pulse": {
+    "doc_id": "macro_pulse:2026-04-27",
+    "data": {
+      "date": "2026-04-27",
+      "ai_regime": "Transitional",
+      "metrics_52w": {
+        "SLV": {
+          "low_52week": 29.04,
+          "high_52week": 109.83
+        },
+        "USO": {
+          "low_52week": 61.75,
+          "high_52week": 143.98
+        },
+        "UNG": {
+          "low_52week": 9.95,
+          "high_52week": 19.11
+        },
+        "SHY": {
+          "low_52week": 82.21,
+          "high_52week": 83.2
+        },
+        "LQD": {
+          "low_52week": 105.39,
+          "high_52week": 112.93
+        },
+        "TIP": {
+          "low_52week": 107.98,
+          "high_52week": 112.26
+        },
+        "HYG": {
+          "low_52week": 78.18,
+          "high_52week": 81.36
+        },
+        "TLT": {
+          "low_52week": 83.3,
+          "high_52week": 92.19
+        },
+        "GLD": {
+          "low_52week": 291.78,
+          "high_52week": 509.7
+        }
+      },
+      "ai_summary": "Mixed macro signals. Monitor VIX and credit spreads for confirmation.",
+      "ai_regime_score": 0,
+      "by_category": {
+        "inflation": [
+          {
+            "ticker": "TIP",
+            "high": 111.88,
+            "price": 111.77,
+            "label": "TIPS (Inflation)",
+            "change_pct": -0.03,
+            "category": "inflation",
+            "low": 111.69,
+            "change": -0.03
+          }
+        ],
+        "bonds": [
+          {
+            "ticker": "TLT",
+            "high": 86.62,
+            "price": 86.31,
+            "label": "20yr Treasury ETF",
+            "change_pct": -0.47,
+            "category": "bonds",
+            "low": 86.19,
+            "change": -0.41
+          },
+          {
+            "ticker": "SHY",
+            "high": 82.58,
+            "price": 82.55,
+            "label": "2yr Treasury ETF",
+            "change_pct": -0.02,
+            "category": "bonds",
+            "low": 82.53,
+            "change": -0.02
+          }
+        ],
+        "commodities": [
+          {
+            "ticker": "GLD",
+            "high": 431.8,
+            "price": 429.89,
+            "label": "Gold ETF",
+            "change_pct": -0.78,
+            "category": "commodities",
+            "low": 428.52,
+            "change": -3.36
+          },
+          {
+            "ticker": "SLV",
+            "high": 68.55,
+            "price": 68.33,
+            "label": "Silver ETF",
+            "change_pct": -0.67,
+            "category": "commodities",
+            "low": 67.55,
+            "change": -0.46
+          },
+          {
+            "ticker": "USO",
+            "high": 136.49,
+            "price": 134.72,
+            "label": "Oil ETF",
+            "change_pct": 1.75,
+            "category": "commodities",
+            "low": 133.21,
+            "change": 2.32
+          },
+          {
+            "ticker": "UNG",
+            "high": 10.79,
+            "price": 10.49,
+            "label": "Natural Gas ETF",
+            "change_pct": 1.75,
+            "category": "commodities",
+            "low": 10.46,
+            "change": 0.18
+          }
+        ],
+        "volatility": [
+          {
+            "ticker": "VIX",
+            "error": "No price data from Finnhub for VIX (c=0)",
+            "category": "volatility",
+            "label": "Fear Gauge"
+          }
+        ],
+        "currency": [
+          {
+            "ticker": "DXY",
+            "error": "No price data from Finnhub for DXY (c=0)",
+            "category": "currency",
+            "label": "US Dollar Index"
+          }
+        ],
+        "credit": [
+          {
+            "ticker": "HYG",
+            "high": 80.54,
+            "price": 80.51,
+            "label": "High Yield Bond ETF",
+            "change_pct": 0.04,
+            "category": "credit",
+            "low": 80.42,
+            "change": 0.03
+          },
+          {
+            "ticker": "LQD",
+            "high": 109.58,
+            "price": 109.29,
+            "label": "Investment Grade Bond ETF",
+            "change_pct": -0.28,
+            "category": "credit",
+            "low": 109.19,
+            "change": -0.31
+          }
+        ]
+      },
+      "ai_signals": [
+        "Oil rising \u2014 inflationary pressure"
+      ],
+      "indicators": {
+        "SLV": {
+          "ticker": "SLV",
+          "high": 68.55,
+          "price": 68.33,
+          "label": "Silver ETF",
+          "change_pct": -0.67,
+          "category": "commodities",
+          "low": 67.55,
+          "change": -0.46
+        },
+        "USO": {
+          "ticker": "USO",
+          "high": 136.49,
+          "price": 134.72,
+          "label": "Oil ETF",
+          "change_pct": 1.75,
+          "category": "commodities",
+          "low": 133.21,
+          "change": 2.32
+        },
+        "UNG": {
+          "ticker": "UNG",
+          "high": 10.79,
+          "price": 10.49,
+          "label": "Natural Gas ETF",
+          "change_pct": 1.75,
+          "category": "commodities",
+          "low": 10.46,
+          "change": 0.18
+        },
+        "SHY": {
+          "ticker": "SHY",
+          "high": 82.58,
+          "price": 82.55,
+          "label": "2yr Treasury ETF",
+          "change_pct": -0.02,
+          "category": "bonds",
+          "low": 82.53,
+          "change": -0.02
+        },
+        "LQD": {
+          "ticker": "LQD",
+          "high": 109.58,
+          "price": 109.29,
+          "label": "Investment Grade Bond ETF",
+          "change_pct": -0.28,
+          "category": "credit",
+          "low": 109.19,
+          "change": -0.31
+        },
+        "TIP": {
+          "ticker": "TIP",
+          "high": 111.88,
+          "price": 111.77,
+          "label": "TIPS (Inflation)",
+          "change_pct": -0.03,
+          "category": "inflation",
+          "low": 111.69,
+          "change": -0.03
+        },
+        "DXY": {
+          "ticker": "DXY",
+          "error": "No price data from Finnhub for DXY (c=0)",
+          "category": "currency",
+          "label": "US Dollar Index"
+        },
+        "HYG": {
+          "ticker": "HYG",
+          "high": 80.54,
+          "price": 80.51,
+          "label": "High Yield Bond ETF",
+          "change_pct": 0.04,
+          "category": "credit",
+          "low": 80.42,
+          "change": 0.03
+        },
+        "TLT": {
+          "ticker": "TLT",
+          "high": 86.62,
+          "price": 86.31,
+          "label": "20yr Treasury ETF",
+          "change_pct": -0.47,
+          "category": "bonds",
+          "low": 86.19,
+          "change": -0.41
+        },
+        "VIX": {
+          "ticker": "VIX",
+          "error": "No price data from Finnhub for VIX (c=0)",
+          "category": "volatility",
+          "label": "Fear Gauge"
+        },
+        "GLD": {
+          "ticker": "GLD",
+          "high": 431.8,
+          "price": 429.89,
+          "label": "Gold ETF",
+          "change_pct": -0.78,
+          "category": "commodities",
+          "low": 428.52,
+          "change": -3.36
+        }
+      }
+    }
+  },
+  "ai_summary": {
+    "doc_id": "ai_summary:2026-04-27",
+    "data": {
+      "date": "2026-04-27",
+      "macro_regime": "Transitional",
+      "market_tone": "Mixed",
+      "brief": "Markets are operating in a transitional environment today, April 27, 2026, with no clean directional conviction. The macro picture is dominated by a single overriding signal: Oil rising \u2014 inflationary pressure. That one input is doing a lot of heavy lifting \u2014 it's pushing energy higher while keeping the broader regime in limbo rather than decisively tilting risk-on or risk-off.\n\nThe day's clearest sector story is Oil & Gas (+1.09%) and Automotive (+0.95%), which are the only two industries posting meaningful gains today. Cloud Computing (+0.51%) and Software (+0.49%) are holding, but they're not leading. The sector rotation model confirms an offensive tilt \u2014 Financials, Communication Services, and Utilities are attracting the most capital flow \u2014 yet none of those three show up in today's top price performers. That divergence between where money is flowing and where price is moving is the central tension right now.\n\nEarnings are providing a solid underpinning. With 5 beats (MS, TSLA, BAC, JPM, META) against just one miss (AMZN), the corporate fundamental picture is healthy. 90% of tracked companies beat estimates last quarter. Biggest beat: MS (+10.9%). Biggest miss: AMZN (-3.0%). Strong earnings season \u2014 corporate fundamentals are solid. Screener breadth sits at +2.4%, which is positive but not convincing \u2014 Mixed. Technical signals tilt bullish with 20 BUY readings versus 7 SELLs, with buy conviction in Automotive, Infrastructure, Materials and sell pressure building in E-Commerce, Internet, Video Gaming.\n\nThe tactical takeaway: lean into industry-level strength rather than broad index exposure \u2014 Oil & Gas and Automotive have both momentum and fundamental support, while the broader market needs confirmation that sector rotation leaders actually start moving on price before adding risk.",
+      "lagging_sectors": [
+        "Materials",
+        "Real Estate",
+        "Consumer Staples"
+      ],
+      "news_sentiment": "mixed",
+      "sources": [
+        "macro_pulse",
+        "screener",
+        "earnings_radar",
+        "industry_returns",
+        "sector_rotation",
+        "technical_signals"
+      ],
+      "breadth_pct": 2.4,
+      "leading_sectors": [
+        "Financials",
+        "Communication Services",
+        "Utilities"
+      ]
+    }
+  }
+}
