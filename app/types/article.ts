@@ -22,6 +22,15 @@ export interface FirestoreArticle {
     source_b: string;
   };
   all_pairs_count?: number;
+  // AI Summary extras (present when category === "AI Summary")
+  aiSummary?: {
+    macro_regime: string;
+    market_tone: string;
+    breadth_pct: number;
+    leading_sectors: string[];
+    lagging_sectors: string[];
+    news_sentiment: string;
+  };
 }
 
 // Lightweight version for landing page card display (no content field)
