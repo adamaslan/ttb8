@@ -109,7 +109,7 @@ import myArticleImage from "/continuous-pentesting-ci-guide.png";
       AI News
     </div>
     <img
-      className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+      className="m-2 h-auto max-w-full rounded-full"
       src={myArticleImage}
       alt="<Article title>"
     />
@@ -165,7 +165,7 @@ Caption structure the command generates:
 ### Start the backend
 
 ```bash
-cd /Users/adamaslan/code/zxy3/social-pr-autopilot/backend
+cd <path-to-social-pr-autopilot>/backend
 uvicorn app.main:app --reload
 ```
 

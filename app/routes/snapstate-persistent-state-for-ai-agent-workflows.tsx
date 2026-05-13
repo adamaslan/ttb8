@@ -26,7 +26,8 @@ const RemixPage = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       <header className="bg-blue-600 text-white py-6 shadow-lg">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold">SnapState: Keeping AI Agent Workflows Alive Between Sessions</h1>
+          <span className="rounded-full bg-purple-400 px-3 py-1 text-sm font-bold text-white">AI News</span>
+          <h1 className="mt-3 text-3xl font-bold">SnapState: Keeping AI Agent Workflows Alive Between Sessions</h1>
           <p className="mt-2">A lightweight library for maintaining AI agent state across restarts and interruptions</p>
         </div>
       </header>

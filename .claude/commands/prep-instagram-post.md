@@ -98,7 +98,7 @@ curl -X POST http://localhost:8000/publish \
 ```
 
 Also remind the user:
-- The social-pr-autopilot backend must be running (`cd /Users/adamaslan/code/zxy3/social-pr-autopilot/backend && uvicorn app.main:app --reload`)
+- The social-pr-autopilot backend must be running (`cd <path-to-social-pr-autopilot>/backend && uvicorn app.main:app --reload`)
 - `INSTAGRAM_ACCESS_TOKEN`, `INSTAGRAM_BUSINESS_ACCOUNT_ID`, and `INSTAGRAM_PUBLIC_BASE_URL` must be set in the backend's `.env`
 - The image at `public/<image-file>` must be publicly reachable at `$INSTAGRAM_PUBLIC_BASE_URL/<image-file>` (use ngrok locally)
 

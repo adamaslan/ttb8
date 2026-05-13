@@ -50,7 +50,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
 
   return (
 
-    <main className="items-left justify-left mx-4 min-h-screen bg-black lg:mx-36 md:mx-16">
+    <main className="mx-4 min-h-screen bg-black lg:mx-36 md:mx-16">
 
       {dailyArticle && (
         <div className="mb-6 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 p-4 text-white">
@@ -96,7 +96,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={cask}
                 alt="casks"
               />
@@ -114,7 +114,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={blender1}
                 alt="computer and graphs"
               />
@@ -133,7 +133,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
                 Software - Webstorm
               </div>
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={webstorm1}
                 alt="computer and graphs"
               />
@@ -152,7 +152,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={banner}
                 alt="computer and graphs"
               />
@@ -168,7 +168,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
                 AI News
               </div>
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={continuousPentestingCiGuide}
                 alt="Set Up Continuous Pentesting in Your CI: A 10-Minute Guide"
               />
@@ -184,7 +184,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
                 AI News
               </div>
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={snapstatePersistentStateForAiAgentWorkflows}
                 alt="SnapState: Keeping AI Agent Workflows Alive Between Sessions"
               />
@@ -226,7 +226,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={burden}
                 alt="computer and graphs"
               />
@@ -245,7 +245,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={box}
                 alt="computer and graphs"
               />
@@ -264,7 +264,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </div>
 
               <img
-                className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+                className="m-2 h-auto max-w-full rounded-full"
                 src={graph4}
                 alt="computer and graphs"
               />
@@ -290,7 +290,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
               </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={pipe1}
             alt="pipe"
           />
@@ -308,7 +308,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={fish1}
             alt="fish"
           />
@@ -326,7 +326,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={text2speech}
             alt="text to speech"
           />
@@ -345,7 +345,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={dspyprompt}
             alt="dspyprompt"
           />
@@ -365,7 +365,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={databricks}
             alt="databricks"
           />
@@ -383,7 +383,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={letters1}
             alt="letters"
           />
@@ -402,7 +402,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={cloud}
             alt="clouds"
           />
@@ -421,7 +421,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={analytics}
             alt="analytics chart"
           />
@@ -440,7 +440,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={js1}
             alt="javascript chart"
           />
@@ -459,7 +459,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={huggingface1}
             alt="emoji"
           />
@@ -479,7 +479,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={soundguy1}
             alt="computer and graphs"
           />
@@ -498,7 +498,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={databricks} 
             alt="AI models table"
           />
@@ -517,7 +517,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={airpods}
             alt="computer and graphs"
           />
@@ -536,7 +536,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full object-cover"
+            className="m-2 h-auto max-w-full rounded-full object-cover"
             src={pytorch_elements_in_rnn}
             alt="text to speech"
           />
@@ -554,7 +554,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={NeuralNetworks}
             alt="computer and graphs"
           />
@@ -573,7 +573,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={pytorch_elements_in_lstm}
             alt="10_Essential_PyTorch_Elements_in_LSTMs"
           />
@@ -593,7 +593,7 @@ on some rows and right two thirds on other rows for lg and md screens */}
           </div>
 
           <img
-            className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
+            className="m-2 h-auto max-w-full rounded-full"
             src={sqlite_to_postgres}
             alt="10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL"
           />
