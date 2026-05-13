@@ -59,8 +59,8 @@ Card slot classes:
 
 The 5 slots use **two card variants** — `<HeroCard size="big" />` for the middle, `<HeroCard size="small" />` for the four flankers. (Currently inlined as raw markup; extract to a component if Part 1 changes more than once.)
 
-- **Big**: larger image, h1 at `lg:text-4xl`, badge `text-base`.
-- **Small**: tighter padding, h1 at `lg:text-2xl`, badge `text-sm`.
+- **Big**: larger image, h2 at `lg:text-4xl`, badge `text-base`.
+- **Small**: tighter padding, h2 at `lg:text-2xl`, badge `text-sm`.
 
 ## Part 2 — Quick row (4 cards)
 

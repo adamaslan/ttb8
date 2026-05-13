@@ -50,7 +50,7 @@ function AdSlot({ id }: { id: string }) {
   return (
     <div
       data-ad-slot={id}
-      className="flex h-62.5 w-75 items-center justify-center rounded-lg border border-dashed border-gray-700 bg-gray-900 text-xs text-gray-500"
+      className="flex h-[250px] w-[300px] items-center justify-center rounded-lg border border-dashed border-gray-700 bg-gray-900 text-xs text-gray-500"
     >
       Ad · {id}
     </div>
@@ -62,7 +62,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
 
   return (
 
-    <main className="mx-4 min-h-screen bg-black lg:mx-36 md:mx-16">
+    <main className="mx-4 min-h-screen bg-black pb-16 lg:mx-36 md:mx-16">
 
       {dailyArticle && (
         <div className="mb-6 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 p-4 text-white">
@@ -107,7 +107,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-yellow-500 p-1 text-sm font-bold tracking-tight text-white">
               Drink World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={cask} alt="whiskey casks" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={cask} alt="whiskey casks" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               3 Ways to Invest in Whiskey
             </h2>
@@ -123,7 +123,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
               3D World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={blender1} alt="Blender 3D interface" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={blender1} alt="Blender 3D interface" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               The Pie Menu Rocks in Blender
             </h2>
@@ -139,7 +139,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-blue-500 p-1 text-base font-bold tracking-tight text-white">
               Software - Webstorm
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={webstorm1} alt="WebStorm IDE" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={webstorm1} alt="WebStorm IDE" />
             <h2 className="pb-4 text-left text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
               The Three WebStorm Shortcuts to Rule Them All
             </h2>
@@ -156,7 +156,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               AI News
             </div>
             <img
-              className="m-2 h-auto max-w-full rounded-full"
+              className="m-2 h-auto max-w-full rounded-2xl"
               src={continuousPentestingCiGuide}
               alt="Set Up Continuous Pentesting in Your CI"
             />
@@ -176,7 +176,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               AI News
             </div>
             <img
-              className="m-2 h-auto max-w-full rounded-full"
+              className="m-2 h-auto max-w-full rounded-2xl"
               src={snapstatePersistentStateForAiAgentWorkflows}
               alt="SnapState: persistent state for AI agent workflows"
             />
@@ -194,7 +194,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
               Code World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={studio} alt="Studio by Warren Hansen" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={studio} alt="Studio by Warren Hansen" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               The 3 Keys To Getting Your Dream Frontend or Full Stack Engineer Job
             </h2>
@@ -206,7 +206,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
               Code World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={burden} alt="JavaScript framework illustration" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={burden} alt="JavaScript framework illustration" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               VueJS as the Most Indie Yet Established Javascript Framework
             </h2>
@@ -218,7 +218,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
               Code World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={box} alt="Astro.js" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={box} alt="Astro.js" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               Astro.js as the Most Innovative and Modern Javascript Framework
             </h2>
@@ -230,7 +230,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
               Code World - Helpful
             </div>
-            <img className="m-2 h-auto max-w-full rounded-full" src={graph4} alt="clean install graphic" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={graph4} alt="clean install graphic" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
               The Art of the Clean Install
             </h2>
@@ -325,6 +325,11 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             </article>
           </Link>
 
+          {/* Mobile ad slot 1 — shown on mobile/md, hidden on lg where the rail takes over */}
+          <div className="lg:hidden md:col-span-2 flex justify-center py-2">
+            <AdSlot id="mobile-1" />
+          </div>
+
           <Link to="/weirdinternetfacts">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
               <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
@@ -372,6 +377,11 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               </h2>
             </article>
           </Link>
+
+          {/* Mobile ad slot 2 */}
+          <div className="lg:hidden md:col-span-2 flex justify-center py-2">
+            <AdSlot id="mobile-2" />
+          </div>
 
           <Link to="/create-your-own-huggingface-space-easy">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
