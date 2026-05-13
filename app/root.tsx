@@ -44,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           crossOrigin="anonymous"
         />
       </head>
-      <body>
+      <body className="bg-black text-white">
         {children}
         <ScrollRestoration />
         <Scripts />
