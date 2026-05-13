@@ -53,7 +53,7 @@ export default function ArchiveIndex({
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
+    <main className="min-h-screen bg-black">
       <header className="relative overflow-hidden border-b border-gray-200">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600" />
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.4),transparent_50%),radial-gradient(circle_at_80%_60%,rgba(255,255,255,0.3),transparent_50%)]" />

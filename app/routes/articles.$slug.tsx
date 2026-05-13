@@ -81,17 +81,17 @@ function AiSummaryLayout({ article }: { article: import("~/types/article").Fires
 
       {/* Snapshot strip */}
       <div className="grid grid-cols-3 gap-3 mb-8">
-        <div className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-center">
+        <div className="rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-center">
           <div className="text-xs uppercase tracking-wide text-gray-400 mb-1">Regime</div>
-          <div className="font-semibold text-gray-800 text-sm">{ai.macro_regime}</div>
+          <div className="font-semibold text-white text-sm">{ai.macro_regime}</div>
         </div>
-        <div className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-center">
+        <div className="rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-center">
           <div className="text-xs uppercase tracking-wide text-gray-400 mb-1">Tone</div>
           <div className={`font-semibold text-sm capitalize ${toneColor(ai.market_tone)}`}>
             {ai.market_tone}
           </div>
         </div>
-        <div className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-center">
+        <div className="rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-center">
           <div className="text-xs uppercase tracking-wide text-gray-400 mb-1">Breadth</div>
           <div className={`font-semibold text-sm ${breadthColor(ai.breadth_pct)}`}>
             {ai.breadth_pct > 0 ? "+" : ""}{ai.breadth_pct.toFixed(1)}%
@@ -103,21 +103,21 @@ function AiSummaryLayout({ article }: { article: import("~/types/article").Fires
       {(ai.leading_sectors.length > 0 || ai.lagging_sectors.length > 0) && (
         <div className="flex gap-4 mb-8">
           {ai.leading_sectors.length > 0 && (
-            <div className="flex-1 rounded-lg border border-green-200 bg-green-50 px-4 py-3">
-              <div className="text-xs uppercase tracking-wide text-green-600 font-semibold mb-2">Leading</div>
+            <div className="flex-1 rounded-lg border border-green-800 bg-green-950 px-4 py-3">
+              <div className="text-xs uppercase tracking-wide text-green-400 font-semibold mb-2">Leading</div>
               <div className="flex flex-wrap gap-1">
                 {ai.leading_sectors.map((s) => (
-                  <span key={s} className="text-xs bg-green-100 text-green-800 rounded-full px-2 py-0.5">{s}</span>
+                  <span key={s} className="text-xs bg-green-900 text-green-300 rounded-full px-2 py-0.5">{s}</span>
                 ))}
               </div>
             </div>
           )}
           {ai.lagging_sectors.length > 0 && (
-            <div className="flex-1 rounded-lg border border-red-200 bg-red-50 px-4 py-3">
-              <div className="text-xs uppercase tracking-wide text-red-600 font-semibold mb-2">Lagging</div>
+            <div className="flex-1 rounded-lg border border-red-800 bg-red-950 px-4 py-3">
+              <div className="text-xs uppercase tracking-wide text-red-400 font-semibold mb-2">Lagging</div>
               <div className="flex flex-wrap gap-1">
                 {ai.lagging_sectors.map((s) => (
-                  <span key={s} className="text-xs bg-red-100 text-red-800 rounded-full px-2 py-0.5">{s}</span>
+                  <span key={s} className="text-xs bg-red-900 text-red-300 rounded-full px-2 py-0.5">{s}</span>
                 ))}
               </div>
             </div>
@@ -155,7 +155,7 @@ function StandardLayout({ article }: { article: import("~/types/article").Firest
       </div>
 
       <h1 className="text-3xl font-bold mb-4 lg:text-4xl">{article.title}</h1>
-      <p className="text-lg text-gray-600 mb-8">{article.summary}</p>
+      <p className="text-lg text-gray-300 mb-8">{article.summary}</p>
 
       {article.contentFormat === "html" ? (
         <div
@@ -175,10 +175,10 @@ function StandardLayout({ article }: { article: import("~/types/article").Firest
       {article.extreme_pair && (
         <aside className={`mt-8 border rounded-lg px-4 py-3 text-sm ${
           article.extreme_pair.signal === "divergence"
-            ? "border-red-300 bg-red-50 text-red-800"
+            ? "border-red-800 bg-red-950 text-red-300"
             : article.extreme_pair.signal === "agreement"
-            ? "border-green-300 bg-green-50 text-green-800"
-            : "border-gray-300 bg-gray-50 text-gray-700"
+            ? "border-green-800 bg-green-950 text-green-300"
+            : "border-gray-700 bg-gray-900 text-gray-300"
         }`}>
           <div className="font-semibold uppercase tracking-wide text-xs mb-1">
             {article.extreme_pair.signal} — {article.extreme_pair.pair_id}
@@ -215,11 +215,11 @@ export default function ArticlePage({ loaderData }: { loaderData: LoaderData }) 
               <Link
                 key={c.slug}
                 to={`/articles/${c.slug}`}
-                className="block rounded-lg border border-gray-200 px-4 py-3 hover:border-purple-300 hover:bg-purple-50 transition-colors"
+                className="block rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 hover:border-purple-600 hover:bg-gray-800 transition-colors"
               >
-                <div className="text-xs font-semibold text-purple-500 mb-1">{c.category}</div>
-                <div className="font-medium text-gray-900 text-sm leading-snug line-clamp-2">{c.title}</div>
-                <div className="text-xs text-gray-500 mt-1 line-clamp-2">{c.summary}</div>
+                <div className="text-xs font-semibold text-purple-400 mb-1">{c.category}</div>
+                <div className="font-medium text-white text-sm leading-snug line-clamp-2">{c.title}</div>
+                <div className="text-xs text-gray-400 mt-1 line-clamp-2">{c.summary}</div>
               </Link>
             ))}
           </div>

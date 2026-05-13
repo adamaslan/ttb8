@@ -111,25 +111,25 @@ function ArchiveCard({ article, index }: { article: ArticleCard; index: number }
   return (
     <Link
       to={`/articles/${article.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-transparent"
+      className="group relative flex flex-col overflow-hidden rounded-xl bg-gray-900 border border-gray-700 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-purple-600"
     >
       <div className={`h-2 bg-gradient-to-r ${gradient}`} />
       <div className="flex flex-col p-5 flex-1">
         <div className="flex items-center justify-between mb-3">
-          <span className="rounded-full bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-purple-700">
+          <span className="rounded-full bg-purple-900 border border-purple-700 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-purple-300">
             {article.category}
           </span>
-          <time className="text-[11px] font-medium text-gray-500" title={formatDate(article.publishedAt)}>
+          <time className="text-[11px] font-medium text-gray-400" title={formatDate(article.publishedAt)}>
             {relativeTime(article.publishedAt)}
           </time>
         </div>
-        <h3 className="text-lg font-bold text-gray-900 line-clamp-2 mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 transition-colors">
+        <h3 className="text-lg font-bold text-white line-clamp-2 mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-colors">
           {article.title}
         </h3>
-        <p className="text-sm text-gray-600 line-clamp-3 flex-1">{article.summary}</p>
-        <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-          <span className="text-xs text-gray-400 font-mono">#{String(index + 1).padStart(3, "0")}</span>
-          <span className="text-xs font-bold text-purple-600 inline-flex items-center gap-1">
+        <p className="text-sm text-gray-400 line-clamp-3 flex-1">{article.summary}</p>
+        <div className="mt-4 pt-3 border-t border-gray-700 flex items-center justify-between">
+          <span className="text-xs text-gray-500 font-mono">#{String(index + 1).padStart(3, "0")}</span>
+          <span className="text-xs font-bold text-purple-400 inline-flex items-center gap-1">
             Read
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </span>
@@ -149,7 +149,7 @@ export default function CorrelationsArchive({
   const rest = articles.slice(1);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
+    <main className="min-h-screen bg-black">
       <header className="relative overflow-hidden border-b border-gray-200">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600" />
         <img
@@ -200,12 +200,12 @@ export default function CorrelationsArchive({
 
       <section className="container mx-auto px-4 py-10 sm:py-14">
         {articles.length === 0 ? (
-          <div className="rounded-2xl border-2 border-dashed border-gray-300 bg-white p-12 text-center">
+          <div className="rounded-2xl border-2 border-dashed border-gray-700 bg-gray-900 p-12 text-center">
             <div className="text-5xl mb-4">📊</div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">
+            <h2 className="text-xl font-bold text-white mb-2">
               No correlation articles yet
             </h2>
-            <p className="text-gray-600 max-w-md mx-auto">
+            <p className="text-gray-400 max-w-md mx-auto">
               The daily story pipeline hasn't published any articles to the cache.
               Check back after the next refresh.
             </p>
@@ -227,10 +227,10 @@ export default function CorrelationsArchive({
             {rest.length > 0 && (
               <>
                 <div className="flex items-baseline justify-between mb-6">
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
                     Other articles today
                   </h2>
-                  <span className="text-sm text-gray-500 font-medium">
+                  <span className="text-sm text-gray-400 font-medium">
                     {rest.length} {rest.length === 1 ? "entry" : "entries"}
                   </span>
                 </div>

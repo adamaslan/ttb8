@@ -4,6 +4,12 @@ export const meta: MetaFunction = () => {
   return [
     { title: "Ai Articles" },
     { name: "description", content: "List of Ai Articles for the Publication." },
+    {
+      title: "SnapState: Keeping AI Agent Workflows Alive Between Sessions",
+      description: "Discover SnapState, a simple yet powerful tool for persisting AI agent workflow state, ensuring continuity and reliability in your AI applications.",
+      link: "/snapstate-persistent-state-for-ai-agent-workflows",
+      image: "/snapstate-persistent-state-for-ai-agent-workflows.jpg"
+    },
   ];
 };
 
@@ -135,23 +141,29 @@ export default function AiArticles() {
       link: "/weirdinternetfacts",
       image: "/fish1.png"
     },
+    {
+      title: "Your First Pentest: A Practical Intro Using Free Tools",
+      description: "A hands-on introduction to penetration testing using only free, open-source tools — DVWA, Nmap, Burp Suite Community, SQLMap, and Nikto. No vendor lock-in.",
+      link: "/first-pentest-free-tools-intro",
+      image: "/first-pentest-free-tools-intro.jpg"
+    },
   ];
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Articles</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-white">Articles</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {articles.map((article) => (
-          <div key={article.link} className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <div key={article.link} className="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:bg-gray-800">
             <a href={article.link} className="block">
-              <img 
-                src={article.image} 
+              <img
+                src={article.image}
                 alt={article.title}
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
-                <p className="text-gray-600 text-sm">{article.description}</p>
+                <h2 className="text-xl font-semibold mb-2 text-white">{article.title}</h2>
+                <p className="text-gray-400 text-sm">{article.description}</p>
               </div>
             </a>
           </div>

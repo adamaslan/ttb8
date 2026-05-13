@@ -40,8 +40,8 @@ export default function Article12() {
             <a href="https://arxiv.org/abs/2310.03714" className="text-blue-500"> here</a>.
           </p>
           <p className="text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
-            DSPy allows developers to construct complex LLM pipelines that adapt dynamically to evolving requirements, making traditional manual prompt-tuning redundant. For more on its retrieval capabilities, check out
-            <a href="https://dspy.ai" className="text-blue-500"> Five Ways to Do RAG with DSPy</a>.
+            DSPy allows developers to construct complex LLM pipelines that adapt dynamically to evolving requirements, making traditional manual prompt-tuning redundant. For more on its retrieval capabilities, check out our deep-dive on{" "}
+            <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy" className="text-blue-500">Five Ways to Enhance RAG Efficiency with DSPy</Link>.
           </p>
           <br />
           <p className="text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">

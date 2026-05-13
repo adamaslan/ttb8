@@ -80,16 +80,16 @@ function StructuredFields({
       {fields.map(([k, v]) => (
         <div
           key={k}
-          className="rounded-xl border border-gray-200 bg-white/70 backdrop-blur p-4 shadow-sm"
+          className="rounded-xl border border-gray-700 bg-gray-900 backdrop-blur p-4 shadow-sm"
         >
-          <dt className="text-[10px] font-bold uppercase tracking-widest text-purple-600 mb-1">
+          <dt className="text-[10px] font-bold uppercase tracking-widest text-purple-400 mb-1">
             {k.replace(/_/g, " ")}
           </dt>
-          <dd className="text-sm text-gray-800 break-words">
+          <dd className="text-sm text-gray-200 wrap-break-word">
             {typeof v === "string" || typeof v === "number" ? (
               String(v)
             ) : (
-              <pre className="whitespace-pre-wrap font-mono text-[11px] text-gray-700 max-h-48 overflow-auto">
+              <pre className="whitespace-pre-wrap font-mono text-[11px] text-gray-400 max-h-48 overflow-auto">
                 {JSON.stringify(v, null, 2)}
               </pre>
             )}
@@ -114,10 +114,10 @@ export default function ArchiveTypePage({
   const gradient = TYPE_GRADIENTS[meta.id] ?? "from-slate-600 to-slate-800";
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
+    <main className="min-h-screen bg-black">
       {/* Hero */}
       <header className="relative overflow-hidden border-b border-gray-200">
-        <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
+        <div className={`absolute inset-0 bg-linear-to-br ${gradient}`} />
         <img
           src={HERO_IMAGE}
           alt=""
@@ -154,7 +154,7 @@ export default function ArchiveTypePage({
       </header>
 
       {/* Type tabs */}
-      <nav className="border-b border-gray-200 bg-white/80 backdrop-blur sticky top-0 z-10">
+      <nav className="border-b border-gray-800 bg-black/90 backdrop-blur sticky top-0 z-10">
         <div className="container mx-auto px-4">
           <div className="flex gap-1 overflow-x-auto py-3 scrollbar-hide">
             {types.map((t) => (
@@ -163,8 +163,8 @@ export default function ArchiveTypePage({
                 to={`/archive/${t.id}`}
                 className={`whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors ${
                   t.id === meta.id
-                    ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md"
-                    : "text-gray-600 hover:bg-gray-100"
+                    ? "bg-linear-to-r from-purple-600 to-pink-600 text-white shadow-md"
+                    : "text-gray-400 hover:bg-gray-800"
                 }`}
               >
                 {t.label}
@@ -176,34 +176,34 @@ export default function ArchiveTypePage({
 
       <section className="container mx-auto px-4 py-10 sm:py-14 max-w-4xl">
         {!article || !raw ? (
-          <div className="rounded-2xl border-2 border-dashed border-gray-300 bg-white p-12 text-center">
+          <div className="rounded-2xl border-2 border-dashed border-gray-700 bg-gray-900 p-12 text-center">
             <div className="text-5xl mb-4">📭</div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">
+            <h2 className="text-xl font-bold text-white mb-2">
               No {meta.label.toLowerCase()} for today
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-400">
               The pipeline hasn't generated this article type yet. Check back
               later or pick another flavor.
             </p>
           </div>
         ) : (
           <>
-            <article className="rounded-2xl bg-white border border-gray-200 shadow-md p-6 sm:p-10">
+            <article className="rounded-2xl bg-gray-900 border border-gray-700 shadow-md p-6 sm:p-10">
               {article.content ? (
-                <div className="prose prose-lg max-w-none">
+                <div className="prose prose-invert prose-lg max-w-none">
                   {article.content.split(/\n{2,}/).map((para, i) => (
                     <p key={i}>{para.trim()}</p>
                   ))}
                 </div>
               ) : (
-                <p className="text-gray-500 italic">
+                <p className="text-gray-400 italic">
                   No prose body for this article — see structured data below.
                 </p>
               )}
             </article>
 
-            <details className="mt-8 rounded-xl border border-gray-200 bg-white/60 backdrop-blur p-4">
-              <summary className="cursor-pointer text-sm font-bold text-gray-700">
+            <details className="mt-8 rounded-xl border border-gray-700 bg-gray-900/60 backdrop-blur p-4">
+              <summary className="cursor-pointer text-sm font-bold text-gray-300">
                 Show structured fields ({Object.keys(raw.data).length})
               </summary>
               <StructuredFields

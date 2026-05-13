@@ -32,7 +32,10 @@ export default function Article5() {
         />
         <div>
           <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
-            Hugging Face Spaces offer a simple way to host not just ML demo apps directly on your profile or your organization’s profile, but really any Python code you want.
+            <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" className="text-blue-500">Hugging Face Spaces</a>
+            {" "}offer a simple way to host not just ML demo apps directly on your profile or your organization’s profile, but really any Python code you want. If you are deploying a model that uses RAG patterns, our primer on{" "}
+            <Link to="/what-is-rag" className="text-blue-500">What is RAG</Link>
+            {" "}pairs well with this guide.
           </p>
           <br />
           <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">

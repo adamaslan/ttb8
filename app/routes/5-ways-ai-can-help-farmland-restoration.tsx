@@ -78,7 +78,10 @@ const FarmlandRestorationPage = () => {
         <section className="mb-8">
           <h2 className="text-left text-lg tracking-tight sm:text-2xl lg:text-3xl font-serif font-bold mb-4">Introduction</h2>
           <p className="mt-2 text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
-            Artificial Intelligence (AI) offers powerful tools to address the challenges of farmland degradation and promote restoration efforts. By analyzing complex data and providing actionable insights, AI can significantly contribute to sustainable agriculture and the preservation of vital soil resources. Here are five key ways AI is making a difference:
+            Artificial Intelligence (AI) offers powerful tools to address the challenges of farmland degradation and promote restoration efforts — the{" "}
+            <a href="https://www.fao.org/soils-portal/en/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">FAO Soils Portal</a>
+            {" "}documents how rapidly arable soil is being lost worldwide. By analyzing complex data and providing actionable insights, AI can significantly contribute to sustainable agriculture and the preservation of vital soil resources. For a parallel example of AI optimizing real-world pipelines, see our case study on{" "}
+            <Link to="/databricks-dspy-jetblue-ai-chatbot" className="text-blue-600 underline">how JetBlue applied DSPy with Databricks</Link>. Here are five key ways AI is making a difference:
           </p>
         </section>
 
