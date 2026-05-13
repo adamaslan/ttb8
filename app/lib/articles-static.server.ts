@@ -92,7 +92,7 @@ function entryToArticle(
   const slug = getString(data, "slug") || `${type.id}-${entry.doc_id.split(":")[1] ?? "today"}`;
   const publishedAt = dateFromDocId(entry.doc_id);
 
-  return {
+  const base: FirestoreArticle = {
     slug,
     title,
     content: body,
@@ -102,6 +102,21 @@ function entryToArticle(
     category: type.category,
     tags: [type.id],
   };
+
+  if (type.id === "ai-summary") {
+    const toStringArray = (v: unknown): string[] =>
+      Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
+    base.aiSummary = {
+      macro_regime: getString(data, "macro_regime") ?? "",
+      market_tone: getString(data, "market_tone") ?? "",
+      breadth_pct: typeof data.breadth_pct === "number" ? data.breadth_pct : 0,
+      leading_sectors: toStringArray(data.leading_sectors),
+      lagging_sectors: toStringArray(data.lagging_sectors),
+      news_sentiment: getString(data, "news_sentiment") ?? "",
+    };
+  }
+
+  return base;
 }
 
 function articleToCard(a: FirestoreArticle): ArticleCard {

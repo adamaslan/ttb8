@@ -160,19 +160,19 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             </div>
           </Link>
       
-          <Link to="/nab-2023-audio-video-gear">
+          <Link to="/5-ways-ai-can-help-farmland-restoration">
             <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
-              <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
-                Code World - Helpful
+              <div className="rounded-full bg-green-700 p-1 text-lg font-bold tracking-tight text-white">
+                AI & Sustainability
               </div>
 
               <img
                 className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
-                src={soundguy1}
-                alt="computer and graphs"
+                src={restorationImage}
+                alt="Farmland restoration"
               />
               <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
-                Highlights from NAB 2023
+                5 Ways AI Can Help Farmland Restoration
               </h1>
 
             </div>
@@ -456,19 +456,19 @@ on some rows and right two thirds on other rows for lg and md screens */}
     </div>
       
     <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/5-ways-ai-can-help-farmland-restoration">
+      <Link to="/nab-2023-audio-video-gear">
         <div className="transition-shadow duration-300 ease-in-out hover:bg-gray-100">
-          <div className="rounded-full bg-green-700 p-1 text-lg font-bold tracking-tight text-white">
-            AI & Sustainability
+          <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
+            Code World - Helpful
           </div>
 
           <img
             className="items-left justify-left m-2 h-auto max-w-full flex-col rounded-full"
-            src={restorationImage}
-            alt="Farmland restoration"
+            src={soundguy1}
+            alt="computer and graphs"
           />
           <h1 className="pb-4 text-left text-xl font-bold tracking-tight sm:text-2xl lg:pb-12 lg:text-3xl">
-            5 Ways AI Can Help Farmland Restoration
+            Highlights from NAB 2023
           </h1>
         </div>
       </Link>
