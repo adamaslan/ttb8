@@ -16,7 +16,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
   const article = matchedType ? getArticleByType(matchedType.id) : null;
   if (!article) throw data("Article not found", { status: 404 });
 
-  const otherCards = cards.filter((c) => c.slug !== slug);
+  const otherCards = cards.filter((c) => c.slug !== article.slug);
 
   return data(
     { article, otherCards },
@@ -57,7 +57,8 @@ function breadthColor(pct: number): string {
 }
 
 function AiSummaryLayout({ article }: { article: import("~/types/article").FirestoreArticle }) {
-  const ai = article.aiSummary!;
+  const ai = article.aiSummary;
+  if (!ai) return null;
   const publishDate = new Date(article.publishedAt).toLocaleDateString("en-US", {
     year: "numeric", month: "long", day: "numeric",
   });

@@ -92,7 +92,7 @@ function entryToArticle(
   const slug = getString(data, "slug") || `${type.id}-${entry.doc_id.split(":")[1] ?? "today"}`;
   const publishedAt = dateFromDocId(entry.doc_id);
 
-  const base: import("~/types/article").FirestoreArticle = {
+  const base: FirestoreArticle = {
     slug,
     title,
     content: body,
