@@ -1,0 +1,3 @@
+iteration,slug,title,category,date_created,status,source_url,notes
+1,snapstate-persistent-state-for-ai-agent-workflows,SnapState: Keeping AI Agent Workflows Alive Between Sessions,AI News,2026-05-12,published,,
+2,continuous-pentesting-ci-guide,Set Up Continuous Pentesting in Your CI: A 10-Minute Guide,AI News,2026-05-12,published,https://www.pensarai.com/blog/continuous-pentesting-ci-guide,Covers Pensar CLI + GitHub/GitLab/Bitbucket configs

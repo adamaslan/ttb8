@@ -19,9 +19,9 @@ import studio from "/studio.jpg";
 import burden from "/js-burden.jpeg";
 import box from "/boxchicken2.jpeg";
 import graph4 from "/graph4.jpeg";
+import js1 from "/js1.jpeg";
 import blender1 from "/blender1.jpeg";
 import airpods from "/airpods.jpeg";
-import js1 from "/js1.jpeg";
 import soundguy1 from "/soundsguy1.jpeg";
 import webstorm1 from "/webstorm1.jpeg";
 import cloud from "/cloud1.jpeg"
@@ -40,10 +40,22 @@ import pytorch_elements_in_lstm from "/10_pytorch_elements_in_lstm.png";
 import sqlite_to_postgres from "/sqlite_to_postgres.png";
 import snapstatePersistentStateForAiAgentWorkflows from "/snapstate-persistent-state-for-ai-agent-workflows.jpg";
 import continuousPentestingCiGuide from "/continuous-pentesting-ci-guide.png";
+import firstPentestFreeToolsIntro from "/first-pentest-free-tools-intro.jpg";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
 };
+
+function AdSlot({ id }: { id: string }) {
+  return (
+    <div
+      data-ad-slot={id}
+      className="flex h-62.5 w-75 items-center justify-center rounded-lg border border-dashed border-gray-700 bg-gray-900 text-xs text-gray-500"
+    >
+      Ad · {id}
+    </div>
+  );
+}
    {/* small little tabs with small photos to the right */}
 export default function Art2({ loaderData }: { loaderData: { dailyArticle: ReturnType<typeof getLatestStaticArticle> } }) {
   const { dailyArticle } = loaderData;
@@ -84,528 +96,388 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
         Keeping it Tasty in 2025
       </p>
       
-      {/* elaborate div section */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="col-span-1">
- 
-          <Link to="/how-to-invest-in-whisky">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-yellow-500 p-1 text-lg font-bold tracking-tight text-white">
-                Drink World - Helpful
-              </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={cask}
-                alt="casks"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                3 Ways to Invest in Whiskey
-              </h1>
-
+      {/* Part 1 — Hero rail: 5 cards (2 left, big middle, 2 right). See docs/agent-guides/homepage-grid.md */}
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-4 md:grid-rows-2">
+        {/* L1 */}
+        <Link
+          to="/how-to-invest-in-whisky"
+          className="md:col-start-1 md:row-start-1"
+        >
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-yellow-500 p-1 text-sm font-bold tracking-tight text-white">
+              Drink World - Helpful
             </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={cask} alt="whiskey casks" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              3 Ways to Invest in Whiskey
+            </h2>
+          </article>
+        </Link>
+
+        {/* L2 */}
+        <Link
+          to="/how-to-use-the-pie-menu-in-blender"
+          className="md:col-start-1 md:row-start-2"
+        >
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+              3D World - Helpful
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={blender1} alt="Blender 3D interface" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              The Pie Menu Rocks in Blender
+            </h2>
+          </article>
+        </Link>
+
+        {/* Big middle */}
+        <Link
+          to="/three-essential-webstorm-shortcuts"
+          className="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1"
+        >
+          <article className="flex h-full flex-col transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-blue-500 p-1 text-base font-bold tracking-tight text-white">
+              Software - Webstorm
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={webstorm1} alt="WebStorm IDE" />
+            <h2 className="pb-4 text-left text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
+              The Three WebStorm Shortcuts to Rule Them All
+            </h2>
+          </article>
+        </Link>
+
+        {/* R1 */}
+        <Link
+          to="/continuous-pentesting-ci-guide"
+          className="md:col-start-4 md:row-start-1"
+        >
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
+              AI News
+            </div>
+            <img
+              className="m-2 h-auto max-w-full rounded-full"
+              src={continuousPentestingCiGuide}
+              alt="Set Up Continuous Pentesting in Your CI"
+            />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              Set Up Continuous Pentesting in Your CI: A 10-Minute Guide
+            </h2>
+          </article>
+        </Link>
+
+        {/* R2 */}
+        <Link
+          to="/snapstate-persistent-state-for-ai-agent-workflows"
+          className="md:col-start-4 md:row-start-2"
+        >
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+              AI News
+            </div>
+            <img
+              className="m-2 h-auto max-w-full rounded-full"
+              src={snapstatePersistentStateForAiAgentWorkflows}
+              alt="SnapState: persistent state for AI agent workflows"
+            />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              SnapState: Keeping AI Agent Workflows Alive Between Sessions
+            </h2>
+          </article>
+        </Link>
+      </section>
+
+      {/* Part 2 — Quick row: 4 uniform cards. See docs/agent-guides/homepage-grid.md */}
+      <section className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Link to="/threekeys-to-getting-a-frontend-or-fullstackjob">
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+              Code World - Helpful
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={studio} alt="Studio by Warren Hansen" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              The 3 Keys To Getting Your Dream Frontend or Full Stack Engineer Job
+            </h2>
+          </article>
+        </Link>
+
+        <Link to="/vuejs-independant-javascript-framework">
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+              Code World - Helpful
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={burden} alt="JavaScript framework illustration" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              VueJS as the Most Indie Yet Established Javascript Framework
+            </h2>
+          </article>
+        </Link>
+
+        <Link to="/astro-the-most-innovative-javascript-framework">
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+              Code World - Helpful
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={box} alt="Astro.js" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              Astro.js as the Most Innovative and Modern Javascript Framework
+            </h2>
+          </article>
+        </Link>
+
+        <Link to="/the-art-of-the-clean-install">
+          <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+              Code World - Helpful
+            </div>
+            <img className="m-2 h-auto max-w-full rounded-full" src={graph4} alt="clean install graphic" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
+              The Art of the Clean Install
+            </h2>
+          </article>
+        </Link>
+      </section>
+
+      {/* Part 3 — Long feed + ad rail. See docs/agent-guides/homepage-grid.md */}
+      <section className="mt-6 lg:grid lg:grid-cols-[1fr_300px] lg:gap-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Link to="/first-pentest-free-tools-intro">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
+                AI News
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={firstPentestFreeToolsIntro} alt="Your First Pentest: A Practical Intro Using Free Tools" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Your First Pentest: A Practical Intro Using Free Tools
+              </h2>
+            </article>
           </Link>
-          
-          <Link to="/how-to-use-the-pie-menu-in-blender">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-purple-900 p-1 text-lg font-bold tracking-tight text-white">
+
+          <Link to="/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
                 3D World - Helpful
               </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={blender1}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                The Pie Menu Rocks in Blender
-              </h1>
-
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={pipe1} alt="Blender node editor pipeline" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The Ultimate Guide to Flyers in Blender with the Node Editor
+              </h2>
+            </article>
           </Link>
-        </div>
-      
-        <div className="sm:col-span-2 lg:col-span-2">
-          <Link to="/three-essential-webstorm-shortcuts">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-blue-500 p-1 text-lg font-bold tracking-tight text-white">
-                Software - Webstorm
+
+          <Link to="/what-is-rag">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
               </div>
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={webstorm1}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                The Three WebStorm Shortcuts to Rule Them All
-              </h1>{" "}
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={fish1} alt="RAG illustration" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                RAG 101 Tutorial: All you need to know about RAG
+              </h2>
+            </article>
           </Link>
-        </div>
 
-        <div className="col-span-1">
+          <Link to="/what-are-the-best-free-text-to-speech-tools">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={text2speech} alt="text-to-speech tools" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                What are the Best Free Text-to-Speech Tools?
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/dspy101">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={dspyprompt} alt="DSPy prompting" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                DSPy 101 Tutorial: Prompting Guide
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/databricks-dspy-jetblue-ai-chatbot">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={databricks} alt="Databricks DSPy JetBlue" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                JetBlue Optimizes Databricks LLM Pipelines with DSPy
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={letters1} alt="RAG efficiency" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                5 ways to enhance RAG efficiency with DSPy
+              </h2>
+            </article>
+          </Link>
+
           <Link to="/weirdinternetfacts">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-green-400 p-1 text-lg font-bold tracking-tight text-white">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
                 Code World - Random
               </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={banner}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={banner} alt="vintage computer banner" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 4 Weird Things about the Internet
-              </h1>
-            </div>
+              </h2>
+            </article>
           </Link>
 
-          <Link to="/continuous-pentesting-ci-guide">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-red-600 p-1 text-lg font-bold tracking-tight text-white">
-                AI News
+          <Link to="/threejs-and-web3">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-800 p-1 text-sm font-bold tracking-tight text-white">
+                Code Art - ThreeJS
               </div>
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={continuousPentestingCiGuide}
-                alt="Set Up Continuous Pentesting in Your CI: A 10-Minute Guide"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                Set Up Continuous Pentesting in Your CI: A 10-Minute Guide
-              </h1>
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={cloud} alt="ThreeJS clouds" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                ThreeJS, the old Web3?
+              </h2>
+            </article>
           </Link>
 
-          <Link to="/snapstate-persistent-state-for-ai-agent-workflows">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-                AI News
-              </div>
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={snapstatePersistentStateForAiAgentWorkflows}
-                alt="SnapState: Keeping AI Agent Workflows Alive Between Sessions"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                SnapState: Keeping AI Agent Workflows Alive Between Sessions
-              </h1>
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      {/* smaller div section */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          
-        <div className="col-span-1 row-span-1">
-          <Link to="/threekeys-to-getting-a-frontend-or-fullstackjob">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
+          <Link to="/easy-domain-verification-with-google">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
                 Code World - Helpful
               </div>
-              <img
-                className="m-2 h-auto flex-col rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
-                src={studio}
-                alt="Studio by Warren Hansen"
-              />
-              <h1 className="pb-3 text-left text-xl font-bold tracking-tight text-white shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 sm:text-2xl lg:text-3xl">
-                The 3 Keys To Getting Your Dream Frontend or Full Stack Engineer Job
-              </h1>{" "}
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={analytics} alt="analytics chart" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The Easy Way to Verify Domain Ownership with Google
+              </h2>
+            </article>
           </Link>
-        </div> 
-           
-        <div className="col-span-1">
-          <Link to="/vuejs-independant-javascript-framework">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
+
+          <Link to="/lies-about-javascript">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
                 Code World - Helpful
               </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={burden}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                VueJS as the Most Indie Yet Established Javascript Framework
-              </h1>
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={js1} alt="JavaScript" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Sweet Little JavaScript Lies About Javascript
+              </h2>
+            </article>
           </Link>
-        </div>
-        
-        <div className="col-span-1">
-          <Link to="/astro-the-most-innovative-javascript-framework.tsx">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
+
+          <Link to="/create-your-own-huggingface-space-easy">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
                 Code World - Helpful
               </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={box}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                Astro.js as the Most Innovative and Modern Javascript Framework
-              </h1>
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={huggingface1} alt="Hugging Face Spaces" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The easy way to publish on Hugging Face Spaces
+              </h2>
+            </article>
           </Link>
-        </div>
-        
-        <div className="col-span-1">
-          <Link to="/the-art-of-the-clean-install">
-            <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-              <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
+
+          <Link to="/nab-2023-audio-video-gear">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
                 Code World - Helpful
               </div>
-
-              <img
-                className="m-2 h-auto max-w-full rounded-full"
-                src={graph4}
-                alt="computer and graphs"
-              />
-              <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-                The Art of the Clean Install
-              </h1>
-
-            </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={soundguy1} alt="NAB 2023 audio video" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Highlights from NAB 2023
+              </h2>
+            </article>
           </Link>
-        </div> 
-      </div>
 
-      {/* Bigger articles */}
-{/* make articles smaller this is part 2 - return everything 
-but with thiner margins and padding and a grid that puts articles to the left two thirds 
-on some rows and right two thirds on other rows for lg and md screens */}
-<div className="px-1 py-2 md:grid md:grid-cols-3 md:gap-2">
-  <div className="mb-2 md:col-span-2 md:col-start-1">
-   <Link to="/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-900 p-1 text-lg font-bold tracking-tight text-white">
-                3D World - Helpful
+          <Link to="/using-airpods-and-audacity-hack">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
               </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={airpods} alt="AirPods and Audacity" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                AirPods Audacity: How to make AirPods (or any bluetooth audio) work with Audacity
+              </h2>
+            </article>
+          </Link>
 
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={pipe1}
-            alt="pipe"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            The Ultimate Guide to Flyers in Blender with the Node Editor
-          </h1>
+          <Link to="/10-essential-pytorch-elements-in-a-rnn">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl object-cover" src={pytorch_elements_in_rnn} alt="PyTorch RNN elements" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The 10 Essential PyTorch Elements in a RNN
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/introduction-to-neural-networks">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={NeuralNetworks} alt="neural network diagram" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Introduction to Neural Networks
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/10_Essential_PyTorch_Elements_in_LSTMs">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={pytorch_elements_in_lstm} alt="PyTorch LSTM elements" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                10 Essential PyTorch Elements in LSTMs
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={sqlite_to_postgres} alt="SQLite to PostgreSQL" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                10 Ways to Optimize SQLite Before Migrating to PostgreSQL
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/5-ways-ai-can-help-farmland-restoration">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={restorationImage} alt="farmland restoration" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                5 Ways AI Can Help Farmland Restoration
+              </h2>
+            </article>
+          </Link>
         </div>
-      </Link>   
-</div>
-  <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/what-is-rag">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
+
+        {/* Ad rail — visible on lg+, sticky as the feed scrolls */}
+        <aside className="hidden lg:block">
+          <div className="sticky top-4 space-y-4">
+            <AdSlot id="rail-top" />
+            <AdSlot id="rail-mid" />
           </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={fish1}
-            alt="fish"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            RAG 101 Tutorial: All you need to know about RAG
-          </h1>
-        </div>
-      </Link>   
-</div>
-  <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/what-are-the-best-free-text-to-speech-tools">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={text2speech}
-            alt="text to speech"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            What are the Best Free Text-to-Speech Tools?
-          </h1>
-        </div>
-      </Link>   
-</div>
-
-  <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/dspy101">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={dspyprompt}
-            alt="dspyprompt"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            DSPy 101 Tutorial: Prompting Guide
-          </h1>
-        </div>
-      </Link>   
-</div>
-  <div className="mb-2 md:col-span-2 md:col-start-1">
-
-  
-      <Link to="/databricks-dspy-jetblue-ai-chatbot">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={databricks}
-            alt="databricks"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            JetBlue Optimizes Databricks LLM Pipelines with DSPy
-          </h1>
-        </div>
-      </Link>   
-</div>
-    <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={letters1}
-            alt="letters"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            5 ways to enhance RAG efficiency with DSPy
-          </h1>
-        </div>
-      </Link>
-    </div>
-
-    <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/threejs-and-web3">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-green-800 p-1 text-lg font-bold tracking-tight text-white">
-            Code Art - ThreeJS
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={cloud}
-            alt="clouds"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            ThreeJS, the old Web3?
-          </h1>
-        </div>
-      </Link>
-    </div>
-    
-    <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/easy-domain-verification-with-google">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
-            Code World - Helpful
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={analytics}
-            alt="analytics chart"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            The Easy Way to Verify Domain Ownership with Google
-          </h1>
-        </div>
-      </Link>
-    </div>
-
-    <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/lies-about-javascript">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
-            Code World - Helpful
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={js1}
-            alt="javascript chart"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            Sweet Little JavaScript Lies About Javascript
-          </h1>
-        </div>
-      </Link>
-    </div>
-
-    <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/create-your-own-huggingface-space-easy">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
-            Code World - Helpful
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={huggingface1}
-            alt="emoji"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            The easy way to publish on Hugging Face Spaces
-          </h1>
-
-        </div>
-      </Link>
-    </div>
-      
-    <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/nab-2023-audio-video-gear">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-red-900 p-1 text-lg font-bold tracking-tight text-white">
-            Code World - Helpful
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={soundguy1}
-            alt="computer and graphs"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            Highlights from NAB 2023
-          </h1>
-        </div>
-      </Link>
-    </div>
-
-      {/* New Link for Models Table */}
-      {/* <Link to="/models-table">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-indigo-600 p-1 text-lg font-bold tracking-tight text-white">
-            AI Models
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={databricks} 
-            alt="AI models table"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            View Registered AI Models
-          </h1>
-
-        </div>
-      </Link> */}
-
-    <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/using-airpods-and-audacity-hack">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-pink-600 p-1 text-lg font-bold tracking-tight text-white">
-            Tech World - Helpful
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={airpods}
-            alt="computer and graphs"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-            AirPods Audacity: How to make AirPods(or any other bluetooth audio) work with Audacity 2023
-          </h1>
-
-        </div>
-      </Link>
-    </div>
-    <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/10-essential-pytorch-elements-in-a-rnn">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-          <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full object-cover"
-            src={pytorch_elements_in_rnn}
-            alt="text to speech"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-          The 10 essential pytorch elements in a rnn
-          </h1>
-        </div>
-      </Link>   
-</div>
-  <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/introduction-to-neural-networks">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={NeuralNetworks}
-            alt="computer and graphs"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-           Introduction to Neural Networks
-          </h1>
-
-        </div>
-      </Link>
-    </div>
-    <div className="mb-2 md:col-span-2 md:col-start-1">
-      <Link to="/10_Essential_PyTorch_Elements_in_LSTMs">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={pytorch_elements_in_lstm}
-            alt="10_Essential_PyTorch_Elements_in_LSTMs"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-          10_Essential_PyTorch_Elements_in_LSTMs
-          </h1>
-
-        </div>
-      </Link>
-    </div>
-
-    <div className="mb-2 md:col-span-2 md:col-start-2">
-      <Link to="/10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL">
-        <div className="transition-all duration-300 ease-in-out hover:bg-gray-900">
-      <div className="rounded-full bg-purple-400 p-1 text-lg font-bold tracking-tight text-white">
-            AI Tips
-          </div>
-
-          <img
-            className="m-2 h-auto max-w-full rounded-full"
-            src={sqlite_to_postgres}
-            alt="10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL"
-          />
-          <h1 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:pb-12 lg:text-3xl">
-          10 Ways to Optimize SQLite Before Migrating to PostgreSQL
-          </h1>
-
-        </div>
-      </Link>
-    </div>
-    
-    </div>
+        </aside>
+      </section>
 </main>
      
   );
