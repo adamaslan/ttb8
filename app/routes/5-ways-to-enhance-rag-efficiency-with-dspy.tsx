@@ -17,8 +17,8 @@ export default function Article12() {
         <div>
           {" "}
           <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
-            {" "}  DSPy is a versatile toolkit for information retrieval and prompt engineering. It can be thought of as a prompting language. It can leverage various techniques to retrieve relevant documents efficiently. Let’s explore five key approaches that make Retrieval Augmented Generation easier and less bloated!
-       
+            {" "}  <a href="https://dspy.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">DSPy</a> is a versatile toolkit for information retrieval and prompt engineering. It can be thought of as a prompting language. It can leverage various techniques to retrieve relevant documents efficiently. If you are new to the underlying pattern, start with our primer on <Link to="/what-is-rag" className="text-blue-600 underline">what RAG actually is</Link>, then come back here. Let’s explore five key approaches that make Retrieval Augmented Generation easier and less bloated!
+
           </p>
           <br />
           <p className="text-left text-lg tracking-tight sm:text-2xl lg:text-3xl font-serif font-bold">

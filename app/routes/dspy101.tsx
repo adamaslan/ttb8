@@ -15,7 +15,12 @@ const RemixPage = () => {
       <header className="bg-blue-600 text-white py-6 shadow-lg">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold">DSPy 101 Tutorial: Prompting Guide</h1>
-          <p className="mt-2">Simplify LLM-powered applications with DSPy.</p>
+          <p className="mt-2">
+            Simplify LLM-powered applications with{" "}
+            <a href="https://dspy.ai" target="_blank" rel="noopener noreferrer" className="underline">DSPy</a>.
+            For a deeper dive on retrieval patterns, see our companion piece on{" "}
+            <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy" className="underline">Five Ways to Enhance RAG Efficiency with DSPy</Link>.
+          </p>
         </div>
       </header>
       <section className="mb-8">

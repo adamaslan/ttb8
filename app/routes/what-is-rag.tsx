@@ -73,7 +73,10 @@ const RemixPage = () => {
         <section className="mb-8">
           <h2 className="text-left text-lg tracking-tight sm:text-2xl lg:text-3xl font-serif font-bold mb-4">Introduction</h2>
           <p className="mt-2 text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
-            Retrieval-Augmented Generation (RAG) is an AI framework that enhances the outputs of large language models (LLMs) by incorporating information from external sources. It combines the generative capabilities of LLMs with the retrieval capabilities of traditional information retrieval. This combination allows RAG to access and reference information outside the LLMs' training data, leading to more accurate, up-to-date, and contextually relevant responses.
+            Retrieval-Augmented Generation (RAG) is an AI framework — originally proposed in a{" "}
+            <a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">2020 Facebook AI paper</a>
+            {" "}— that enhances the outputs of large language models (LLMs) by incorporating information from external sources. It combines the generative capabilities of LLMs with the retrieval capabilities of traditional information retrieval. This combination allows RAG to access and reference information outside the LLMs&apos; training data, leading to more accurate, up-to-date, and contextually relevant responses. For a hands-on follow-up, see our companion piece on{" "}
+            <Link to="/5-ways-to-enhance-rag-efficiency-with-dspy" className="text-blue-600 underline">Five Ways to Enhance RAG Efficiency with DSPy</Link>.
           </p>
         </section>
 

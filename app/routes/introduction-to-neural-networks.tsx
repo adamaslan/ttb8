@@ -44,7 +44,10 @@ export default function ArticleNN() {
           </p>
           <p className="text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
             PyTorch has become the go-to framework for neural network research and production deployment. Its dynamic nature allows for easy debugging and experimentation, while its comprehensive ecosystem includes tools for computer vision (torchvision), natural language processing (torchtext), and audio processing (torchaudio). Get started with PyTorch by exploring their comprehensive{" "}
-            <a href="https://pytorch.org/docs/stable/index.html" className="text-blue-500">documentation</a>.
+            <a href="https://pytorch.org/docs/stable/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-500">documentation</a>,
+            {" "}then move on to our companion guide on{" "}
+            <Link to="/10-essential-pytorch-elements-in-a-rnn" className="text-blue-500">10 Essential PyTorch Elements in an RNN</Link>
+            {" "}for the sequence-modeling building blocks.
           </p>
           <br />
           <p className="text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif font-bold">

@@ -12,7 +12,7 @@ const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex items-center justify-between p-4 flex-wrap bg-skin-base text-skin-base">
+    <div className="flex items-center justify-between p-4 flex-wrap bg-black text-white">
       <Link
         to="/"
         className="text-2xl font-black font-palette-blueslate tracking-wide transform hover:scale-105 transition-transform duration-200"
