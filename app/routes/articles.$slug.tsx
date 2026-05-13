@@ -45,15 +45,15 @@ type LoaderData = {
 
 function toneColor(tone: string): string {
   const t = tone.toLowerCase();
-  if (t === "bullish" || t === "positive") return "text-green-600";
-  if (t === "bearish" || t === "negative") return "text-red-600";
-  return "text-yellow-600";
+  if (t === "bullish" || t === "positive") return "text-green-400";
+  if (t === "bearish" || t === "negative") return "text-red-400";
+  return "text-yellow-400";
 }
 
 function breadthColor(pct: number): string {
-  if (pct > 5) return "text-green-600";
-  if (pct < -5) return "text-red-600";
-  return "text-yellow-600";
+  if (pct > 5) return "text-green-400";
+  if (pct < -5) return "text-red-400";
+  return "text-yellow-400";
 }
 
 function AiSummaryLayout({ article }: { article: import("~/types/article").FirestoreArticle }) {

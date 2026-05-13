@@ -4,12 +4,6 @@ export const meta: MetaFunction = () => {
   return [
     { title: "Ai Articles" },
     { name: "description", content: "List of Ai Articles for the Publication." },
-    {
-      title: "SnapState: Keeping AI Agent Workflows Alive Between Sessions",
-      description: "Discover SnapState, a simple yet powerful tool for persisting AI agent workflow state, ensuring continuity and reliability in your AI applications.",
-      link: "/snapstate-persistent-state-for-ai-agent-workflows",
-      image: "/snapstate-persistent-state-for-ai-agent-workflows.jpg"
-    },
   ];
 };
 
@@ -140,6 +134,12 @@ export default function AiArticles() {
       description: "Dive into a collection of bizarre and fascinating facts from the internet, guaranteed to surprise and entertain.",
       link: "/weirdinternetfacts",
       image: "/fish1.png"
+    },
+    {
+      title: "SnapState: Keeping AI Agent Workflows Alive Between Sessions",
+      description: "Discover SnapState, a simple yet powerful tool for persisting AI agent workflow state, ensuring continuity and reliability in your AI applications.",
+      link: "/snapstate-persistent-state-for-ai-agent-workflows",
+      image: "/snapstate-persistent-state-for-ai-agent-workflows.jpg"
     },
     {
       title: "Your First Pentest: A Practical Intro Using Free Tools",
