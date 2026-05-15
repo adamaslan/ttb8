@@ -1,6 +1,8 @@
-# Homepage Grid — Style Guide & Authoring Plan
+# Homepage Grid — Layout & Authoring Rules
 
-Style guide and authoring rules for the three grid sections on [app/routes/_index.tsx](../../app/routes/_index.tsx). Read this before adding, removing, or reordering homepage cards.
+> **Color palette, typography, dark theme, article structure, and social media rules live in [style-guide.md](./style-guide.md).** Read that first. This file covers homepage grid layout only.
+
+Rules for the three grid sections on [app/routes/_index.tsx](../../app/routes/_index.tsx). Read this before adding, removing, or reordering homepage cards.
 
 ## Mental model — three parts
 
