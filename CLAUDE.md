@@ -35,7 +35,10 @@ public/         # Static assets
 
 ## Skills & Guides
 
+- **Site-wide style guide** → `docs/agent-guides/style-guide.md` ← start here for any UI or content work
 - New article route → `.claude/skills/add-article-route.md`
+- Homepage grid layout → `docs/agent-guides/homepage-grid.md`
+- Instagram pipeline → `docs/agent-guides/article-to-instagram-pipeline.md`
 - Git commit workflow → `.claude/skills/git-commit.md`
 - Pull request → `.claude/skills/create-pull-request.md`
 - Deploy & Netlify details → `docs/agent-guides/deployment.md`
