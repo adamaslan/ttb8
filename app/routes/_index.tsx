@@ -93,7 +93,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
 
       <p className="text-left text-xl font-extrabold tracking-tight text-white sm:text-2xl lg:text-4xl">
         {" "}
-        Keeping it Tasty in 2025
+        Now with Pensar — Hack Less, Ship Safe
       </p>
       
       {/* Part 1 — Hero rail: 5 cards (2 left, big middle, 2 right). See docs/agent-guides/homepage-grid.md */}
