@@ -10,6 +10,11 @@ description: Open a GitHub pull request for ttb8 changes
 1. `npm run typecheck` passes
 2. Branch is pushed to origin
 3. PR targets `main` branch
+4. **No sensitive data exposed** — run `git diff main` and verify:
+   - No API keys, tokens, or secrets committed
+   - No `.env` files or credential files staged
+   - No hardcoded passwords, private keys, or auth tokens in source files
+   - Check with: `git diff main | grep -iE "(key|secret|token|password|credential|api_key)" | grep "^\+"` and review any matches
 
 ## Create PR
 
@@ -23,6 +28,7 @@ gh pr create --title "<title under 70 chars>" --body "$(cat <<'EOF'
 - [ ] `npm run typecheck` passes
 - [ ] Dev server starts (`npm run dev`) and route renders correctly
 - [ ] No console errors in browser
+- [ ] No sensitive data (API keys, tokens, secrets) in diff
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
 EOF
