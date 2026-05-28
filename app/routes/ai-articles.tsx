@@ -17,13 +17,13 @@ export default function AiArticles() {
     },
     {
       title: "Robinhood\u2019s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-      description: "Robinhood\u2019s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing and what",
+      description: "Robinhood\u2019s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing.",
       link: "/robinhood-agentic-trading-ai-agents-market-access",
       image: "/robinhood-agentic-trading-ai-agents-market-access.jpg"
     },
     {
-      title: "Robinhood\u2019s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-      description: "Robinhood\u2019s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI pu",
+      title: "Robinhood\u2019s Agentic Trading: AI Agents Get Direct Market Access",
+      description: "Robinhood\u2019s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI purchases.",
       link: "/robinhood-agentic-trading-ai-agents-get-market-access",
       image: "/robinhood-agentic-trading-ai-agents-get-market-access.jpg"
     },

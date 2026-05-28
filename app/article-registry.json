@@ -16,7 +16,7 @@
   {
     "slug": "robinhood-agentic-trading-ai-agents-market-access",
     "title": "Robinhood’s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-    "og_description": "Robinhood’s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing and what",
+    "og_description": "Robinhood’s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing.",
     "image": "/robinhood-agentic-trading-ai-agents-market-access.jpg",
     "keywords": [
       "AI agent trading",
@@ -29,8 +29,8 @@
   },
   {
     "slug": "robinhood-agentic-trading-ai-agents-get-market-access",
-    "title": "Robinhood’s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-    "og_description": "Robinhood’s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI pu",
+    "title": "Robinhood’s Agentic Trading: AI Agents Get Direct Market Access",
+    "og_description": "Robinhood’s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI purchases.",
     "image": "/robinhood-agentic-trading-ai-agents-get-market-access.jpg",
     "keywords": [
       "AI agent trading",
@@ -86,7 +86,7 @@
   {
     "slug": "cloudflare-flagship-feature-flags-made-easy",
     "title": "Cloudflare Flagship: The Developer’s Secret Weapon for Effortless Feature Flags",
-    "og_description": "Cloudflare Flagship streamlines feature flag management with targeting rules and percentage-based rollouts, letting developers toggle features without redeployi",
+    "og_description": "Cloudflare Flagship streamlines feature flag management with targeting rules and percentage-based rollouts, letting developers toggle features without redeploying.",
     "image": "/cloudflare-flagship-feature-flags-made-easy.jpg",
     "keywords": [
       "feature flags",
