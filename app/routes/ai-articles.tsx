@@ -10,6 +10,30 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "Cloudflare Flagship 3.0: Effortless Feature Flags with Zero Redeployments",
+      description: "Cloudflare Flagship 3.0 simplifies feature flag management with zero-code targeting rules and percentage-based rollouts, eliminating redeployments.",
+      link: "/cloudflare-flagship-3-zero-redeployments",
+      image: "/cloudflare-flagship-3-zero-redeployments.jpg"
+    },
+    {
+      title: "Cloudflare Flagship 2.0: Zero-Code Feature Flags for Faster Deployments",
+      description: "Cloudflare Flagship 2.0 simplifies feature flag management with targeting rules and percentage-based rollouts, eliminating code redeployment for faster releases",
+      link: "/cloudflare-flagship-2-zero-code-feature-flags",
+      image: "/cloudflare-flagship-2-zero-code-feature-flags.jpg"
+    },
+    {
+      title: "Cloudflare Flagship: The Developer\u2019s Secret Weapon for Effortless Feature Flags",
+      description: "Cloudflare Flagship streamlines feature flag management with targeting rules and percentage-based rollouts, letting developers toggle features without redeployi",
+      link: "/cloudflare-flagship-feature-flags-made-easy",
+      image: "/cloudflare-flagship-feature-flags-made-easy.jpg"
+    },
+    {
+      title: "Cloudflare Flagship Simplifies Feature Flag Management for Developers",
+      description: "Discover how Cloudflare Flagship enables effortless feature flag management with targeting rules and rollouts, eliminating the need for code redeployment.",
+      link: "/cloudflare-flagship-simplifies-feature-flags",
+      image: "/cloudflare-flagship-simplifies-feature-flags.jpg"
+    },
+    {
       title: "5 Ways AI Can Help Farmland Restoration",
       description: "Explore how artificial intelligence can play a crucial role in restoring farmlands and promoting sustainable agriculture practices.",
       link: "/5-ways-ai-can-help-farmland-restoration",

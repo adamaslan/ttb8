@@ -1,3 +1,5 @@
 iteration,slug,title,category,date_created,status,source_url,notes
 1,snapstate-persistent-state-for-ai-agent-workflows,SnapState: Keeping AI Agent Workflows Alive Between Sessions,AI News,2026-05-12,published,,
 2,continuous-pentesting-ci-guide,Set Up Continuous Pentesting in Your CI: A 10-Minute Guide,AI News,2026-05-12,published,https://www.pensarai.com/blog/continuous-pentesting-ci-guide,Covers Pensar CLI + GitHub/GitLab/Bitbucket configs
+3,ibm-anderon-quantum-foundry,IBM's Anderon Quantum Foundry Is a $2B Bet on 300mm Qubits,AI News,2026-05-25,draft,https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/,Dry-run Instagram payload created; source analysis from Futurum and IBM announcement
+4,walking-boosts-creativity-study,Take a Walk Before You Brainstorm: The Study Behind the Old Advice,Tech World - Helpful,2026-05-26,draft,https://www.apa.org/news/press/releases/2014/04/creativity-walk,Dry-run Instagram payload created; source backed by APA/PubMed/Stanford

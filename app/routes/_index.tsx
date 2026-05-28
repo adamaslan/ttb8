@@ -41,6 +41,8 @@ import sqlite_to_postgres from "/sqlite_to_postgres.png";
 import snapstatePersistentStateForAiAgentWorkflows from "/snapstate-persistent-state-for-ai-agent-workflows.jpg";
 import continuousPentestingCiGuide from "/continuous-pentesting-ci-guide.png";
 import firstPentestFreeToolsIntro from "/first-pentest-free-tools-intro.jpg";
+import ibmAnderonQuantumFoundry from "/ibm-anderon-quantum-foundry.png";
+import walkingBoostsCreativityStudy from "/walking-boosts-creativity-study.png";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -241,6 +243,30 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
       {/* Part 3 — Long feed + ad rail. See docs/agent-guides/homepage-grid.md */}
       <section className="mt-6 lg:grid lg:grid-cols-[1fr_300px] lg:gap-6">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Link to="/walking-boosts-creativity-study">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={walkingBoostsCreativityStudy} alt="Take a Walk Before You Brainstorm: The Study Behind the Old Advice" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Take a Walk Before You Brainstorm: The Study Behind the Old Advice
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/ibm-anderon-quantum-foundry">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
+                AI News
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={ibmAnderonQuantumFoundry} alt="IBM's Anderon Quantum Foundry Is a $2B Bet on 300mm Qubits" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                IBM's Anderon Quantum Foundry Is a $2B Bet on 300mm Qubits
+              </h2>
+            </article>
+          </Link>
+
           <Link to="/first-pentest-free-tools-intro">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
               <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
