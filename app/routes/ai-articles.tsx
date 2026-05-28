@@ -10,6 +10,30 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "How Robinhood\u2019s AI Agent Trading Lets Developers Automate Stock Trades with MCP",
+      description: "Robinhood\u2019s Agentic Trading lets AI agents execute stock trades via MCP with safety guardrails. Learn how developers can integrate Claude, Cursor, and more.",
+      link: "/robinhood-ai-agent-trading-mcp-developers",
+      image: "/robinhood-ai-agent-trading-mcp-developers.jpg"
+    },
+    {
+      title: "Robinhood\u2019s Agentic Trading: How AI Agents Are Getting Direct Market Access",
+      description: "Robinhood\u2019s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing.",
+      link: "/robinhood-agentic-trading-ai-agents-market-access",
+      image: "/robinhood-agentic-trading-ai-agents-market-access.jpg"
+    },
+    {
+      title: "Robinhood\u2019s Agentic Trading: AI Agents Get Direct Market Access",
+      description: "Robinhood\u2019s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI purchases.",
+      link: "/robinhood-agentic-trading-ai-agents-get-market-access",
+      image: "/robinhood-agentic-trading-ai-agents-get-market-access.jpg"
+    },
+    {
+      title: "Last.fm\u2019s Independence: What Developers Should Know About the Platform\u2019s Future",
+      description: "Last.fm has officially gone independent. Discover what this means for your account, data, and the platform\u2019s future as a standalone company.",
+      link: "/lastfm-goes-independent-what-developers-need-to-know",
+      image: "/lastfm-goes-independent-what-developers-need-to-know.jpg"
+    },
+    {
       title: "Cloudflare Flagship 3.0: Effortless Feature Flags with Zero Redeployments",
       description: "Cloudflare Flagship 3.0 simplifies feature flag management with zero-code targeting rules and percentage-based rollouts, eliminating redeployments.",
       link: "/cloudflare-flagship-3-zero-redeployments",
