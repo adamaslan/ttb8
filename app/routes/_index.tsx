@@ -69,7 +69,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
       {dailyArticle && (
         <div className="mb-6 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 p-4 text-white">
           <div className="flex items-center justify-between mb-1">
-            <p className="text-sm font-bold uppercase tracking-widest">Daily Article</p>
+            <p className="text-sm font-bold uppercase tracking-widest">Daily Financial Tech Article</p>
             <Link
               to="/correlations-archive"
               className="text-xs font-bold uppercase tracking-wider underline opacity-90 hover:opacity-100"
