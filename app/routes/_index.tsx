@@ -95,7 +95,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
 
       <p className="text-left text-xl font-extrabold tracking-tight text-white sm:text-2xl lg:text-4xl">
         {" "}
-        Now with Pensar — Hack Less, Ship Safe
+        Covering Tech in NYC and Beyond
       </p>
       
       {/* Part 1 — Hero rail: 5 cards (2 left, big middle, 2 right). See docs/agent-guides/homepage-grid.md */}
@@ -163,7 +163,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               alt="Set Up Continuous Pentesting in Your CI"
             />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
-              Set Up Continuous Pentesting in Your CI: A 10-Minute Guide
+              Pensar Tutorial: A Guide to Setting Up Continuous Pentesting in 10 Minutes with Pensar's CI Integration
             </h2>
           </article>
         </Link>
