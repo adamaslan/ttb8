@@ -163,7 +163,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               alt="Set Up Continuous Pentesting in Your CI"
             />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl">
-              Pensar Tutorial: A Guide to Setting Up Continuous Pentesting in 10-Minutes with Pensar's CI Integration
+              Pensar Tutorial: A Guide to Setting Up Continuous Pentesting in 10 Minutes with Pensar's CI Integration
             </h2>
           </article>
         </Link>

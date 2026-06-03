@@ -252,7 +252,7 @@ export default function LastfmIndependentPage() {
           </ul>
         </section>
 
-        <section className="text-sm text-gray-600">
+        <section className="text-sm text-gray-400">
           <span>Source: </span>
           <a
             href="https://support.last.fm/t/last-fm-is-now-independent/118591"
@@ -269,7 +269,7 @@ export default function LastfmIndependentPage() {
         </p>
       </main>
 
-      <footer className="bg-black border-t border-gray-800 py-4 text-center text-xs text-gray-600">
+      <footer className="bg-black border-t border-gray-800 py-4 text-center text-xs text-gray-400">
         Tech World · {SLUG} · TastyTechBytes
       </footer>
     </div>
