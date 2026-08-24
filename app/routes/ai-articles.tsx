@@ -10,6 +10,60 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "How a Solo Dev Built a 1990s FPS Cat Game Entirely by Hand",
+      description: "Discover how one developer built Catlantean 3D, a retro FPS cat game with 256 colors and handcrafted art, using only Blender, Aseprite, and procedural technique",
+      link: "/how-solo-dev-built-1990s-fps-cat-game-entirely-by-hand",
+      image: "/how-solo-dev-built-1990s-fps-cat-game-entirely-by-hand.jpg"
+    },
+    {
+      title: "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
+      description: "Discover how a solo developer built Catlantean 3D, a 1990s-style FPS with 256 colors and software raycasting, entirely by hand.",
+      link: "/how-one-dev-built-catlantean-3d-by-hand",
+      image: "/how-one-dev-built-catlantean-3d-by-hand.jpg"
+    },
+    {
+      title: "The Handcrafted Magic Behind Catlantean 3D: A 1990s FPS Built Without AI",
+      description: "Discover how one developer built Catlantean 3D, a 1990s-style FPS with handcrafted art and software raycasting\u2014without a single line of AI generation.",
+      link: "/handcrafted-magic-behind-catlantean-3d-no-ai",
+      image: "/handcrafted-magic-behind-catlantean-3d-no-ai.jpg"
+    },
+    {
+      title: "How a Solo Dev Built a 1990s FPS Cat Game Without AI",
+      description: "Discover how one developer created Catlantean 3D, a retro FPS cat game with 256 colors and software raycasting, entirely by hand.",
+      link: "/how-solo-dev-built-1990s-fps-cat-game-without-ai",
+      image: "/how-solo-dev-built-1990s-fps-cat-game-without-ai.jpg"
+    },
+    {
+      title: "SnapState: Keep Your AI Agents from Losing Their Workflow Memory",
+      description: "Learn how SnapState helps AI agents retain workflow state between sessions, ensuring continuity and reliability in your applications.",
+      link: "/snapstate-persistent-state-ai-agents-workflow-memory",
+      image: "/snapstate-persistent-state-ai-agents-workflow-memory.jpg"
+    },
+    {
+      title: "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
+      description: "SnapState makes AI agent workflows persistent by saving state between runs. Learn how it works and why your next AI project needs it.",
+      link: "/snapstate-persistent-state-for-ai-agents",
+      image: "/snapstate-persistent-state-for-ai-agents.jpg"
+    },
+    {
+      title: "How VSCode\u2019s GitHub.dev Bug Lets Attackers Steal OAuth Tokens in One Click",
+      description: "A critical vulnerability in GitHub\u2019s browser-based VSCode editor (github.dev) allows attackers to steal OAuth tokens with just one click. Learn how it works and",
+      link: "/vscode-github-dev-oauth-token-stealing-one-click-v2",
+      image: "/vscode-github-dev-oauth-token-stealing-one-click-v2.jpg"
+    },
+    {
+      title: "How VSCode\u2019s GitHub.dev Bug Lets Attackers Steal OAuth Tokens in One Click",
+      description: "Discover how a VSCode bug in GitHub.dev allowed attackers to steal OAuth tokens with a single click, exposing developer accounts to risk.",
+      link: "/vscode-github-dev-oauth-token-stealing-one-click",
+      image: "/vscode-github-dev-oauth-token-stealing-one-click.jpg"
+    },
+    {
+      title: "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
+      description: "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to sta",
+      link: "/vscode-bug-github-dev-token-stealing-one-click",
+      image: "/vscode-bug-github-dev-token-stealing-one-click.jpg"
+    },
+    {
       title: "How Robinhood\u2019s AI Agent Trading Lets Developers Automate Stock Trades with MCP",
       description: "Robinhood\u2019s Agentic Trading lets AI agents execute stock trades via MCP with safety guardrails. Learn how developers can integrate Claude, Cursor, and more.",
       link: "/robinhood-ai-agent-trading-mcp-developers",
@@ -112,10 +166,10 @@ export default function AiArticles() {
       image: "/js-burden.jpeg"
     },
     {
-      title: "Three Essential Webstorm Shortcuts",
-      description: "Boost your productivity with these three essential Webstorm shortcuts that every developer should know.",
-      link: "/three-essential-webstorm-shortcuts",
-      image: "/webstorm1.jpeg"
+      title: "10 Things You Need to Know About Dextego: The Future of AI Sales Coaching",
+      description: "From roleplay and objection handling to a private AI coach that tracks coachability, discover how Dextego is transforming sales training with agentic AI.",
+      link: "/dextego-10-things-ai-sales-coaching",
+      image: "/dextego1.png"
     },
     {
       title: "Three Keys To Getting A Frontend Or Fullstack Job",
@@ -194,6 +248,12 @@ export default function AiArticles() {
       description: "A hands-on introduction to penetration testing using only free, open-source tools — DVWA, Nmap, Burp Suite Community, SQLMap, and Nikto. No vendor lock-in.",
       link: "/first-pentest-free-tools-intro",
       image: "/first-pentest-free-tools-intro.jpg"
+    },
+    {
+      title: "Three Essential Webstorm Shortcuts",
+      description: "Boost your productivity with these three essential Webstorm shortcuts that every developer should know.",
+      link: "/three-essential-webstorm-shortcuts",
+      image: "/webstorm1.jpeg"
     },
   ];
 
