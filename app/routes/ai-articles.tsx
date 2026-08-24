@@ -47,7 +47,7 @@ export default function AiArticles() {
     },
     {
       title: "How VSCode\u2019s GitHub.dev Bug Lets Attackers Steal OAuth Tokens in One Click",
-      description: "A critical vulnerability in GitHub\u2019s browser-based VSCode editor (github.dev) allows attackers to steal OAuth tokens with just one click. Learn how it works and",
+      description: "A critical vulnerability in GitHub\u2019s browser-based VSCode editor (github.dev) allows attackers to steal OAuth tokens with just one click. Learn how it works and how to protect your accounts.",
       link: "/vscode-github-dev-oauth-token-stealing-one-click-v2",
       image: "/vscode-github-dev-oauth-token-stealing-one-click-v2.jpg"
     },
@@ -59,7 +59,7 @@ export default function AiArticles() {
     },
     {
       title: "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
-      description: "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to sta",
+      description: "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to stay safe.",
       link: "/vscode-bug-github-dev-token-stealing-one-click",
       image: "/vscode-bug-github-dev-token-stealing-one-click.jpg"
     },

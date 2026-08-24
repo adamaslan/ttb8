@@ -24,6 +24,7 @@ import blender1 from "/blender1.jpeg";
 import airpods from "/airpods.jpeg";
 import soundguy1 from "/soundsguy1.jpeg";
 import webstorm1 from "/webstorm1.jpeg";
+import dextego1 from "/dextego1.png";
 import cloud from "/cloud1.jpeg"
 import cask from "/cask1.jpeg";
 import letters1 from "/letters1.png";
@@ -134,16 +135,16 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
 
         {/* Big middle */}
         <Link
-          to="/three-essential-webstorm-shortcuts"
+          to="/dextego-10-things-ai-sales-coaching"
           className="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1"
         >
           <article className="flex h-full flex-col transition-all duration-300 ease-in-out hover:bg-gray-900">
             <div className="rounded-full bg-blue-500 p-1 text-base font-bold tracking-tight text-white">
-              Software - Webstorm
+              AI Sales
             </div>
-            <img className="m-2 h-auto max-w-full rounded-2xl" src={webstorm1} alt="WebStorm IDE" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={dextego1} alt="Dextego AI sales coaching" />
             <h2 className="pb-4 text-left text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
-              The Three WebStorm Shortcuts to Rule Them All
+              10 Things You Need to Know About Dextego: The Future of AI Sales Coaching
             </h2>
           </article>
         </Link>
@@ -501,6 +502,18 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
               <img className="m-2 h-auto max-w-full rounded-2xl" src={restorationImage} alt="farmland restoration" />
               <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 5 Ways AI Can Help Farmland Restoration
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/three-essential-webstorm-shortcuts">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-blue-500 p-1 text-sm font-bold tracking-tight text-white">
+                Software - Webstorm
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={webstorm1} alt="WebStorm IDE" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The Three WebStorm Shortcuts to Rule Them All
               </h2>
             </article>
           </Link>
