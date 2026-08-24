@@ -47,4 +47,6 @@ app/routes/<slug>.tsx (hand-written article)
 - [[entity-routing]] — step 1, registering the article route
 - [[concept-article-source-of-truth-drift]] — the homepage card is a separate authoring step from the route registration this pipeline depends on
 - `docs/agent-guides/article-to-instagram-pipeline.md` — full step-by-step guide with the Imagen curl command and cost table
-- `docs/agent-guides/instagram-robustness.md` — companion robustness doc (pending fuller ingest)
+- `docs/agent-guides/instagram-robustness.md` — companion robustness doc: the v2 queue schema, image/caption validation, idempotent publish state machine, credential/token-expiry handling, and a generic per-project config
+- `docs/agent-guides/auto-social-on-deploy.md` — proposed (not yet wired) Netlify `deploy-succeeded` webhook that would trigger publish automatically instead of the current manual `/prep-instagram-post` + backend flow
+- `docs/agent-guides/ideal-article-instagram-workflow.md` — **full outlet map**: every system, every live vs. proposed-only outlet (article page, homepage card, `/articles` grid, Instagram, Twitter/X, LinkedIn), and the current-state-vs-ideal-state gap

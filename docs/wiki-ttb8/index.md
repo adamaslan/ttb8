@@ -22,7 +22,7 @@ Catalog is organized by page type. This wiki is ttb8-only; the Instagram publish
 One page per named component. These are the hubs — everything links to entities.
 
 - [[entity-routing]] — `app/routes.ts`; the explicit route registry, the single most load-bearing file in the repo
-- [[entity-article-pipeline]] — article → Imagen cover image → Instagram post, spanning this repo and the external `social-pr-autopilot` backend
+- [[entity-article-pipeline]] — article → Imagen cover image → Instagram post, spanning this repo and the external `social-pr-autopilot` backend; see also `docs/agent-guides/ideal-article-instagram-workflow.md` for the full outlet map (live vs. proposed-only channels)
 - [[entity-auth]] — Clerk (`@clerk/react-router`); client `<SignedIn>`/`<SignedOut>` vs. server `getAuth()` gating
 - [[entity-deployment]] — Netlify SSR build pipeline (`react-router build` → `netlify/prepare.js` → Functions) + CSP headers
 - [[entity-three-components]] — `Cloud.tsx`/`chicken.tsx`; client-only Three.js components and SSR hydration risk
