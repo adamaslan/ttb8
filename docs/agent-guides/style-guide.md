@@ -314,6 +314,32 @@ Keep prompts under 100 words. Always include `dark background` — light images 
 
 Instagram requires a minimum 1080×1080 px square or 1080×1350 portrait. Imagen outputs 1024×1024 by default — acceptable for both.
 
+### Render it in the article body, not just meta tags
+
+The cover image constant must appear as an actual `<img src={hero} ... />` in
+the article JSX, not only in `meta()` (`og:image`, `twitter:image`,
+`linkedin:image`). Meta tags control link-preview cards on other platforms —
+they render nothing on the page itself. A hero defined but only referenced in
+`meta()` silently ships an article with no image above the fold.
+
+```tsx
+<section className="mb-8">
+  <img className="mx-auto my-auto h-1/2 w-1/2 rounded-2xl" src={hero} alt="{descriptive alt}" />
+</section>
+```
+
+Place it directly after the `<header>`, before the first body paragraph.
+
+### If the article will be featured in Part 1's "big" homepage slot
+
+Generate a landscape image (~16:9 or ~4:3), not the default 1024×1024 square.
+The Part 1 featured slot (`md:col-span-2 md:row-span-2`, see
+[homepage-grid.md](./homepage-grid.md)) is wide and tall; a square image
+placed there forces a choice between visible dead space or a cropped/sliced
+image, and no CSS-only fix resolves this cleanly — it has to be solved at
+generation time. See `docs/wiki-ttb8/entity-article-pipeline.md` "Known
+failures" for the incident this came from.
+
 ---
 
 ## 8. Instagram Posts
