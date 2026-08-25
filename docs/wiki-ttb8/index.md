@@ -1,6 +1,6 @@
 # Wiki Index — ttb8
 
-_Last updated: 2026-08-25 (todo3-restyle Phase 0/1 — routing fix + duplicate cluster consolidation)_
+_Last updated: 2026-08-25 (todo3-restyle Phase 3/4 — first guides built + legacy triage, PR#44)_
 
 **New here / cold-started? Read [[START-HERE]] first** — it routes you to the right pages for your task in the right order.
 

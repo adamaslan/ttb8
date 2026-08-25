@@ -77,6 +77,30 @@ conflated in one commit.
 > than left dangling. This is the generalizable risk of removing (not redirecting) a
 > route: unlike 301 stubs, a hard removal requires a repo-wide reference sweep first.
 
+## Related but distinct: Phase 4 staleness archiving (PR#44)
+
+Phase 4 of `docs/todo3-restyle.md` reused steps 2–3 of this pattern (301 stub
++ archive-with-header) for a **different reason**: not duplication, but
+staleness/thinness. `nab-2023-audio-video-gear` (a 2023 trade-show gear
+roundup) and `weirdinternetfacts` (a 44-line trivia listicle with no
+consistent shell) were retired to `/` with no winner to redirect to, since
+there was no duplicate cluster — just one obsolete post each. Same mechanism,
+different trigger; don't conflate "this is a copy of that" with "this is
+stale," since the former implies a live winner to redirect to and the latter
+usually doesn't.
+
+Phase 4 also promoted one file out of the OTHER-shell bucket entirely:
+`three-essential-webstorm-shortcuts` became the second real guide
+(`/guides/three-webstorm-shortcuts`) rather than being restyled as a flat
+article — see [[entity-routing]] for the new `/guides/*` route type. Two
+other guide-titled candidates (`how-to-invest-in-whisky`,
+`the-ultimate-guide-to-flyers-in-blender-with-the-node-editor`,
+`how-to-use-the-pie-menu-in-blender`) were considered for promotion and
+rejected on inspection — despite "how-to"/"guide" titles, all three are
+flowing prose with no actual numbered steps a reader executes, so they were
+restyled as articles instead. Title shape alone is not sufficient signal for
+the guide/article split; the content has to actually be step-shaped.
+
 ## See also
 
 - [[concept-article-source-of-truth-drift]] — the registry/routes.ts/ai-articles.tsx

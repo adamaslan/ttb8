@@ -66,3 +66,25 @@ the retired route still resolves via its redirect. This is the last content
 change from `docs/todo3-restyle.md` Phase 2. Touched
 [[concept-seo-duplicate-consolidation]] indirectly (no page edit needed) and
 this log.
+
+## [2026-08-25] ingest | PR #44 complete todo3-restyle Phase 3 (guides) + Phase 4 (legacy triage) | pages touched: 3
+
+Phase 3: built the first two real guides — `/guides/continuous-pentesting-ci`
+(content moved from `pensar-continuous-pentesting-ci.tsx`) and
+`/guides/three-webstorm-shortcuts` (promoted out of Phase 4's OTHER bucket) —
+cyan accent, sticky step-index ToC, numbered `Step N —` sections, `Last
+verified` footer. Old slugs 301 directly to the new routes (no redirect
+chains). Phase 4: triaged the 22 remaining legacy OTHER-shell routes — 2
+archived as stale (`nab-2023-audio-video-gear`, `weirdinternetfacts`), 1
+promoted to guide, 19 restyled to the dark-shell class map via 3 background
+Haiku agents (verified in parent: zero forbidden classes, `npm run
+typecheck` and `npm run build` clean, no fabrication tells). Three
+guide-titled candidates were considered for promotion and rejected on
+inspection — prose, not actual numbered steps.
+
+Touched [[entity-routing]] (new `/guides/*` route type documented, the
+`ai-articles.tsx` registration drift note corrected now that Phase 0 closed
+it), [[concept-seo-duplicate-consolidation]] (added a "related but distinct"
+section distinguishing staleness-archiving from duplicate-consolidation, and
+the guide-promotion rejections), and this log. `docs/todo3-restyle.md` is
+now fully complete (Phases 0–4).
