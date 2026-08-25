@@ -1,17 +1,21 @@
-import { Link } from "react-router";
-import huggingface1 from "/huggingface1.png";
-import type { MetaFunction } from "react-router";
+import React from 'react';
+import { Link } from 'react-router';
+import type { MetaFunction } from 'react-router';
+
+const hero = "/huggingface1.png";
+
+const TITLE = "The Easy Way to Host Your Python Project on Hugging Face Spaces";
+const DESC = "Hugging Face Spaces offer a simple way to host not just ML demo apps directly on your profile or your organization's profile, but any Python code with frameworks like Gradio, Streamlit, Docker, or static HTML.";
+const SLUG = "create-your-own-huggingface-space-easy";
+const CATEGORY = "Dev Tools";
+const AUTHOR = "Adam Timur Aslan";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "The Easy Way to Publish on Hugging Face Spaces" },
-    {
-      name: "description",
-      content:
-        "Hugging Face Spaces offer a simple way to host not just ML demo apps directly on your profile or your organization’s profile, but any Python code with frameworks like Gradio, Streamlit, Docker, or static HTML.",
-    },
+    { title: TITLE },
+    { name: "description", content: DESC },
     { name: "keywords", content: "Hugging Face, Spaces, Gradio, Streamlit, Python, Deployment" },
-    { name: "author", content: "Adam Aslan" },
+    { name: "author", content: AUTHOR },
     { name: "viewport", content: "width=device-width, initial-scale=1.0" },
     { name: "robots", content: "index, follow" },
   ];
@@ -19,59 +23,90 @@ export const meta: MetaFunction = () => {
 
 export default function Article5() {
   return (
-    <div>
-      <div className="mx-3 lg:mx-36">
-        <h1 className="tracking-light text-center text-2xl font-extrabold text-blue-500 sm:text-4xl lg:text-5xl">
-          The Easy Way to Host Your Python Project on Hugging Face Spaces
-        </h1>
-        <br />
+    <div className="min-h-screen bg-black text-gray-100">
+      <header className="bg-black border-b border-gray-800 py-6">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <span className="rounded-full bg-red-600 px-3 py-1 text-sm font-bold text-white">
+            {CATEGORY}
+          </span>
+          <h1 className="text-3xl font-bold text-green-400 mt-3">{TITLE}</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            by <span className="text-gray-300">{AUTHOR}</span>
+          </p>
+          <p className="mt-4 flex items-start gap-2 font-mono text-xs sm:text-sm text-green-400/90 tracking-tight">
+            <span className="text-green-500 font-bold shrink-0">▸</span>
+            A simple way to host ML demo apps and Python code using Gradio, Streamlit, Docker, or static HTML.
+          </p>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-4 py-8 space-y-8 max-w-3xl">
         <img
-          className="mx-auto my-auto h-1/2 w-1/2"
-          src={huggingface1}
+          className="w-full rounded-xl border border-gray-800"
+          src={hero}
           alt="Hugging Face Spaces Overview"
         />
-        <div>
-          <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
-            <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" className="text-blue-500">Hugging Face Spaces</a>
-            {" "}offer a simple way to host not just ML demo apps directly on your profile or your organization’s profile, but really any Python code you want. If you are deploying a model that uses RAG patterns, our primer on{" "}
-            <Link to="/what-is-rag" className="text-blue-500">What is RAG</Link>
+
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
+            Overview
+          </h2>
+          <p className="text-gray-300 leading-relaxed text-sm">
+            <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">Hugging Face Spaces</a>
+            {" "}offer a simple way to host not just ML demo apps directly on your profile or your organization's profile, but really any Python code you want. If you are deploying a model that uses RAG patterns, our primer on{" "}
+            <Link to="/what-is-rag" className="text-green-400 hover:underline">What is RAG</Link>
             {" "}pairs well with this guide.
           </p>
-          <br />
-          <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
+        </section>
+
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
+            Framework Support
+          </h2>
+          <p className="text-gray-300 leading-relaxed text-sm">
             This is especially helpful for apps that use{' '}
-            <a href="https://www.gradio.app/" className="text-blue-500">
+            <a href="https://www.gradio.app/" className="text-green-400 hover:underline">
               Gradio
             </a>, Streamlit, Docker, or static HTML, allowing you to create a decent looking UI fast.
           </p>
-          <br /><br />
-          <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
+        </section>
+
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
+            Key Benefits
+          </h2>
+          <p className="text-gray-300 leading-relaxed text-sm">
             In addition to quick deployment, Hugging Face Spaces provides automatic GPU allocation, collaborative editing, and customizable templates so you can focus on building your application rather than managing infrastructure.
           </p>
-          <br /><br />
-          <p className="text-left font-serif text-lg font-bold tracking-tight sm:text-2xl lg:text-3xl">
+        </section>
+
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
+            Getting Started
+          </h2>
+          <p className="text-gray-300 leading-relaxed text-sm">
             Checkout{' '}
-            <a href="https://huggingface.co/spaces/" className="text-blue-500">
+            <a href="https://huggingface.co/spaces/" className="text-green-400 hover:underline">
               Hugging Face Spaces
             </a>
-            <br /><br /> Here's their{' '}
-            <a href="https://www.huggingface.co/" className="text-blue-500">
+            {' '}to get started. Here's their{' '}
+            <a href="https://www.huggingface.co/" className="text-green-400 hover:underline">
               docs for spaces
             </a>
+            .
           </p>
-          <br />
-          <p className="text-center text-lg font-extrabold tracking-tight text-yellow-500 sm:text-2xl lg:text-4xl">
-            Go back{' '}
-            <Link
-              to="/"
-              className="text-center text-6xl font-extrabold tracking-tight text-blue-500 sm:text-xl lg:text-4xl"
-            >
-              Home
-            </Link>
-          </p>
-          <br /><br />
-        </div>
-      </div>
+        </section>
+
+        <p className="text-center">
+          <Link to="/" className="text-green-400 hover:underline text-sm">
+            ← Back to Home
+          </Link>
+        </p>
+      </main>
+
+      <footer className="bg-black border-t border-gray-800 py-4 text-center text-xs text-gray-600">
+        {CATEGORY} · {SLUG} · TastyTechBytes
+      </footer>
     </div>
   );
 }

@@ -1,3 +1,8 @@
+/*
+ARCHIVED: 2026-08-25
+REASON: Duplicate/SEO-variant route retired per docs/todo3-restyle.md Phase 1 cluster cleanup.
+ORIGINAL ROUTE: /cloudflare-flagship-2-zero-code-feature-flags
+*/
 import React from 'react';
 import { Link } from 'react-router';
 import hero from "/cloudflare-flagship-2-zero-code-feature-flags.jpg";
