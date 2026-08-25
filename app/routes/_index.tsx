@@ -138,12 +138,12 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
           to="/dextego-10-things-ai-sales-coaching"
           className="md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-1"
         >
-          <article className="flex h-full flex-col transition-all duration-300 ease-in-out hover:bg-gray-900">
-            <div className="rounded-full bg-blue-500 p-1 text-base font-bold tracking-tight text-white">
+          <article className="mx-auto flex h-full w-4/5 flex-col transition-all duration-300 ease-in-out hover:bg-gray-900">
+            <div className="rounded-full bg-blue-500 p-1 text-sm font-bold tracking-tight text-white">
               AI Sales
             </div>
-            <img className="m-2 h-auto max-w-full rounded-2xl" src={dextego1} alt="Dextego AI sales coaching" />
-            <h2 className="pb-4 text-left text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
+            <img className="m-2 h-auto max-h-64 max-w-full rounded-2xl object-cover" src={dextego1} alt="Dextego AI sales coaching" />
+            <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
               10 Things You Need to Know About Dextego: The Future of AI Sales Coaching
             </h2>
           </article>

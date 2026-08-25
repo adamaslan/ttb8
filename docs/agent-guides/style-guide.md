@@ -314,6 +314,22 @@ Keep prompts under 100 words. Always include `dark background` — light images 
 
 Instagram requires a minimum 1080×1080 px square or 1080×1350 portrait. Imagen outputs 1024×1024 by default — acceptable for both.
 
+### Render it in the article body, not just meta tags
+
+The cover image constant must appear as an actual `<img src={hero} ... />` in
+the article JSX, not only in `meta()` (`og:image`, `twitter:image`,
+`linkedin:image`). Meta tags control link-preview cards on other platforms —
+they render nothing on the page itself. A hero defined but only referenced in
+`meta()` silently ships an article with no image above the fold.
+
+```tsx
+<section className="mb-8">
+  <img className="mx-auto my-auto h-1/2 w-1/2 rounded-2xl" src={hero} alt="{descriptive alt}" />
+</section>
+```
+
+Place it directly after the `<header>`, before the first body paragraph.
+
 ---
 
 ## 8. Instagram Posts

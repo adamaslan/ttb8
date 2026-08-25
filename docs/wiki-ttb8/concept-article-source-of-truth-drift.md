@@ -31,4 +31,4 @@ The tension: a registry-driven model (single JSON, everything else derives from 
 ## See also
 
 - [[entity-routing]] — the actually-authoritative list for what renders
-- [[entity-article-pipeline]] — the manual, multi-step process that produces this drift each time an article is added
+- [[entity-article-pipeline]] — the manual, multi-step process that produces this drift each time an article is added, including the related "hero defined in `meta()` but never rendered in JSX" failure caught on the same Dextego article

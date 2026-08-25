@@ -40,6 +40,10 @@ const DextegoArticle = () => {
             <main className="container mx-auto px-4 py-8">
 
                 <section className="mb-8">
+                    <img className="mx-auto my-auto h-1/2 w-1/2 rounded-2xl" src={hero} alt="Dextego AI sales coaching" />
+                </section>
+
+                <section className="mb-8">
                     <p className="mt-2 text-left text-lg tracking-tight sm:text-xl lg:text-2xl font-serif">
                         The landscape of sales training is changing rapidly. At the forefront of this revolution is <a href="https://dextego.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Dextego</a>, a platform that uses agentic AI to create a private, hyper-personalized coaching experience. Whether you are a veteran sales executive or a newcomer to the field, understanding what Dextego offers is key to staying ahead. Based on recent deep-dives into the platform, here are the 10 most important things you need to know.
                     </p>

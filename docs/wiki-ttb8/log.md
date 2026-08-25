@@ -13,3 +13,7 @@ Created SCHEMA.md, START-HERE.md, overview.md, index.md, log.md, and 5 entity + 
 ## [2026-08-24] ingest | PR #43 add Dextego AI sales coaching article + fix Netlify build | pages touched: 3
 
 Touched [[entity-routing]] (route ordering — Dextego placed where WebStorm was, WebStorm moved to the end), [[entity-article-pipeline]] (no new pattern, but the article follows the documented flow), and this log. The build-fix commit (8e25daa) is the first real instance of [[concept-article-source-of-truth-drift]]'s cousin failure mode: not drift between registries, but drift between "committed" and "working tree" — same root problem (multiple sources of truth for "what exists"), different axis.
+
+## [2026-08-25] ingest | Dextego article missing rendered hero image | pages touched: 3
+
+The Dextego article defined `hero` and used it only in `meta()` (`og:image`/`twitter:image`/`linkedin:image`) — no `<img>` in the JSX body, so the article page rendered with no visible cover image despite the homepage card and social previews looking correct. Fixed in code (added the `<img>` after `<header>`) and in `docs/agent-guides/style-guide.md` §7, which now requires the cover image be rendered in the article body, not just wired into `meta()`. Touched [[entity-article-pipeline]] (new known-failure entry), [[concept-article-source-of-truth-drift]] (cross-link), and this log.

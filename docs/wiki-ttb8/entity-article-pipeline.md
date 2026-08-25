@@ -2,7 +2,7 @@
 date: 2026-08-24
 type: entity
 tags: [articles, instagram, imagen, automation, publishing]
-sources: [docs/agent-guides/article-to-instagram-pipeline.md, docs/agent-guides/instagram-robustness.md, instagram-queue/, PR#43]
+sources: [docs/agent-guides/article-to-instagram-pipeline.md, docs/agent-guides/instagram-robustness.md, instagram-queue/, docs/agent-guides/style-guide.md, PR#43]
 ---
 
 # entity: Article → Image → Instagram Pipeline
@@ -35,6 +35,7 @@ app/routes/<slug>.tsx (hand-written article)
 - **The running backend holds live credentials in-process.** Per the user's global CLAUDE.md safety rule, killing the uvicorn backend to fix a stale tunnel URL previously destroyed in-memory API credentials, requiring manual retrieval from the Meta Graph API Explorer. This is the origin of the "never kill a running process without warning" rule — treat any running `social-pr-autopilot` backend as holding unrecoverable state.
 - **The backend is outside this repo's control.** If it isn't running, `/prep-instagram-post` still succeeds (it only writes the queue JSON) — the failure is silent until someone tries to actually publish.
 - **`ngrok` URLs are ephemeral.** Every local restart requires updating `INSTAGRAM_PUBLIC_BASE_URL` and re-verifying the image is reachable before publishing; stale URLs produce Graph API fetch failures on Instagram's side, not this repo's.
+- **A cover image can be wired into `meta()` and never rendered on the page.** The Dextego article (`app/routes/dextego-10-things-ai-sales-coaching.tsx`, PR #43) defined `const hero = "/dextego1.png"` and used it in `og:image`/`twitter:image`/`linkedin:image` only — no `<img>` in the JSX body, so the article shipped with no visible hero image despite passing typecheck and looking complete in the meta tags. Fixed 2026-08-25 by adding `docs/agent-guides/style-guide.md` §7 "Render it in the article body, not just meta tags," with the required `<img>` snippet placed right after `<header>`.
 
 ## Open questions
 
