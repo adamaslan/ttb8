@@ -142,7 +142,7 @@ export default function Art2({ loaderData }: { loaderData: { dailyArticle: Retur
             <div className="rounded-full bg-blue-500 p-1 text-sm font-bold tracking-tight text-white">
               AI Sales
             </div>
-            <img className="m-2 w-full max-w-full rounded-2xl object-cover" style={{ aspectRatio: "16 / 9" }} src={dextego1} alt="Dextego AI sales coaching" />
+            <img className="m-2 h-auto max-w-full rounded-2xl" src={dextego1} alt="Dextego AI sales coaching" />
             <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
               10 Things You Need to Know About Dextego: The Future of AI Sales Coaching
             </h2>
