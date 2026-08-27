@@ -29,7 +29,7 @@
   {
     "slug": "vscode-bug-github-dev-token-stealing-one-click",
     "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
-    "og_description": "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to sta",
+    "og_description": "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to stay safe.",
     "image": "/vscode-bug-github-dev-token-stealing-one-click.jpg",
     "keywords": [
       "GitHub OAuth token theft",

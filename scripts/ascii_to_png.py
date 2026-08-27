@@ -33,7 +33,7 @@ def ascii_to_png(ascii_file: str, output_png: str, char_width: int = 12, char_he
     # Try to use a monospace font; fall back to default
     try:
         font = ImageFont.truetype("/System/Library/Fonts/Courier.dfont", size=14)
-    except:
+    except OSError:
         font = ImageFont.load_default()
 
     # Text colors (bright, 8-bit palette)

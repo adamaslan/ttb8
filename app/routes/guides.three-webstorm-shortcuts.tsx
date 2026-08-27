@@ -72,7 +72,7 @@ export default function ThreeWebstormShortcutsGuide() {
           <section id="step-1" className="scroll-mt-24 bg-gray-950 rounded-xl border border-gray-800 p-6">
             <h2 className="text-xs font-semibold text-cyan-500 uppercase tracking-wide mb-4">Step 1 — Speed Search</h2>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Press Shift + Up and then type the name of any file you want to find
+              Press Shift twice (double-tap the Shift key) and then type the name of any file you want to find
               in WebStorm. You will see a list of suggestions. Press Enter to
               select an item. This also gets you to the navigation bar so you can clear up the file tree for a more zen like experience.
             </p>

@@ -15,17 +15,17 @@ const AUTHOR = "Adam Timur Aslan";
 export const meta: MetaFunction = () => {
     return [
         { title: TITLE },
-        { property: "og:image", content: hero },
+        { property: "og:image", content: `https://tastytechbytes.com${hero}` },
         { property: "og:title", content: TITLE },
         { property: "og:description", content: DESC },
         { property: "og:type", content: "article" },
         { property: "twitter:card", content: "summary_large_image" },
         { property: "twitter:title", content: TITLE },
         { property: "twitter:description", content: DESC },
-        { property: "twitter:image", content: hero },
+        { property: "twitter:image", content: `https://tastytechbytes.com${hero}` },
         { property: "linkedin:title", content: TITLE },
         { property: "linkedin:description", content: DESC },
-        { property: "linkedin:image", content: hero },
+        { property: "linkedin:image", content: `https://tastytechbytes.com${hero}` },
         { property: "keywords", content: "GitHub OAuth token theft, VSCode security vulnerability, Jupyter notebook attack, synthetic keyboard events exploit, developer security risks, GitHub.dev vulnerability" },
     ];
 };
@@ -115,7 +115,7 @@ const VscodeBugArticle = () => {
                         To protect against this vulnerability, developers should avoid opening untrusted Jupyter notebooks in <a href="https://github.dev" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">github.dev</a>. If a notebook must be reviewed, it’s safer to clone the repository and open it in a local environment like VS Code or Jupyter Lab. Additionally, users should review and audit installed browser extensions regularly, removing any that are unnecessary or suspicious.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-sm">
-                        GitHub has not yet released a patch for this vulnerability, but users can mitigate the risk by disabling synthetic keyboard events in their browser settings or using content security policies to restrict extension installations. For teams looking to enhance their security posture, integrating tools like <a href="https://www.cloudflare.com/products/feature-flags/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">Cloudflare’s feature flags</a> can help manage risks in cloud-based workflows. Developers should also stay informed about updates from GitHub and apply them promptly once available.
+                        Microsoft mitigated this vulnerability on the service side as of June 2026. Current best practices for developers: avoid opening untrusted Jupyter notebooks in github.dev, audit browser extensions regularly, and use content security policies to restrict extension installations. For teams looking to enhance their security posture, integrating tools like <a href="https://www.cloudflare.com/products/feature-flags/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">Cloudflare’s feature flags</a> can help manage risks in cloud-based workflows. Developers should stay informed about security updates from GitHub and apply them promptly.
                     </p>
                 </section>
 
@@ -136,7 +136,7 @@ const VscodeBugArticle = () => {
                         Conclusion
                     </h2>
                     <p className="text-gray-300 leading-relaxed text-sm">
-                        The discovery of a 1-click GitHub token theft vulnerability in <a href="https://github.dev" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">github.dev</a> is a stark reminder of the security risks lurking in browser-based development tools. By exploiting synthetic keyboard events in malicious Jupyter notebooks, attackers can silently install extensions and steal OAuth tokens, putting repositories and sensitive data at risk. While GitHub works on a fix, developers must take proactive steps to protect themselves, such as avoiding untrusted notebooks and auditing browser extensions.
+                        The GitHub token theft vulnerability in <a href="https://github.dev" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">github.dev</a> demonstrated a critical security risk in browser-based development tools. The vulnerability exploited synthetic keyboard events in malicious Jupyter notebooks to silently install extensions and steal OAuth tokens. Microsoft mitigated this on the service side in June 2026. Developers should remain vigilant: avoid untrusted notebooks, audit browser extensions regularly, and follow security best practices in cloud-based development workflows.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-sm">
                         This incident also highlights the need for greater scrutiny of cloud-based development environments. As tools like <a href="https://github.dev" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">github.dev</a> become more popular, their security must evolve to match the threats they face. Developers should prioritize security in their workflows and demand better protections from the platforms they rely on. For now, caution is the best defense against this and similar exploits.

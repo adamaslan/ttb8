@@ -16,17 +16,17 @@ const AUTHOR = "Adam Timur Aslan";
 export const meta: MetaFunction = () => {
   return [
     { title: TITLE },
-    { property: "og:image", content: hero },
+    { property: "og:image", content: `https://tastytechbytes.com${hero}` },
     { property: "og:title", content: TITLE },
     { property: "og:description", content: DESC },
     { property: "og:type", content: "article" },
     { property: "twitter:card", content: "summary_large_image" },
     { property: "twitter:title", content: TITLE },
     { property: "twitter:description", content: DESC },
-    { property: "twitter:image", content: hero },
+    { property: "twitter:image", content: `https://tastytechbytes.com${hero}` },
     { property: "linkedin:title", content: TITLE },
     { property: "linkedin:description", content: DESC },
-    { property: "linkedin:image", content: hero },
+    { property: "linkedin:image", content: `https://tastytechbytes.com${hero}` },
     { property: "keywords", content: "Text-to-Speech, TTS, Free TTS, NaturalReader, Voice Dream, Speak4Me, Audiobooks, Accessibility, Text to Voice" },
   ];
 };

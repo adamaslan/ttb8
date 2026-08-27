@@ -13,6 +13,7 @@ const AUTHOR = "Adam Timur Aslan";
 export const meta: MetaFunction = () => {
     return [
         { title: TITLE },
+        { name: "description", content: DESC },
         { property: "og:image", content: hero },
         { property: "og:title", content: TITLE },
         { property: "og:description", content: DESC },

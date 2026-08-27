@@ -56,6 +56,6 @@ msg3_x = (1080 - msg3_width) // 2
 draw.text((msg3_x, 650), msg3, font=font_small, fill=cyan)
 
 # Save
-dest = Path("/Users/adamaslan/code/ttb8/public/norway-ai-elementary-school-ban.png")
+dest = Path(__file__).resolve().with_name("norway-ai-elementary-school-ban.png")
 img.save(dest, "PNG")
 print(f"✓ Generated 1080x1080 Instagram-safe image: {dest}")

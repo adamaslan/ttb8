@@ -16,6 +16,7 @@ const AUTHOR = "Adam Timur Aslan";
 export const meta: MetaFunction = () => {
   return [
     { title: TITLE },
+    { name: "description", content: DESC },
     { property: "og:image", content: hero },
     { property: "og:title", content: TITLE },
     { property: "og:description", content: DESC },
@@ -62,13 +63,13 @@ const RemixPage = () => {
           <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
             Quick Start
           </h2>
-          <p className="text-gray-300 leading-relaxed text-sm">
-            <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
+          <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
 {`import dspy
 
 lm = dspy.LM('ollama_chat/llama3.2:1b', api_base='http://localhost:11434')
 dspy.configure(lm=lm)`}
-            </pre>
+          </pre>
+          <p className="text-gray-300 leading-relaxed text-sm">
             This snippet initializes a language model and configures DSPy for use.
           </p>
         </section>
@@ -77,15 +78,15 @@ dspy.configure(lm=lm)`}
           <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
             Defining a Signature
           </h2>
-          <p className="text-gray-300 leading-relaxed text-sm">
-            <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
+          <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
 {`from typing import Literal
 
 class Categorize(dspy.Signature):
     event: str = dspy.InputField()
     category: Literal['Wars and Conflicts', 'Politics'] = dspy.OutputField()
     confidence: float = dspy.OutputField()`}
-            </pre>
+          </pre>
+          <p className="text-gray-300 leading-relaxed text-sm">
             Signatures define input-output structures, making your models more intuitive.
           </p>
         </section>
@@ -94,12 +95,12 @@ class Categorize(dspy.Signature):
           <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-1">
             Calling the Module
           </h2>
-          <p className="text-gray-300 leading-relaxed text-sm">
-            <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
+          <pre className="bg-gray-900 text-gray-300 p-4 rounded-lg overflow-x-auto text-xs font-mono">
 {`classify = dspy.Predict(Categorize)
 classification = classify(event="[YOUR HISTORIC EVENT]")
 print(classification)`}
-            </pre>
+          </pre>
+          <p className="text-gray-300 leading-relaxed text-sm">
             Use the <span className="text-gray-100">Predict</span> module to classify events with ease.
           </p>
         </section>
