@@ -1,3 +1,4 @@
+import React from 'react';
 import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 
@@ -19,25 +20,20 @@ const ASCII_ART = `
 `;
 
 const TITLE = "Lore – Open Source Version Control Built for Massive Scale";
+const DESC = "Epic Games released Lore, a next-generation open source version control system built to handle massive codebases and large binary assets at the same time.";
 const DATE = "June 2026";
 const SLUG = "lore-open-source-version-control-scalability";
+const CATEGORY = "Dev Tools";
+const AUTHOR = "Adam Timur Aslan";
 const LORE_URL = "https://lore.org";
 const HN_URL = "https://news.ycombinator.com/item?id=48571081";
 
 export const meta: MetaFunction = () => {
   return [
     { title: TITLE },
-    {
-      name: "description",
-      content:
-        "Epic Games released Lore, a next-generation open source version control system built to handle massive codebases and large binary assets at the same time.",
-    },
+    { name: "description", content: DESC },
     { property: "og:title", content: TITLE },
-    {
-      property: "og:description",
-      content:
-        "Lore is a next-gen open source VCS from Epic Games, designed for teams that combine code with giant binary assets like game art, audio, and video.",
-    },
+    { property: "og:description", content: DESC },
   ];
 };
 
@@ -51,54 +47,58 @@ const bodyParagraphs = [
 
 export default function LoreVersionControl() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10 font-mono text-gray-900">
-      <div className="mb-2 inline-block rounded-full bg-blue-500 px-3 py-1 text-sm font-bold text-white">
-        Software
-      </div>
+    <div className="min-h-screen bg-black text-gray-100">
+      <header className="bg-black border-b border-gray-800 py-6">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <span className="rounded-full bg-red-600 px-3 py-1 text-sm font-bold text-white">
+            {CATEGORY}
+          </span>
+          <h1 className="text-3xl font-bold text-green-400 mt-3">{TITLE}</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            {DATE} · by <span className="text-gray-300">{AUTHOR}</span>
+          </p>
+          <p className="mt-4 flex items-start gap-2 font-mono text-xs sm:text-sm text-green-400/90 tracking-tight">
+            <span className="text-green-500 font-bold shrink-0">▸</span>
+            Next-generation version control from Epic Games, built for massive scale.
+          </p>
+        </div>
+      </header>
 
-      <pre className="my-6 overflow-x-auto rounded bg-gray-900 p-4 text-xs text-green-400">
-        {ASCII_ART}
-      </pre>
+      <main className="container mx-auto px-4 py-8 space-y-8 max-w-3xl">
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <pre className="overflow-x-auto rounded bg-black p-4 text-xs text-green-400 font-mono border border-gray-800">
+            {ASCII_ART}
+          </pre>
+        </section>
 
-      <h1 className="mb-2 text-3xl font-bold leading-tight">{TITLE}</h1>
-      <p className="mb-8 text-sm text-gray-500">{DATE}</p>
-
-      <div className="space-y-5 leading-relaxed">
         {bodyParagraphs.map((p, i) => (
-          <p key={i}>{p}</p>
+          <section key={i} className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+            <p className="text-gray-300 leading-relaxed text-sm">{p}</p>
+          </section>
         ))}
-      </div>
 
-      <div className="mt-10 space-y-2 border-t pt-6 text-sm text-gray-500">
-        <p>
-          Source:{" "}
-          <a
-            href={LORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            lore.org
-          </a>
-        </p>
-        <p>
-          Discussion:{" "}
-          <a
-            href={HN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            Hacker News thread (848+ points)
-          </a>
-        </p>
-      </div>
+        <section className="bg-gray-950 rounded-xl border border-gray-800 p-6 space-y-4">
+          <h2 className="text-xs font-semibold text-green-500 uppercase tracking-wide mb-3">
+            Resources
+          </h2>
+          <p className="text-gray-300 leading-relaxed text-sm">
+            Source: <a href={LORE_URL} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">lore.org</a>
+          </p>
+          <p className="text-gray-300 leading-relaxed text-sm">
+            Discussion: <a href={HN_URL} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">Hacker News thread (848+ points)</a>
+          </p>
+        </section>
 
-      <div className="mt-10">
-        <Link to="/" className="text-sm text-blue-600 underline">
-          ← Back to Home
-        </Link>
-      </div>
+        <p className="text-center">
+          <Link to="/" className="text-green-400 hover:underline text-sm">
+            ← Back to Home
+          </Link>
+        </p>
+      </main>
+
+      <footer className="bg-black border-t border-gray-800 py-4 text-center text-xs text-gray-600">
+        {CATEGORY} · {SLUG} · TastyTechBytes
+      </footer>
     </div>
   );
 }

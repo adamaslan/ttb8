@@ -10,34 +10,10 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
-      title: "How a Solo Dev Built a 1990s FPS Cat Game Entirely by Hand",
-      description: "Discover how one developer built Catlantean 3D, a retro FPS cat game with 256 colors and handcrafted art, using only Blender, Aseprite, and procedural technique",
-      link: "/how-solo-dev-built-1990s-fps-cat-game-entirely-by-hand",
-      image: "/how-solo-dev-built-1990s-fps-cat-game-entirely-by-hand.jpg"
-    },
-    {
       title: "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
       description: "Discover how a solo developer built Catlantean 3D, a 1990s-style FPS with 256 colors and software raycasting, entirely by hand.",
       link: "/how-one-dev-built-catlantean-3d-by-hand",
       image: "/how-one-dev-built-catlantean-3d-by-hand.jpg"
-    },
-    {
-      title: "The Handcrafted Magic Behind Catlantean 3D: A 1990s FPS Built Without AI",
-      description: "Discover how one developer built Catlantean 3D, a 1990s-style FPS with handcrafted art and software raycasting\u2014without a single line of AI generation.",
-      link: "/handcrafted-magic-behind-catlantean-3d-no-ai",
-      image: "/handcrafted-magic-behind-catlantean-3d-no-ai.jpg"
-    },
-    {
-      title: "How a Solo Dev Built a 1990s FPS Cat Game Without AI",
-      description: "Discover how one developer created Catlantean 3D, a retro FPS cat game with 256 colors and software raycasting, entirely by hand.",
-      link: "/how-solo-dev-built-1990s-fps-cat-game-without-ai",
-      image: "/how-solo-dev-built-1990s-fps-cat-game-without-ai.jpg"
-    },
-    {
-      title: "SnapState: Keep Your AI Agents from Losing Their Workflow Memory",
-      description: "Learn how SnapState helps AI agents retain workflow state between sessions, ensuring continuity and reliability in your applications.",
-      link: "/snapstate-persistent-state-ai-agents-workflow-memory",
-      image: "/snapstate-persistent-state-ai-agents-workflow-memory.jpg"
     },
     {
       title: "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
@@ -46,39 +22,15 @@ export default function AiArticles() {
       image: "/snapstate-persistent-state-for-ai-agents.jpg"
     },
     {
-      title: "How VSCode\u2019s GitHub.dev Bug Lets Attackers Steal OAuth Tokens in One Click",
-      description: "A critical vulnerability in GitHub\u2019s browser-based VSCode editor (github.dev) allows attackers to steal OAuth tokens with just one click. Learn how it works and how to protect your accounts.",
-      link: "/vscode-github-dev-oauth-token-stealing-one-click-v2",
-      image: "/vscode-github-dev-oauth-token-stealing-one-click-v2.jpg"
-    },
-    {
-      title: "How VSCode\u2019s GitHub.dev Bug Lets Attackers Steal OAuth Tokens in One Click",
-      description: "Discover how a VSCode bug in GitHub.dev allowed attackers to steal OAuth tokens with a single click, exposing developer accounts to risk.",
-      link: "/vscode-github-dev-oauth-token-stealing-one-click",
-      image: "/vscode-github-dev-oauth-token-stealing-one-click.jpg"
-    },
-    {
       title: "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
       description: "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to stay safe.",
       link: "/vscode-bug-github-dev-token-stealing-one-click",
       image: "/vscode-bug-github-dev-token-stealing-one-click.jpg"
     },
     {
-      title: "How Robinhood\u2019s AI Agent Trading Lets Developers Automate Stock Trades with MCP",
-      description: "Robinhood\u2019s Agentic Trading lets AI agents execute stock trades via MCP with safety guardrails. Learn how developers can integrate Claude, Cursor, and more.",
-      link: "/robinhood-ai-agent-trading-mcp-developers",
-      image: "/robinhood-ai-agent-trading-mcp-developers.jpg"
-    },
-    {
-      title: "Robinhood\u2019s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-      description: "Robinhood\u2019s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing.",
-      link: "/robinhood-agentic-trading-ai-agents-market-access",
-      image: "/robinhood-agentic-trading-ai-agents-market-access.jpg"
-    },
-    {
       title: "Robinhood\u2019s Agentic Trading: AI Agents Get Direct Market Access",
       description: "Robinhood\u2019s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI purchases.",
-      link: "/robinhood-agentic-trading-ai-agents-get-market-access",
+      link: "/robinhood-agentic-trading",
       image: "/robinhood-agentic-trading-ai-agents-get-market-access.jpg"
     },
     {
@@ -86,18 +38,6 @@ export default function AiArticles() {
       description: "Last.fm has officially gone independent. Discover what this means for your account, data, and the platform\u2019s future as a standalone company.",
       link: "/lastfm-goes-independent-what-developers-need-to-know",
       image: "/lastfm-goes-independent-what-developers-need-to-know.jpg"
-    },
-    {
-      title: "Cloudflare Flagship 3.0: Effortless Feature Flags with Zero Redeployments",
-      description: "Cloudflare Flagship 3.0 simplifies feature flag management with zero-code targeting rules and percentage-based rollouts, eliminating redeployments.",
-      link: "/cloudflare-flagship-3-zero-redeployments",
-      image: "/cloudflare-flagship-3-zero-redeployments.jpg"
-    },
-    {
-      title: "Cloudflare Flagship 2.0: Zero-Code Feature Flags for Faster Deployments",
-      description: "Cloudflare Flagship 2.0 simplifies feature flag management with targeting rules and percentage-based rollouts, eliminating code redeployment for faster releases",
-      link: "/cloudflare-flagship-2-zero-code-feature-flags",
-      image: "/cloudflare-flagship-2-zero-code-feature-flags.jpg"
     },
     {
       title: "Cloudflare Flagship: The Developer\u2019s Secret Weapon for Effortless Feature Flags",
@@ -236,12 +176,6 @@ export default function AiArticles() {
       description: "Dive into a collection of bizarre and fascinating facts from the internet, guaranteed to surprise and entertain.",
       link: "/weirdinternetfacts",
       image: "/fish1.png"
-    },
-    {
-      title: "SnapState: Keeping AI Agent Workflows Alive Between Sessions",
-      description: "Discover SnapState, a simple yet powerful tool for persisting AI agent workflow state, ensuring continuity and reliability in your AI applications.",
-      link: "/snapstate-persistent-state-for-ai-agent-workflows",
-      image: "/snapstate-persistent-state-for-ai-agent-workflows.jpg"
     },
     {
       title: "Your First Pentest: A Practical Intro Using Free Tools",

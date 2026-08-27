@@ -1,44 +1,43 @@
 [
   {
-    "slug": "robinhood-ai-agent-trading-mcp-developers",
-    "title": "How Robinhood’s AI Agent Trading Lets Developers Automate Stock Trades with MCP",
-    "og_description": "Robinhood’s Agentic Trading lets AI agents execute stock trades via MCP with safety guardrails. Learn how developers can integrate Claude, Cursor, and more.",
-    "image": "/robinhood-ai-agent-trading-mcp-developers.jpg",
+    "slug": "how-one-dev-built-catlantean-3d-by-hand",
+    "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
+    "og_description": "Discover how a solo developer built Catlantean 3D, a 1990s-style FPS with 256 colors and software raycasting, entirely by hand.",
+    "image": "/how-one-dev-built-catlantean-3d-by-hand.jpg",
     "keywords": [
-      "AI agent trading",
-      "MCP trading",
-      "Robinhood API",
-      "AI-driven investments",
-      "agentic finance",
-      "automated stock trading"
+      "retro FPS",
+      "software raycasting",
+      "Blender pre-renders",
+      "Aseprite pixel art",
+      "handcrafted game development"
     ]
   },
   {
-    "slug": "robinhood-agentic-trading-ai-agents-market-access",
-    "title": "Robinhood’s Agentic Trading: How AI Agents Are Getting Direct Market Access",
-    "og_description": "Robinhood’s Agentic Trading lets AI agents like Claude or Cursor execute stock trades automatically via MCP. Learn how this changes AI-driven investing.",
-    "image": "/robinhood-agentic-trading-ai-agents-market-access.jpg",
+    "slug": "snapstate-persistent-state-for-ai-agents",
+    "title": "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
+    "og_description": "SnapState makes AI agent workflows persistent by saving state between runs. Learn how it works and why your next AI project needs it.",
+    "image": "/snapstate-persistent-state-for-ai-agents.jpg",
     "keywords": [
-      "AI agent trading",
-      "Robinhood MCP",
-      "automated stock trading",
-      "AI-driven investing",
-      "agentic trading",
-      "financial AI"
+      "AI agents",
+      "state persistence",
+      "workflow continuity",
+      "agentic AI",
+      "LLM state management",
+      "AI tooling"
     ]
   },
   {
-    "slug": "robinhood-agentic-trading-ai-agents-get-market-access",
-    "title": "Robinhood’s Agentic Trading: AI Agents Get Direct Market Access",
-    "og_description": "Robinhood’s Agentic Trading enables AI agents like Claude and Cursor to execute stock trades via MCP, with safety guardrails and a virtual credit card for AI purchases.",
-    "image": "/robinhood-agentic-trading-ai-agents-get-market-access.jpg",
+    "slug": "vscode-bug-github-dev-token-stealing-one-click",
+    "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
+    "og_description": "A critical VSCode bug in GitHub.dev enables 1-click token theft via malicious Jupyter notebooks and synthetic keyboard events. Learn how it works and how to stay safe.",
+    "image": "/vscode-bug-github-dev-token-stealing-one-click.jpg",
     "keywords": [
-      "AI agent trading",
-      "MCP trading",
-      "Robinhood AI",
-      "automated investing",
-      "AI virtual credit card",
-      "agentic finance"
+      "GitHub OAuth token theft",
+      "VSCode security vulnerability",
+      "Jupyter notebook attack",
+      "synthetic keyboard events exploit",
+      "developer security risks",
+      "GitHub.dev vulnerability"
     ]
   },
   {
@@ -53,34 +52,6 @@
       "developer tools",
       "API",
       "music discovery"
-    ]
-  },
-  {
-    "slug": "cloudflare-flagship-3-zero-redeployments",
-    "title": "Cloudflare Flagship 3.0: Effortless Feature Flags with Zero Redeployments",
-    "og_description": "Cloudflare Flagship 3.0 simplifies feature flag management with zero-code targeting rules and percentage-based rollouts, eliminating redeployments.",
-    "image": "/cloudflare-flagship-3-zero-redeployments.jpg",
-    "keywords": [
-      "feature flags",
-      "Cloudflare Flagship",
-      "feature management",
-      "software deployment",
-      "developer tools",
-      "rollout strategies"
-    ]
-  },
-  {
-    "slug": "cloudflare-flagship-2-zero-code-feature-flags",
-    "title": "Cloudflare Flagship 2.0: Zero-Code Feature Flags for Faster Deployments",
-    "og_description": "Cloudflare Flagship 2.0 simplifies feature flag management with targeting rules and percentage-based rollouts, eliminating code redeployment for faster releases",
-    "image": "/cloudflare-flagship-2-zero-code-feature-flags.jpg",
-    "keywords": [
-      "feature flags",
-      "Cloudflare Flagship",
-      "feature management",
-      "progressive delivery",
-      "feature toggles",
-      "developer tools"
     ]
   },
   {

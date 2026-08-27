@@ -1,6 +1,6 @@
 # Wiki Index — ttb8
 
-_Last updated: 2026-08-24 (PR #43 — Dextego article + Netlify build fix)_
+_Last updated: 2026-08-25 (todo3-restyle Phase 3/4 — first guides built + legacy triage, PR#44)_
 
 **New here / cold-started? Read [[START-HERE]] first** — it routes you to the right pages for your task in the right order.
 
@@ -35,6 +35,7 @@ Cross-cutting patterns and design choices.
 
 - [[concept-article-source-of-truth-drift]] — `article-registry.json`, `app/routes.ts`, and `ai-articles.tsx` each claim to enumerate "the articles," none generated from the others
 - [[concept-gemini-review-gate]] — the manual post-commit review pass that substitutes for an automated test suite
+- [[concept-seo-duplicate-consolidation]] — the registry-as-duplicate-index problem, the 301-stub-and-archive policy, and the Cloudflare Flagship fabricated-version exception
 
 ---
 
