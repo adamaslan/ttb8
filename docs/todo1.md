@@ -23,6 +23,8 @@ audit the rest against those. Track which routes have been brought into line.
 
 ### Exemplars to standardize on
 
+- dark mode centric - 
+
 **Bordered multi-color boxes** — [pensar-continuous-pentesting-ci.tsx](app/routes/pensar-continuous-pentesting-ci.tsx)
 
 The pattern is a base card plus a semantic color-tier map:
@@ -70,27 +72,15 @@ Four separate concerns bundled in the original note; splitting them:
 
 ---
 
-## 1 — `/ai-articles` is a dead link ⚠️ CONFIRMED BUG
+## 1 — `/ai-articles` is a dead link ⚠️ RESOLVED (2026-08-25)
 
-**Verified:** [app/components/Navbar.tsx:77](app/components/Navbar.tsx#L77) links
-to `/ai-articles`. No matching entry exists in [app/routes.ts](app/routes.ts)
-(56 routes declared; `ai-articles` is not among them). It is the *only* dead
-link in the navbar — `/`, `/archive`, and `/about` all resolve.
+**Status:** `ai-articles` route was built and registered in Phase 0 of
+todo3-restyle (commit 8e25daa, 2026-08-24). The navbar link at
+[app/components/Navbar.tsx:77](app/components/Navbar.tsx#L77) now resolves
+correctly to `/ai-articles`.
 
-**Effect:** every page renders a top-level nav item that 404s.
-
-**Fix — pick one:**
-
-1. **Point it at the existing archive.** `/archive` and `/archive/:type` already
-   exist ([routes.ts](app/routes.ts)). If a type filter for AI exists, retarget
-   the link to `/archive/ai` — cheapest fix, no new route.
-2. **Build the route.** Create `app/routes/ai-articles.tsx` and register it in
-   `app/routes.ts` (both steps required — see CLAUDE.md). Filter
-   `app/article-registry.json` by keyword.
-3. **Remove the nav item.** Correct if AI isn't actually a section you want.
-
-Option 1 or 3 unblocks this today; option 2 overlaps with item 2 below and
-should be folded into it rather than done twice.
+**Verification:** `grep ai-articles app/routes.ts` confirms the route is
+registered and the 404 blocker is cleared.
 
 ---
 

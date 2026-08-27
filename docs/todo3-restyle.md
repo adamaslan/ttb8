@@ -114,7 +114,7 @@ means it needed judgment and was misclassified.
 
 ---
 
-## PHASE 3 — Guides must look different from articles — FIRST GUIDE BUILT (2026-08-25)
+## PHASE 3 — Guides must look different from articles — COMPLETE (2026-08-25)
 
 **Guide accent hue: DECIDED — cyan-400/cyan-500.** (Confirmed 2026-08-25.)
 
@@ -148,13 +148,13 @@ guides, mono/uppercase micro-headings, footer format, `max-w-3xl`.
 | Footer | `{CATEGORY} · {SLUG}` | adds `Last verified: {DATE}` — guides rot; articles don't |
 | Route | flat `/slug` | **`/guides/:slug`** — makes the type addressable |
 
-**Not started.** Build the first guide in the parent (convert
-`continuous-pentesting-ci-guide` from a 301 stub back into a real guide — the
-name is already right), sign it off, *then* delegate the rest.
+**Both guides built and deployed** (2026-08-25):
+- `/guides/continuous-pentesting-ci` (from `pensar-continuous-pentesting-ci`, cyan accent)
+- `/guides/three-webstorm-shortcuts` (promoted from Phase 4, cyan accent)
 
 ---
 
-## PHASE 4 — Triage the 28 `OTHER` routes — IN PROGRESS (2026-08-25)
+## PHASE 4 — Triage the 28 `OTHER` routes — COMPLETE (2026-08-25)
 
 Re-scanned 2026-08-25: 22 live OTHER-shell files remain (6 fewer than the
 pre-Phase-1 count of 28, since several were already archived/removed during
@@ -180,8 +180,8 @@ clean).
 2. ~~**Phase 1** — confirm cluster winners, confirm the Flagship 2.0/3.0 removal, archive + 301. Parent.~~ DONE
 3. ~~**Phase 3 decision only** — pick the guide accent hue. Parent.~~ DONE — cyan
 4. ~~**Phase 2** — delegate the article restyle. Haiku, verified in parent.~~ DONE
-5. **Phase 4 triage table** — parent; then delegate execution. NOT STARTED
-6. **Phase 3 build** — first guide in parent, rest delegated. NOT STARTED
+5. ~~**Phase 4 triage table** — parent; then delegate execution.~~ DONE
+6. ~~**Phase 3 build** — first guide in parent, rest delegated.~~ DONE
 
 Run `npm run typecheck` after every phase — no test suite exists.
 
