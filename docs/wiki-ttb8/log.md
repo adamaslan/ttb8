@@ -88,3 +88,27 @@ it), [[concept-seo-duplicate-consolidation]] (added a "related but distinct"
 section distinguishing staleness-archiving from duplicate-consolidation, and
 the guide-promotion rejections), and this log. `docs/todo3-restyle.md` is
 now fully complete (Phases 0–4).
+
+## [2026-08-27] ingest | PR #45 Nav as sections: culture / biotech / ai / finance | pages touched: 4
+
+PR #45 restructured the top nav into four content sections. `app/components/Navbar.tsx`
+now links exactly `culture / biotech / ai / finance` + About (dropped the decorative
+"AI • Articles" link and the "Archive" link). Three new flat section routes —
+`/culture`, `/biotech`, `/finance` (`routes/culture.tsx` etc.) — render a card grid
+from a new hand-written module `app/lib/section-articles.ts`; `/finance` also has a
+`loader` surfacing the daily financial-tech series (`getAllArticleCards`) and links
+`/correlations-archive` inline. The `ai` nav link reuses the existing `/ai-articles`
+route unchanged. The homepage "Daily Financial Tech Article" banner and its
+`loader`/`getLatestStaticArticle` import were removed from `_index.tsx` — that surface
+moved to `/finance`. Article→section assignment for the ~13 hand-written articles is a
+literal list in `section-articles.ts`, deliberately NOT a `article-registry.json`
+`category` field (todo1 item 2 steps 1–2 deferred).
+
+Touched [[entity-routing]] (new section-route type + a Navbar section; homepage
+banner/loader removal; new known-failure and open-question for the unverified section
+slugs), [[concept-article-source-of-truth-drift]] (`section-articles.ts` is now a 5th
+independent article enumeration; contradiction notice recount), created
+[[decision-hand-maintained-section-taxonomy]] (why the hand-written map over the
+registry `category` field), and [[index]] (new decision entry + last-updated). The
+PR also carried the earlier `ai-articles.tsx` batch (12 previously-missing route
+entries) and `docs/todo1.md` status edits, already covered by prior context.

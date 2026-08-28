@@ -74,28 +74,32 @@ const Nav: React.FC = () => {
         }`}
       >
         <Link
+          to="/culture"
+          className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-pink-400 hover:to-fuchsia-400 hover:bg-clip-text hover:text-transparent group"
+        >
+          <span className="inline-block group-hover:animate-bounce">🎛️</span>
+          <span className="inline-block ml-1">culture</span>
+        </Link>
+        <Link
+          to="/biotech"
+          className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-emerald-400 hover:to-teal-400 hover:bg-clip-text hover:text-transparent group"
+        >
+          <span className="inline-block group-hover:animate-bounce">🧬</span>
+          <span className="inline-block ml-1">biotech</span>
+        </Link>
+        <Link
           to="/ai-articles"
           className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:bg-clip-text hover:text-transparent group"
         >
           <span className="inline-block group-hover:animate-bounce">🤖</span>
-          <span className="inline-block transform group-hover:rotate-1 ml-1">A</span>
-          <span className="inline-block transform group-hover:-rotate-1">I</span>
-          <span className="mx-1">•</span>
-          <span className="inline-block transform group-hover:rotate-2">A</span>
-          <span className="inline-block transform group-hover:-rotate-1">r</span>
-          <span className="inline-block transform group-hover:rotate-1">t</span>
-          <span className="inline-block transform group-hover:-rotate-2">i</span>
-          <span className="inline-block transform group-hover:rotate-1">c</span>
-          <span className="inline-block transform group-hover:-rotate-1">l</span>
-          <span className="inline-block transform group-hover:rotate-2">e</span>
-          <span className="inline-block transform group-hover:-rotate-1">s</span>
+          <span className="inline-block ml-1">ai</span>
         </Link>
         <Link
-          to="/archive"
-          className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-400 hover:bg-clip-text hover:text-transparent group"
+          to="/finance"
+          className="py-2 px-4 text-center text-current text-lg font-bold transform hover:scale-110 hover:rotate-1 transition-all duration-200 hover:bg-gradient-to-r hover:from-blue-400 hover:to-indigo-400 hover:bg-clip-text hover:text-transparent group"
         >
-          <span className="inline-block group-hover:animate-pulse">📚</span>
-          <span className="inline-block ml-1">Archive</span>
+          <span className="inline-block group-hover:animate-pulse">📈</span>
+          <span className="inline-block ml-1">finance</span>
         </Link>
         <Link
           to="/about"

@@ -59,5 +59,8 @@ export default [index("routes/_index.tsx"),
   route("guides/three-webstorm-shortcuts", "./routes/guides.three-webstorm-shortcuts.tsx"),
   route("three-essential-webstorm-shortcuts", "./routes/three-essential-webstorm-shortcuts.tsx"),
   route("ai-articles", "./routes/ai-articles.tsx"),
+  route("culture", "./routes/culture.tsx"),
+  route("biotech", "./routes/biotech.tsx"),
+  route("finance", "./routes/finance.tsx"),
   route("smartbidder-diageo", "./routes/smartbidder-diageo.tsx"),
 ] satisfies RouteConfig;

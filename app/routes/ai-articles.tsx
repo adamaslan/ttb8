@@ -189,6 +189,66 @@ export default function AiArticles() {
       link: "/three-essential-webstorm-shortcuts",
       image: "/webstorm1.jpeg"
     },
+    {
+      title: "10 Essential PyTorch Elements in RNNs",
+      description: "Explore the 10 core PyTorch elements that simplify RNN development, from embeddings and recurrent layers to optimizers and automatic differentiation.",
+      link: "/10-essential-pytorch-elements-in-a-rnn",
+      image: "/10_pytorch_elements_in_rnn.png"
+    },
+    {
+      title: "10 Essential PyTorch Elements in LSTMs",
+      description: "Explore the 10 core PyTorch elements that simplify LSTM development, designed to capture long-term dependencies and overcome vanishing gradients in sequential data.",
+      link: "/10_Essential_PyTorch_Elements_in_LSTMs",
+      image: "/10_pytorch_elements_in_lstm.png"
+    },
+    {
+      title: "10 Ways to Optimize SQLite Before Migrating to PostgreSQL",
+      description: "Prepare your SQLite database for migration to PostgreSQL with these 10 essential optimization steps, from schema normalization to data type fixes.",
+      link: "/10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL",
+      image: "/sqlite_to_postgres.png"
+    },
+    {
+      title: "Introduction to Neural Networks",
+      description: "Explore the foundation of modern machine learning systems, from neural network architecture to PyTorch implementation and practical applications in the Databricks ecosystem.",
+      link: "/introduction-to-neural-networks",
+      image: "/intro_to_Neural_Network.png"
+    },
+    {
+      title: "Pensar Apex: Continuous Adversarial Pentesting Built Into Your CI Pipeline",
+      description: "Pensar Apex deploys autonomous AI agents to attack your running application like a skilled human pentester, chaining vulnerabilities and surfacing runtime business logic flaws that static scanners miss.",
+      link: "/guides/continuous-pentesting-ci",
+      image: "/first-pentest-free-tools-intro.jpg"
+    },
+    {
+      title: "The Three WebStorm Shortcuts to Rule Them All",
+      description: "Boost your productivity with these three essential WebStorm shortcuts every developer should know.",
+      link: "/guides/three-webstorm-shortcuts",
+      image: "/webstorm1.jpeg"
+    },
+    {
+      title: "IBM's Anderon Quantum Foundry Is a $2B Bet on 300mm Qubits",
+      description: "IBM and the U.S. Department of Commerce are turning quantum computing into a manufacturing problem with Anderon, a standalone quantum foundry backed by a proposed $1B CHIPS award plus $1B from IBM.",
+      link: "/ibm-anderon-quantum-foundry",
+      image: "/ibm-anderon-quantum-foundry.png"
+    },
+    {
+      title: "Lore – Open Source Version Control Built for Massive Scale",
+      description: "Epic Games released Lore, a next-generation open source version control system built to handle massive codebases and large binary assets at the same time.",
+      link: "/lore-open-source-version-control-scalability",
+      image: "/lore-open-source-version-control-scalability.png"
+    },
+    {
+      title: "40 Step Geometry Nodes Pipeline: Clarity, Flexibility, and Precision",
+      description: "A procedural 40 step Geometry Nodes workflow in Blender that breaks flyer creation into modular phases, exposing inputs for rapid prototyping, reusability, and precise renders.",
+      link: "/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor",
+      image: "/pipeline1.png"
+    },
+    {
+      title: "Take a Walk Before You Brainstorm: The Study Behind the Old Advice",
+      description: "The old advice to take a walk when you're stuck has real lab backing. A 2014 Stanford study found walking measurably boosts divergent creative thinking in real time and shortly afterward.",
+      link: "/walking-boosts-creativity-study",
+      image: "/walking-boosts-creativity-study.png"
+    },
   ];
 
   return (

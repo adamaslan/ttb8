@@ -1,6 +1,6 @@
 # Wiki Index — ttb8
 
-_Last updated: 2026-08-25 (todo3-restyle Phase 3/4 — first guides built + legacy triage, PR#44)_
+_Last updated: 2026-08-27 (nav as sections culture/biotech/ai/finance, PR#45)_
 
 **New here / cold-started? Read [[START-HERE]] first** — it routes you to the right pages for your task in the right order.
 
@@ -21,7 +21,7 @@ Catalog is organized by page type. This wiki is ttb8-only; the Instagram publish
 
 One page per named component. These are the hubs — everything links to entities.
 
-- [[entity-routing]] — `app/routes.ts`; the explicit route registry, the single most load-bearing file in the repo
+- [[entity-routing]] — `app/routes.ts`; the explicit route registry, the single most load-bearing file in the repo. Now also documents the `/culture` `/biotech` `/finance` section routes and the four-item navbar (PR#45)
 - [[entity-article-pipeline]] — article → Imagen cover image → Instagram post, spanning this repo and the external `social-pr-autopilot` backend; see also `docs/agent-guides/ideal-article-instagram-workflow.md` for the full outlet map (live vs. proposed-only channels)
 - [[entity-auth]] — Clerk (`@clerk/react-router`); client `<SignedIn>`/`<SignedOut>` vs. server `getAuth()` gating
 - [[entity-deployment]] — Netlify SSR build pipeline (`react-router build` → `netlify/prepare.js` → Functions) + CSP headers
@@ -41,7 +41,7 @@ Cross-cutting patterns and design choices.
 
 ## Decisions
 
-_None recorded yet. Add a `decision-*.md` page the next time a deliberate architectural choice is made or surfaced in a PR._
+- [[decision-hand-maintained-section-taxonomy]] — PR#45 backed the four-section navbar with a hand-written `app/lib/section-articles.ts` and deferred the `article-registry.json` `category` field (todo1 item 2 steps 1–2)
 
 ---
 

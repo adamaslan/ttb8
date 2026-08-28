@@ -1,7 +1,7 @@
 # todo1 — site coherence & structure
 
 Working notes for TastyTechBytes. Each item states the goal, what's verified on
-disk today, and the concrete next step. Verified against the repo 2026-08-25.
+disk today, and the concrete next step. Verified against the repo 2026-08-27.
 
 Canonical reference for anything visual: [docs/agent-guides/style-guide.md](docs/agent-guides/style-guide.md).
 Don't re-specify style rules here — point at that file and note the delta.
@@ -84,29 +84,64 @@ registered and the 404 blocker is cleared.
 
 ---
 
-## 2 — Nav as sections: culture / biotech / ai / finance
+## 2 — Nav as sections: culture / biotech / ai / finance ✅ SHIPPED (2026-08-27)
 
 **Goal:** replace the flat nav with four content sections.
 
+**Status:** navbar now links `culture / biotech / ai / finance` + About
+([app/components/Navbar.tsx](app/components/Navbar.tsx)). Three new section
+pages: [app/routes/culture.tsx](app/routes/culture.tsx),
+[app/routes/biotech.tsx](app/routes/biotech.tsx),
+[app/routes/finance.tsx](app/routes/finance.tsx) — `ai` reuses the existing
+`/ai-articles`. The homepage "Daily Financial Tech Article" banner was removed;
+those daily articles now live on `/finance` (which also links the full
+`/correlations-archive`). Article→section assignment for hand-written articles
+is a hand-maintained map in
+[app/lib/section-articles.ts](app/lib/section-articles.ts) — NOT a registry
+`category` field yet (steps 1–2 below are still the "proper" version if the map
+grows unwieldy). `npm run typecheck` passes.
+
+**Delta / follow-ups:**
+- Section membership is currently a literal list in `section-articles.ts`, not
+  driven off `article-registry.json`. Revisit steps 1–2 if it needs to scale.
+- The culture/biotech/finance mapping was a judgment call — see
+  `section-articles.ts` and adjust freely.
+
 **Blocker — the registry can't support this yet.** `app/article-registry.json`
-holds **17 entries** against **56 declared routes**. There is no `category` or
-`section` field on any entry — only `slug`, `title`, `og_description`, `image`,
-`keywords`. So "show me all biotech articles" is currently unanswerable without
-inventing a taxonomy from free-text keywords.
+holds **6 entries** against **56 declared routes** (corrected 2026-08-27 —
+earlier count of 17 was stale). There is no `category` or `section` field on
+any entry — only `slug`, `title`, `og_description`, `image`, `keywords`. So
+"show me all biotech articles" is currently unanswerable without inventing a
+taxonomy from free-text keywords.
+
+**Dedup status: already done.** Checked 2026-08-27 — the near-duplicate slug
+clusters flagged below are *not* live duplicates. In each cluster all but one
+file are 5-line `redirect()` loaders returning a 301 to the canonical route
+(e.g. `vscode-github-dev-oauth-token-stealing-one-click.tsx` → 301 →
+`/vscode-bug-github-dev-token-stealing-one-click`). The one exception is the
+four `robinhood-agentic-trading*` routes — three are 301 stubs to
+`/robinhood-agentic-trading`, and per user direction (2026-08-27) this overlap
+is intentional and left as-is. No further dedup work needed before
+categorizing.
+
+**`ai-articles.tsx` listing gap: fixed 2026-08-27.** The hardcoded list only
+surfaced 30 of the 56 routes. Added the 12 missing real-content routes (10
+PyTorch/SQLite/neural-net articles, the two `/guides/*` pieces, IBM Anderon
+quantum foundry, Lore version control, the Blender geometry-nodes guide, and
+the walking/creativity study). Verified referenced images exist in `public/`
+and `npm run typecheck` passes.
 
 **Prerequisite work, in order:**
 
-1. **Reconcile registry ↔ routes.** 39 routes have no registry entry. Decide
-   whether the registry is meant to be complete (then backfill) or is
-   deliberately a subset (then document what qualifies).
+1. **Reconcile registry ↔ routes.** 50 routes have no registry entry (of 56
+   total, minus dedup redirects). Decide whether the registry is meant to be
+   complete (then backfill) or is deliberately a subset (then document what
+   qualifies). *Not started.*
 2. **Add a `category` field** to the registry schema, constrained to the four
    section names. Style guide §10 already defines category badge colors — reuse
-   those names rather than minting new ones.
-3. **Then** build section routes and rework the navbar. Note that several
-   near-duplicate slugs exist (four `robinhood-agentic-trading*`, four
-   `catlantean`/`1990s-fps` variants, three `vscode-github-dev-oauth*`, three
-   `snapstate*`) — categorizing before deduping means categorizing the same
-   article three times. **Dedupe first.**
+   those names rather than minting new ones. *Not started.*
+3. **Then** build section routes and rework the navbar. *Not started —
+   unblocked now that dedup is confirmed done.*
 
 ---
 
