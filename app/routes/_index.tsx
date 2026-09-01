@@ -30,6 +30,7 @@ import continuousPentestingCiGuide from "/continuous-pentesting-ci-guide.png";
 import firstPentestFreeToolsIntro from "/first-pentest-free-tools-intro.jpg";
 import ibmAnderonQuantumFoundry from "/ibm-anderon-quantum-foundry.png";
 import walkingBoostsCreativityStudy from "/walking-boosts-creativity-study.png";
+import sexysignal1 from "/sexysignal1.jpeg";
 
 export const meta = () => {
   return [{ property: "og:image", content: box }];
@@ -215,6 +216,18 @@ export default function Art2() {
               <img className="m-2 h-auto max-w-full rounded-2xl" src={walkingBoostsCreativityStudy} alt="Take a Walk Before You Brainstorm: The Study Behind the Old Advice" />
               <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 Take a Walk Before You Brainstorm: The Study Behind the Old Advice
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/ipi-signal-report">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={sexysignal1} alt="IPI Signal Report: Hourly Technical Confluence & Bollinger Scan" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                IPI Signal Report: Hourly Technical Confluence & Bollinger Scan
               </h2>
             </article>
           </Link>

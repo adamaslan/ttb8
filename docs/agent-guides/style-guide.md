@@ -292,7 +292,11 @@ ASCII art: every article gets a unique ASCII diagram in the header that visually
 
 Every article needs a cover image for the homepage card and Instagram.
 
-### Generation
+### Rule: Ask First Before Generating Images
+- **Always ask the user first** before generating any new images. The user often has existing images prepared in `ttb8/images/` or elsewhere.
+- Only proceed with image generation if the user confirms or requests a new image to be generated.
+
+### Generation (If Requested)
 
 Use Imagen API (`imagen-4.0-fast-generate-001`, $0.02/image). See [article-to-instagram-pipeline.md](./article-to-instagram-pipeline.md) for the full curl command.
 
