@@ -140,5 +140,12 @@ export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
       link: "/smartbidder-diageo",
       image: "/old-comp1.jpeg",
     },
+    {
+      title: "IPI Signal Report: Hourly Technical Confluence & Bollinger Scan",
+      description:
+        "Technical scan of Intrepid Potash ($IPI) across 189 hourly bars. Evaluates high-confidence bullish confluence (+11.0 net), Bollinger band ride, CMF buying pressure, and Ichimoku cloud support.",
+      link: "/ipi-signal-report",
+      image: "/sexysignal1.jpeg",
+    },
   ],
 };

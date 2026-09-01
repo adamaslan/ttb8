@@ -22,6 +22,7 @@ public/         # Static assets
 - **Deploy**: Netlify (SSR via Netlify Functions, `publish = "build/client"`)
 - **No test suite** — run `npm run typecheck` before committing
 - **Adding a route**: create `app/routes/<slug>.tsx` AND register it in [app/routes.ts](app/routes.ts)
+- **Images — Ask First**: NEVER auto-generate images. Always ask the user first if they already have an image or want to specify an existing path.
 - **3D components** use `@react-three/fiber` + `@react-three/drei`; keep them in `app/components/`
 
 ## Commands
