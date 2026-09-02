@@ -261,12 +261,12 @@ const DextegoArticle = () => {
                         more gravitas, Dextego provides the tools to take your sales career—or your
                         sales organization—to the next level. Visit{" "}
                         <a
-                            href="https://dextego.com/esther/"
+                            href="https://dextego.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-400 hover:underline"
                         >
-                            dextego.com/esther
+                            dextego.com/
                         </a>{" "}
                         to see the AI coach in action.
                     </p>
