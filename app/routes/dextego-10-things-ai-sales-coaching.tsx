@@ -266,7 +266,7 @@ const DextegoArticle = () => {
                             rel="noopener noreferrer"
                             className="text-green-400 hover:underline"
                         >
-                            dextego.com/
+                            dextego.com
                         </a>{" "}
                         to see the AI coach in action.
                     </p>
