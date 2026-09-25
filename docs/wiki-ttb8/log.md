@@ -112,3 +112,5 @@ independent article enumeration; contradiction notice recount), created
 registry `category` field), and [[index]] (new decision entry + last-updated). The
 PR also carried the earlier `ai-articles.tsx` batch (12 previously-missing route
 entries) and `docs/todo1.md` status edits, already covered by prior context.
+
+## [2026-09-25] ingest | docs: CodeRabbit pacing guide + mark F3 done | pages touched: 2
