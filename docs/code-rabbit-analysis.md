@@ -468,3 +468,63 @@ Every source file, even the ones replaced with 301 stubs, is copied to `file-arc
 ---
 
 **Live:** https://github.com/adamaslan/ttb8/pull/44
+
+---
+
+## Guide: Pacing CodeRabbit Around Rate Limits
+
+PR #44's review was **"auto-retriggered after rate-limit"** (see the CodeRabbit
+Review section above) — CodeRabbit's own auto-review didn't fire on the first
+push and needed a delayed retry. That's the pattern this guide generalizes.
+
+### Recognizing a rate limit vs. a stuck review
+
+| Symptom | Likely cause |
+|---|---|
+| PR comment explicitly says review was skipped / rate-limited | Confirmed rate limit — wait it out (below) |
+| No review posted within ~5 min of push, no explicit message | Probably still processing — don't re-trigger yet |
+| No review and no message after ~30-45 min | Possibly genuinely stuck — one manual retry is reasonable |
+| Several pushes in a row only produced one review (or none) | Trigger volume outpaced the review cadence — batch pushes going forward |
+
+### Optimization strategy
+
+1. **Batch commits before pushing.** Each push to an open PR is a trigger.
+   Amend/squash local fixup commits and push once per logical unit of work,
+   rather than after every small edit — this is the single biggest lever on
+   trigger volume.
+2. **Wait out the cooldown instead of re-triggering immediately.** If a review
+   looks skipped or delayed, **wait ~30 minutes** before pushing again or
+   posting `@coderabbitai review`. Re-triggering inside the cooldown window
+   just queues another request behind the same limit and can push the delay
+   out further rather than shortening it.
+3. **Use `@coderabbitai review` deliberately, not reflexively.** Reserve the
+   manual comment-trigger for: (a) after the 30-min wait, when the automatic
+   review still hasn't fired, or (b) after a genuinely new batch of changes —
+   not after every individual commit.
+4. **Prefer `@coderabbitai full review` for a large batched push** rather than
+   relying on incremental auto-review for it — a full review after a batch is
+   one trigger instead of several incremental ones.
+5. **Check for an in-flight review before re-requesting.** If the PR's last
+   CodeRabbit comment is a "reviewing…" / in-progress marker, don't stack a
+   duplicate trigger on top of it — that's the same mistake as re-triggering
+   inside the cooldown.
+6. **Reduce trigger volume at the config level** (`.coderabbit.yaml`):
+   - `path_filters` to exclude generated/vendored files from scope
+   - `reviews.auto_review.drafts: false` to skip draft PRs entirely
+   - Narrow `path_instructions` per file type to keep each pass fast, per the
+     `homebase/.coderabbit.yaml` example in this project's sibling repos
+7. **Log the delay instead of treating it as a failure.** When a rate limit
+   pushes a review out, note it in the PR/doc trail (as this document does)
+   so a future session reads the gap as expected behavior, not a broken
+   integration.
+
+### When it's genuinely stuck (not rate-limited)
+
+If 30-45+ minutes pass with **no review and no rate-limit message**, check the
+CodeRabbit GitHub App / dashboard status before assuming a retry will fix it.
+At that point, one `@coderabbitai review` retry is reasonable — still don't
+spam it; each additional comment is itself a trigger.
+
+This guide is packaged as the global `coderabbit-pacing` skill
+(`~/.claude/skills/coderabbit-pacing/SKILL.md`) so the same pacing rules apply
+across every repo that uses CodeRabbit, not just ttb8.
