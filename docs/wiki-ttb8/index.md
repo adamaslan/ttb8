@@ -34,6 +34,7 @@ One page per named component. These are the hubs — everything links to entitie
 Cross-cutting patterns and design choices.
 
 - [[concept-article-source-of-truth-drift]] — `article-registry.json`, `app/routes.ts`, and `ai-articles.tsx` each claim to enumerate "the articles," none generated from the others
+- [[concept-coderabbit-pacing]] — why re-triggering a delayed CodeRabbit review lengthens the delay, and how to batch pushes instead
 - [[concept-gemini-review-gate]] — the manual post-commit review pass that substitutes for an automated test suite
 - [[concept-seo-duplicate-consolidation]] — the registry-as-duplicate-index problem, the 301-stub-and-archive policy, and the Cloudflare Flagship fabricated-version exception
 

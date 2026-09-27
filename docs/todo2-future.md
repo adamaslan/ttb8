@@ -107,6 +107,8 @@ an engineering one. Do not build until there are ads to remove.
 
 ## F3 — Roll the dark-mode reformat across remaining articles
 
+> **✅ DONE (verified 2026-09-25):** 0 of the route files in `app/routes/` still use `bg-gray-100` or `bg-blue-600`. The scope notes below are kept as history.
+
 **Reference implementation:**
 [dextego-10-things-ai-sales-coaching.tsx](../app/routes/dextego-10-things-ai-sales-coaching.tsx)
 — reformatted, typechecks clean. Establishes: black shell, badge/title header,
