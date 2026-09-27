@@ -114,3 +114,5 @@ PR also carried the earlier `ai-articles.tsx` batch (12 previously-missing route
 entries) and `docs/todo1.md` status edits, already covered by prior context.
 
 ## [2026-09-25] ingest | docs: CodeRabbit pacing guide + mark F3 done | pages touched: 2
+
+## [2026-09-27] ingest | PR #49 feat: add financial disclaimer + terms of service pages | pages touched: 3
