@@ -1,5 +1,6 @@
 import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
+import { FinancialDisclaimer } from "~/components/FinancialDisclaimer";
 
 const ASCII_ART = `
 ╔══════════════════════════════════════════════════╗
@@ -390,6 +391,8 @@ export default function SndkSignalReport() {
             repo.
           </p>
         </section>
+
+        <FinancialDisclaimer />
 
         <p className="pt-4 text-center text-sm">
           <Link to="/" className="text-green-400 hover:underline">
