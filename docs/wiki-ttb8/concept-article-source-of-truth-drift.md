@@ -2,7 +2,7 @@
 date: 2026-08-27
 type: concept
 tags: [drift, articles, data-modeling, registry, sections]
-sources: [app/article-registry.json, app/routes.ts, app/routes/ai-articles.tsx, app/routes/_index.tsx, app/lib/section-articles.ts, PR#43, PR#45]
+sources: [app/article-registry.json, app/routes.ts, app/routes/ai-articles.tsx, app/routes/_index.tsx, app/lib/section-articles.ts, PR#43, PR#45, PR#48]
 ---
 
 # concept: Article Source-of-Truth Drift
@@ -18,6 +18,8 @@ Three separate places claim to enumerate "the articles on this site," and none o
 As of the 2026-08-24 ingest (PR #43), adding the Dextego article required manually touching two of these three places (`routes.ts` and `ai-articles.tsx`) plus the homepage grid in `_index.tsx` — a fourth list, separate from all three — and `article-registry.json` was **not** updated as part of that change, meaning it's already stale relative to the live site.
 
 **PR #45 added a fifth enumerator: `app/lib/section-articles.ts`** — a hand-maintained `Record<"culture"|"biotech"|"finance", SectionArticle[]>` backing the new nav section pages. It re-copies title/description/link/image for ~13 articles that also live in `ai-articles.tsx` and/or `_index.tsx`, with no shared source. Its `link` slugs aren't checked against `app/routes.ts`. The `ai` section deliberately reuses `/ai-articles` instead of getting a `section-articles.ts` key, so the split is: three sections in the new file, one section still the old standalone component. See [[decision-hand-maintained-section-taxonomy]] for why a `category` field on `article-registry.json` (todo1 item 2 steps 1–2) was deferred.
+
+**PR #48 (SNDK signal report) shows the cost concretely.** Adding one article — a `signals-app`-generated finance/signal-scan page, following the IPI signal report precedent — required three separate hand-edits: a `route()` line in `app/routes.ts`, a new object appended to the `finance` array in `app/lib/section-articles.ts`, and a new `<Link>` card block in `app/routes/_index.tsx`'s Part 3 grid. `article-registry.json` and `ai-articles.tsx` were left untouched (same choice as PR#43 and the original IPI article) — neither is treated as load-bearing in practice, reinforcing that they're closer to vestigial than authoritative.
 
 ## Where it appears
 
