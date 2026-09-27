@@ -147,5 +147,12 @@ export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
       link: "/ipi-signal-report",
       image: "/sexysignal1.jpeg",
     },
+    {
+      title: "SNDK Signal Report: MA Stairstep Meets a Stretched 200SMA",
+      description:
+        "Technical scan of SanDisk ($SNDK) across 251 daily bars. A STRONG-strength MA alignment vs. a 60.5% extension above the 200SMA, plus a 5-40 day backtest answering whether to buy, wait, or skip it.",
+      link: "/sndk-signal-report",
+      image: "/sexysignal1.jpeg",
+    },
   ],
 };

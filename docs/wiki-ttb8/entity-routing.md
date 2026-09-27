@@ -2,7 +2,7 @@
 date: 2026-08-27
 type: entity
 tags: [routing, react-router, articles, guides, sections, navbar]
-sources: [app/routes.ts, app/routes/_index.tsx, app/components/Navbar.tsx, docs/agent-guides/routing.md, .claude/skills/add-article-route.md, PR#43, PR#44, PR#45, PR#49, docs/todo1.md, docs/todo3-restyle.md]
+sources: [app/routes.ts, app/routes/_index.tsx, app/components/Navbar.tsx, docs/agent-guides/routing.md, .claude/skills/add-article-route.md, PR#43, PR#44, PR#45, PR#48, PR#49, docs/todo1.md, docs/todo3-restyle.md]
 ---
 
 # entity: Routing
@@ -36,7 +36,7 @@ Separately, the **homepage grid** (`app/routes/_index.tsx`) has its own list of 
 
 - **Silent 404 on forgotten registration.** The most common mistake per the source docs: create `app/routes/<slug>.tsx`, forget the `route()` line, ship, and the URL 404s with no build-time error (TypeScript doesn't catch it because the file is just unused).
 - **`ai-articles.tsx`'s hardcoded article list can still drift from `article-registry.json`** even though the route is now registered — registering the route (Phase 0) did not wire the two lists together. See [[concept-article-source-of-truth-drift]].
-- **`app/lib/section-articles.ts` (PR#45) adds a 5th independent article enumeration.** Its `link` values are hand-copied slugs; nothing checks them against `app/routes.ts`, so a section card can point at a 404 if a slug is mistyped or a route is later renamed. See [[concept-article-source-of-truth-drift]] and [[decision-hand-maintained-section-taxonomy]].
+- **`app/lib/section-articles.ts` (PR#45) adds a 5th independent article enumeration.** Its `link` values are hand-copied slugs; nothing checks them against `app/routes.ts`, so a section card can point at a 404 if a slug is mistyped or a route is later renamed. See [[concept-article-source-of-truth-drift]] and [[decision-hand-maintained-section-taxonomy]]. PR#48 (SNDK signal report) is a second concrete instance of the pattern first seen with IPI: the same slug had to be hand-added in three places — `app/routes.ts`, `app/lib/section-articles.ts`'s `finance` array, and the homepage's Part 3 grid in `_index.tsx` — with no check tying them together.
 
 ## Open questions
 
