@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import cask from "/cask1.jpeg";
 import type { MetaFunction } from "react-router";
+import { FinancialDisclaimer } from "~/components/FinancialDisclaimer";
 
 const TITLE = "3 Ways to Invest in Whiskey";
 const DESC = "Discover three proven strategies for investing in whiskey: rare bottle collections, barrel investments through BlockApps, and fractional cask ownership via Vino Vest.";
@@ -91,6 +92,8 @@ export default function HowToInvestInWhisky() {
             For more information on Block Apps visit their website <a href="https://blockapps.net/" className="text-green-400 hover:underline">here</a>.
           </p>
         </section>
+
+        <FinancialDisclaimer />
 
         <p className="text-center">
           <Link to="/" className="text-green-400 hover:underline text-sm">

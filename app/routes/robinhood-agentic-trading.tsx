@@ -1,5 +1,6 @@
 import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
+import { FinancialDisclaimer } from "~/components/FinancialDisclaimer";
 
 const ASCII_ART = `
 ╔══════════════════════════════════════════════════════════╗
@@ -308,6 +309,8 @@ export default function RobinhoodAgenticTradingPage() {
           <span>Sources: </span>
           TechCrunch, CNBC, Bloomberg, Reuters, The Verge, WSJ — May 27, 2026
         </section>
+
+        <FinancialDisclaimer />
 
         <p className="text-center">
           <Link to="/" className="text-green-400 hover:underline text-sm">← Back to Home</Link>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import type { MetaFunction } from 'react-router';
+import { FinancialDisclaimer } from '~/components/FinancialDisclaimer';
 
 const hero = "/letters1.png";
 
@@ -94,6 +95,8 @@ const Article12 = () => {
                         In essence, Diageo's investment in AI-driven media buying tools like Smartbidder reflects a broader industry trend towards data-driven decision-making. By harnessing the power of AI, Diageo aims to optimize its marketing efforts, strengthen its brand presence, and ultimately drive sales across its extensive portfolio, from Guinness to Tanqueray. This strategic use of technology positions Diageo to remain competitive in the evolving landscape of the global beverage alcohol market.
                     </p>
                 </section>
+
+                <FinancialDisclaimer />
 
                 <p className="text-center">
                     <Link to="/" className="text-green-400 hover:underline text-sm">

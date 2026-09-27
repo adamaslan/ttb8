@@ -1,6 +1,7 @@
 
 import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
+import { FinancialDisclaimer } from "~/components/FinancialDisclaimer";
 
 const ASCII_ART = `
 ╔══════════════════════════════════════════════════════════╗
@@ -5444,6 +5445,8 @@ export default function IpiSignalReportPage() {
             </div>
           </div>
         </section>
+
+        <FinancialDisclaimer />
 
         {/* Back to Home Link */}
         <p className="text-center pt-4">
