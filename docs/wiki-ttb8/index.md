@@ -1,6 +1,6 @@
 # Wiki Index — ttb8
 
-_Last updated: 2026-08-27 (nav as sections culture/biotech/ai/finance, PR#45)_
+_Last updated: 2026-09-27 (financial disclaimer + terms of service pages, PR#49)_
 
 **New here / cold-started? Read [[START-HERE]] first** — it routes you to the right pages for your task in the right order.
 
@@ -26,6 +26,7 @@ One page per named component. These are the hubs — everything links to entitie
 - [[entity-auth]] — Clerk (`@clerk/react-router`); client `<SignedIn>`/`<SignedOut>` vs. server `getAuth()` gating
 - [[entity-deployment]] — Netlify SSR build pipeline (`react-router build` → `netlify/prepare.js` → Functions) + CSP headers
 - [[entity-three-components]] — `Cloud.tsx`/`chicken.tsx`; client-only Three.js components and SSR hydration risk
+- [[entity-legal-compliance]] — `/disclaimer`, `/terms-of-service`, and the shared `<FinancialDisclaimer />` component wired into every existing finance/investing page (PR#49)
 
 ---
 

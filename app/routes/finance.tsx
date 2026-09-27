@@ -1,6 +1,7 @@
 import { Link, data } from "react-router";
 import type { LoaderFunctionArgs, MetaFunction } from "react-router";
 import { SectionGrid } from "~/components/SectionGrid";
+import { FinancialDisclaimer } from "~/components/FinancialDisclaimer";
 import { SECTION_ARTICLES, SECTION_META } from "~/lib/section-articles";
 import { getAllArticleCards } from "~/lib/articles-static.server";
 import type { ArticleCard } from "~/types/article";
@@ -95,6 +96,10 @@ export default function FinanceSection({
         </h2>
         <SectionGrid articles={SECTION_ARTICLES.finance} />
       </section>
+
+      <div className="mt-12">
+        <FinancialDisclaimer />
+      </div>
     </div>
   );
 }
