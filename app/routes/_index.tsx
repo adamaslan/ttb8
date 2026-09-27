@@ -232,6 +232,18 @@ export default function Art2() {
             </article>
           </Link>
 
+          <Link to="/sndk-signal-report">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <img className="m-2 h-auto max-w-full rounded-2xl" src={sexysignal1} alt="SNDK Signal Report: MA Stairstep Meets a Stretched 200SMA" />
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                SNDK Signal Report: MA Stairstep Meets a Stretched 200SMA
+              </h2>
+            </article>
+          </Link>
+
           <Link to="/ibm-anderon-quantum-foundry">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
               <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
