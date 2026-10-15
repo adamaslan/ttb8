@@ -208,6 +208,20 @@ export default function Art2() {
       {/* Part 3 — Long feed + ad rail. See docs/agent-guides/homepage-grid.md */}
       <section className="mt-6 lg:grid lg:grid-cols-[1fr_300px] lg:gap-6">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Link to="/jev-typed-decisions-for-software">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
+                AI News
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                STATE → JUDGMENT → ACTION
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Jev Turns Ambiguous Input Into Decisions Your Code Can Use
+              </h2>
+            </article>
+          </Link>
+
           <Link to="/walking-boosts-creativity-study">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
               <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">

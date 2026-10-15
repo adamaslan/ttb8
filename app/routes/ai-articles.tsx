@@ -10,6 +10,12 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "Jev Turns Ambiguous Input Into Decisions Your Code Can Use",
+      description: "TypeSafe's Jev returns typed choices, scores, and probabilities. See where that interface helps and how to test it.",
+      link: "/jev-typed-decisions-for-software",
+      image: "",
+    },
+    {
       title: "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
       description: "Discover how a solo developer built Catlantean 3D, a 1990s-style FPS with 256 colors and software raycasting, entirely by hand.",
       link: "/how-one-dev-built-catlantean-3d-by-hand",
@@ -258,11 +264,13 @@ export default function AiArticles() {
         {articles.map((article) => (
           <div key={article.link} className="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:bg-gray-800">
             <a href={article.link} className="block">
-              <img
-                src={article.image}
-                alt={article.title}
-                className="w-full h-48 object-cover"
-              />
+              {article.image ? (
+                <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
+              ) : (
+                <div aria-hidden="true" className="flex h-48 items-center justify-center border-b border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-center text-sm text-green-300">
+                  STATE → JUDGMENT → ACTION
+                </div>
+              )}
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2 text-white">{article.title}</h2>
                 <p className="text-gray-400 text-sm">{article.description}</p>
