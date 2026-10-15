@@ -2,7 +2,7 @@
 date: 2026-08-24
 type: entity
 tags: [articles, instagram, imagen, automation, publishing]
-sources: [docs/agent-guides/article-to-instagram-pipeline.md, docs/agent-guides/instagram-robustness.md, instagram-queue/, docs/agent-guides/style-guide.md, PR#43]
+sources: [docs/agent-guides/article-to-instagram-pipeline.md, docs/agent-guides/instagram-robustness.md, instagram-queue/, docs/agent-guides/style-guide.md, PR#43, PR#50]
 ---
 
 # entity: Article → Image → Instagram Pipeline
@@ -24,6 +24,8 @@ app/routes/<slug>.tsx (hand-written article)
 - **Caption authoring**: the `/prep-instagram-post <slug>` slash command reads the article and writes a caption following a fixed structure — hook (≤150 chars) → 2–3 sentences on why it matters → CTA ("Link in bio for the full guide.") → separator → 8–15 hashtags always starting with `#tastytechbytes`.
 - **Publish job format**: `instagram-queue/<slug>.json` — `{channel, caption, image_path, title, slug, date, dry_run}`. `dry_run: true` by default; must be manually flipped to `false` before a live post.
 - **Publish backend**: `social-pr-autopilot` (FastAPI/uvicorn, **not in this repo** — per user memory, run in mamba env `auto1`) exposes `POST /publish`, which consumes the queue JSON and calls the Instagram Graph API. Requires `INSTAGRAM_ACCESS_TOKEN`, `INSTAGRAM_BUSINESS_ACCOUNT_ID`, `INSTAGRAM_PUBLIC_BASE_URL` env vars — the image must be reachable at `$INSTAGRAM_PUBLIC_BASE_URL/<slug>.png`, which locally means running `ngrok http 3000` and pointing the base URL at the ngrok tunnel.
+
+PR#50's Jev article is a web article only. Its route and listing cards use a CSS diagram; there is no cover image or Instagram queue job. A later Instagram publish would need a suitable image before the queue and backend steps above could run.
 
 ## Where used
 
