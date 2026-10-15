@@ -2,7 +2,7 @@
 date: 2026-08-27
 type: entity
 tags: [routing, react-router, articles, guides, sections, navbar]
-sources: [app/routes.ts, app/routes/_index.tsx, app/components/Navbar.tsx, docs/agent-guides/routing.md, .claude/skills/add-article-route.md, PR#43, PR#44, PR#45, PR#48, PR#49, docs/todo1.md, docs/todo3-restyle.md]
+sources: [app/routes.ts, app/routes/_index.tsx, app/components/Navbar.tsx, docs/agent-guides/routing.md, .claude/skills/add-article-route.md, PR#43, PR#44, PR#45, PR#48, PR#49, PR#50, docs/todo1.md, docs/todo3-restyle.md]
 ---
 
 # entity: Routing
@@ -19,6 +19,8 @@ sources: [app/routes.ts, app/routes/_index.tsx, app/components/Navbar.tsx, docs/
 - **Section index routes** `/culture`, `/biotech`, `/finance` are a new flat route type as of PR#45 (todo1 item 2). Each is a single hand-written route file (`routes/culture.tsx` etc.) that renders a card grid from `app/lib/section-articles.ts`. `/finance` additionally has a `loader` pulling `getAllArticleCards()` (the daily financial-tech series). The fourth nav section, `ai`, is **not** a new route — the navbar `ai` link points at the pre-existing `/ai-articles`.
 
 Separately, the **homepage grid** (`app/routes/_index.tsx`) has its own list of article cards — registering a route does not automatically add a homepage card, and vice versa. See `docs/agent-guides/homepage-grid.md` for the card-authoring pattern. As of PR#45 the homepage no longer has a "Daily Financial Tech Article" banner or a `loader` — that daily-series surface moved to `/finance`.
+
+**PR#50's Jev article** follows this hand-registration path: `app/routes/jev-typed-decisions-for-software.tsx` is registered in `app/routes.ts`, then linked separately from the homepage feed and `/ai-articles` list. The homepage and index cards use CSS text artwork because this article has no cover image asset.
 
 **PR#49 added two standalone legal routes**, `/disclaimer` and `/terms-of-service` — plain content pages, not homepage-carded, not part of `article-registry.json` or any `section-articles.ts` enumeration. They're linked from a shared `<FinancialDisclaimer />` component embedded on financial pages rather than from the navbar or homepage grid. See [[entity-legal-compliance]].
 
