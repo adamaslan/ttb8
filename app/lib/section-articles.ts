@@ -45,7 +45,7 @@ export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
   culture: [
     {
       title: "LUFS and the End of the Loudness War: What Streaming Normalization Changed",
-      description: "Streaming platforms normalize playback loudness, which removed the incentive to master everything at maximum smash. Dynamics are back on the menu.",
+      description: "Streaming platforms normalize playback loudness, which diminished - but did not abolish - the incentive to master at maximum smash. Where normalization applies, dynamics are back on the menu.",
       link: "/loudness-normalization-lufs-streaming",
       image: "",
     },
