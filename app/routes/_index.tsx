@@ -208,6 +208,706 @@ export default function Art2() {
       {/* Part 3 — Long feed + ad rail. See docs/agent-guides/homepage-grid.md */}
       <section className="mt-6 lg:grid lg:grid-cols-[1fr_300px] lg:gap-6">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Link to="/structured-outputs-json-schema-llms">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                TEXT → SCHEMA → VALID JSON
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/prompt-caching-llm-cost-guide">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                PREFIX STORED → COST PER CALL DROPS
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Prompt Caching: The Cheapest LLM Optimization You Are Not Using
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/llm-evals-that-catch-regressions">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                PROMPT v2 vs v1 → 300 CASES → DIFF
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                LLM Evals That Actually Catch Regressions
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/rerankers-vs-bigger-embeddings">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                RETRIEVE 100 → RERANK → TOP 5
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                When a Reranker Beats a Bigger Embedding Model
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/function-calling-production-patterns">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                MODEL PICKS fn → ARGS VALIDATED → RUN
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Function Calling Patterns That Hold Up in Production
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/local-llms-apple-silicon-mlx">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                7B @ 4-BIT ≈ 4 GB → RUNS LOCAL
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Running Local LLMs on Apple Silicon: What Fits in Memory and What It Costs You
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/chunking-strategies-that-matter">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                DOCS → SPLIT ON STRUCTURE → INDEX
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                RAG Chunking: The Few Decisions That Actually Matter
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/llm-input-output-guardrails">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                INPUT ✓ → MODEL → OUTPUT ✓ → ACT
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Guardrails for LLM Apps: Validate Inputs, Outputs, and Everything Between
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/model-router-small-models-first">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                EASY → SMALL $ · HARD → BIG $$$
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The Model Router Pattern: Send Easy Queries to Small Models
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/streaming-tokens-cancellation-ux">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                TOKEN… TOKEN… ✋ CANCEL → CLEANUP
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Streaming LLM Responses: Cancellation, Timeouts, and Partial State
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/agent-loops-stop-conditions">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                LOOP: BUDGET -1 … STOP ✓
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Agent Loops Need Stop Conditions, Not Hopes
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/context-window-budgeting">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                200K WINDOW: EVERY TOKEN EARNS ITS SLOT
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Context Window Budgeting: What Actually Deserves Tokens
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/llm-exact-vs-semantic-caching">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                Q == Q? HIT · Q ≈ Q? MAYBE HIT
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Exact vs Semantic Caching for LLM Calls
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/fine-tuning-vs-prompting-decision">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-400 p-1 text-sm font-bold tracking-tight text-white">
+                AI Tips / Tutorials
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                PROMPT → FEW-SHOT → RAG → TUNE?
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Fine-Tuning vs Prompting: A Decision Framework That Respects Your Time
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/sqlite-wal-mode-concurrent-readers">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                READERS ∥ WRITER (ONE AT A TIME)
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                SQLite WAL Mode: Concurrent Readers Without a Server
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/postgres-index-types-when-each-wins">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                QUERY SHAPE → INDEX TYPE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                B-Tree, GIN, BRIN: Picking Postgres Indexes by Query Shape
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/http-caching-headers-practical-guide">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                200 (DISK CACHE) · 304 · REVALIDATE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Cache-Control and ETags: A Practical Guide to HTTP Caching
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/dependency-pinning-supply-chain-hygiene">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                1 DIRECT DEP → 400 TRANSITIVE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Lockfiles Are Not Enough: Dependency Hygiene for Supply-Chain Attacks
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/typescript-satisfies-as-const">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                VALUE STAYS PRECISE · TYPE CHECKS
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                TypeScript's satisfies and as const: Keep the Inference, Add the Check
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/rate-limiting-token-bucket-leaky">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                TOKENS +r/s · BURST ≤ B
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Token Bucket vs Leaky Bucket: Rate Limiting Explained With Code
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/queues-vs-event-logs">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                CONSUME-DELETE vs APPEND-REPLAY
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Queues vs Event Logs: Choosing the Backbone of Async Work
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/idempotency-keys-safe-retries">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                SAME KEY → SAME RESULT, ONCE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Idempotency Keys: How to Retry API Calls Safely
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/graceful-shutdown-node-servers">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                SIGTERM → STOP ACCEPT → DRAIN → EXIT
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Graceful Shutdown in Node: Stop Dropping In-Flight Requests
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/expand-contract-migrations">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-red-900 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                ADD → DUAL-WRITE → BACKFILL → DROP
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Zero-Downtime Migrations: The Expand-and-Contract Pattern
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/where-http-status-codes-came-from">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Random
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                200 OK · 404 · 418 ☕ · 451
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Where HTTP Status Codes Came From
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/dial-up-handshake-sound-decoded">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Random
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                ♪ V.8 BLEEP → V.34 HISS → ONLINE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                What the Dial-Up Handshake Sound Actually Meant
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/unicode-box-drawing-history">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Random
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                ╔═╗ CP437 → UTF-8 → YOUR CLI
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Box-Drawing Characters: From Code Page 437 to Your Terminal
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/gorillas-bas-learn-to-code">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-400 p-1 text-sm font-bold tracking-tight text-white">
+                Code World - Random
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                GORILLA → BANANA ↗ θ,v → BOOM
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Gorillas.bas: The Artillery Game That Taught a Generation to Read Code
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/bollinger-bandwidth-squeeze-scanner">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                BANDWIDTH AT 6-MO LOW → WATCH
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Scanning for Bollinger Bandwidth Squeezes
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/why-correlations-break-regime-shifts">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                CALM: ρ=0.2 · CRISIS: ρ=0.9
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Why Correlations Break Exactly When You Need Them
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/backtest-overfitting-deflated-sharpe">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                1,000 TESTS → BEST SR ≈ LUCK
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Your Backtest Is Overfit: Deflated Sharpe and the Multiple-Testing Problem
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/limit-order-book-mechanics">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                BID 99.98 ×400 │ ASK 99.99 ×250
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Reading a Limit Order Book: Microstructure for Builders
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/etf-creation-redemption-mechanics">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                NAV ≠ PRICE → ARB LOOP → CONVERGE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                ETF Creation and Redemption: The Mechanism Behind the Price
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/vix-term-structure-contango">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                CURVE ↑ CONTANGO = RENT ON INSURANCE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                VIX Futures Term Structure: Contango, Backwardation, and What It Costs
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/post-earnings-announcement-drift">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                SURPRISE +5% → DRIFT FOR ~60 DAYS
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Post-Earnings Announcement Drift: The Slow-Motion Anomaly
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/regime-filter-200-day-average">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-green-700 p-1 text-sm font-bold tracking-tight text-white">
+                Finance - Signal Scan
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                PRICE &gt; 200DMA? RISK ON : ASIDE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The 200-Day Regime Filter: What It Does and Does Not Protect Against
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/threejs-instancedmesh-performance">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+                3D World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                10,000 OBJECTS → 1 DRAW CALL
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                InstancedMesh in Three.js: 10,000 Objects Without the Frame Drop
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/blender-geometry-nodes-scatter-fields">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+                3D World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                MESH → POINTS ×DENSITY → INSTANCES
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Blender Geometry Nodes: Scatter Fields Without the Node Soup
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/webgl-draw-call-batching">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+                3D World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                2,000 CALLS @60FPS? MERGE → 40
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Draw Calls: The WebGL Performance Budget Nobody Graphs
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/projection-matrices-visual-guide">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+                3D World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                FRUSTUM ──► SQUASH ──► CUBE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Projection Matrices, Explained With Boxes Instead of Greek
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/gltf-optimization-draco-ktx2">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-purple-900 p-1 text-sm font-bold tracking-tight text-white">
+                3D World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                12MB GLB → 1.9MB, SAME LOOK
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Shipping glTF: Draco, KTX2, and the Size Budget
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/dns-over-https-what-changes">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                LOOKUP ENCRYPTED · SNI STILL VISIBLE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                DoH and DoT: What Encrypted DNS Hides and What It Doesn't
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/backup-3-2-1-rule-modern-version">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                3 COPIES · 2 MEDIA · 1 OFFSITE · + HISTORY
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                The 3-2-1 Backup Rule, Updated for Sync-and-Delete Mistakes
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/whiskey-proof-terms-cask-strength">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-yellow-500 p-1 text-sm font-bold tracking-tight text-white">
+                Drink World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                BARREL 62% → BOTTLE 40-46% (OR NOT)
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Cask Strength, Barrel Proof, and the Proof Terms That Matter
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/coffee-extraction-tds-brew-ratio">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-yellow-500 p-1 text-sm font-bold tracking-tight text-white">
+                Drink World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                1:16 RATIO · 18-22% EXTRACTION
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Coffee Extraction: TDS, Brew Ratios, and Why Sour Means Under
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/natural-wine-faults-or-style">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-yellow-500 p-1 text-sm font-bold tracking-tight text-white">
+                Drink World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                FARMYARD? BAND-AID? MOUSE? FAULT.
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Natural Wine: Brett, Mouse, and the Line Between Fault and Style
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/loudness-normalization-lufs-streaming">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                NORMALIZED → DYNAMICS SURVIVE
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                LUFS and the End of the Loudness War: What Streaming Normalization Changed
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/field-recording-city-soundscapes">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                32-BIT FLOAT → NO CONVERTER CLIPPING
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Field Recording in the City: Gear, Gain Staging, and Usable Chaos
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/modular-synth-signal-flow-programmers">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                VCO → VCF → VCA · CV = DATA
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Modular Synths for Programmers: It's All Signal Flow
+              </h2>
+            </article>
+          </Link>
+
+          <Link to="/crispr-off-target-detection-computation">
+            <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
+              <div className="rounded-full bg-pink-600 p-1 text-sm font-bold tracking-tight text-white">
+                Tech World - Helpful
+              </div>
+              <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
+                GUIDE 20nt → SCAN GENOME → RANK RISK
+              </div>
+              <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
+                Finding CRISPR Off-Targets With Computation First
+              </h2>
+            </article>
+          </Link>
+
           <Link to="/jev-typed-decisions-for-software">
             <article className="transition-all duration-300 ease-in-out hover:bg-gray-900">
               <div className="rounded-full bg-red-600 p-1 text-sm font-bold tracking-tight text-white">
