@@ -10,6 +10,90 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production",
+      description: "Free-form prompting for JSON breaks in boring, expensive ways. Schema-constrained decoding changes the failure mode from silent corruption to a visible retry.",
+      link: "/structured-outputs-json-schema-llms",
+      image: "",
+    },
+    {
+      title: "Prompt Caching: The Cheapest LLM Optimization You Are Not Using",
+      description: "If your requests share a long static prefix, you are paying full price to reprocess it every call. Prompt caching turns that prefix into a stored asset.",
+      link: "/prompt-caching-llm-cost-guide",
+      image: "",
+    },
+    {
+      title: "LLM Evals That Actually Catch Regressions",
+      description: "A prompt change that looks better in three examples can be worse on three hundred. Evals only earn their keep when they measure the behavior you ship.",
+      link: "/llm-evals-that-catch-regressions",
+      image: "",
+    },
+    {
+      title: "When a Reranker Beats a Bigger Embedding Model",
+      description: "Retrieval quality is a two-stage problem. Upgrading the first stage is expensive; adding a second stage is usually the better dollar.",
+      link: "/rerankers-vs-bigger-embeddings",
+      image: "",
+    },
+    {
+      title: "Function Calling Patterns That Hold Up in Production",
+      description: "Tool use fails in production for boring reasons: ambiguous schemas, unvalidated arguments, and no plan for the call that should never have happened. All three are fixable.",
+      link: "/function-calling-production-patterns",
+      image: "",
+    },
+    {
+      title: "Running Local LLMs on Apple Silicon: What Fits in Memory and What It Costs You",
+      description: "Unified memory makes a laptop a plausible inference box. The constraints are real: memory bandwidth is the speed limit, and quantization is the price of admission.",
+      link: "/local-llms-apple-silicon-mlx",
+      image: "",
+    },
+    {
+      title: "RAG Chunking: The Few Decisions That Actually Matter",
+      description: "Chunk size arguments consume teams for weeks. Retrieval quality usually hinges on three decisions: respecting structure, preserving context, and matching chunk size to the question.",
+      link: "/chunking-strategies-that-matter",
+      image: "",
+    },
+    {
+      title: "Guardrails for LLM Apps: Validate Inputs, Outputs, and Everything Between",
+      description: "The model is one component in a pipeline. Every boundary of that pipeline needs a check, because each side of the model can fail independently.",
+      link: "/llm-input-output-guardrails",
+      image: "",
+    },
+    {
+      title: "The Model Router Pattern: Send Easy Queries to Small Models",
+      description: "Most traffic is easy. Routing easy queries to cheap models and hard ones to strong models cuts cost without touching the answers users complain about.",
+      link: "/model-router-small-models-first",
+      image: "",
+    },
+    {
+      title: "Streaming LLM Responses: Cancellation, Timeouts, and Partial State",
+      description: "Streaming is easy to demo and easy to ship wrong. The hard parts are abandoning a generation cleanly, bounding wait time, and never committing half an answer.",
+      link: "/streaming-tokens-cancellation-ux",
+      image: "",
+    },
+    {
+      title: "Agent Loops Need Stop Conditions, Not Hopes",
+      description: "An agent that loops until done needs a precise definition of done, plus budgets for every way done can fail to arrive.",
+      link: "/agent-loops-stop-conditions",
+      image: "",
+    },
+    {
+      title: "Context Window Budgeting: What Actually Deserves Tokens",
+      description: "A big context window is a budget, not a landfill. What you exclude decides quality as much as what you include.",
+      link: "/context-window-budgeting",
+      image: "",
+    },
+    {
+      title: "Exact vs Semantic Caching for LLM Calls",
+      description: "Caching model output is the highest-leverage optimization in most LLM systems. The design question is what counts as the same question.",
+      link: "/llm-exact-vs-semantic-caching",
+      image: "",
+    },
+    {
+      title: "Fine-Tuning vs Prompting: A Decision Framework That Respects Your Time",
+      description: "Fine-tuning is a commitment with a maintenance tail. Prompting is iteration with a ceiling. Pick based on what is actually failing.",
+      link: "/fine-tuning-vs-prompting-decision",
+      image: "",
+    },
+    {
       title: "Jev Turns Ambiguous Input Into Decisions Your Code Can Use",
       description: "TypeSafe's Jev returns typed choices, scores, and probabilities. See where that interface helps and how to test it.",
       link: "/jev-typed-decisions-for-software",
