@@ -44,6 +44,24 @@ export const SECTION_META: Record<
 export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
   culture: [
     {
+      title: "LUFS and the End of the Loudness War: What Streaming Normalization Changed",
+      description: "Streaming platforms normalize playback loudness, which removed the incentive to master everything at maximum smash. Dynamics are back on the menu.",
+      link: "/loudness-normalization-lufs-streaming",
+      image: "",
+    },
+    {
+      title: "Field Recording in the City: Gear, Gain Staging, and Usable Chaos",
+      description: "A city is the most overdriven input you will ever record. The skill is capturing range, from subway rumble to a street performer's detail, without clipping either end.",
+      link: "/field-recording-city-soundscapes",
+      image: "",
+    },
+    {
+      title: "Modular Synths for Programmers: It's All Signal Flow",
+      description: "A modular patch is a dataflow graph with cables. Oscillators are sources, filters are map operations, envelopes are scheduled events, and the clock is the event loop.",
+      link: "/modular-synth-signal-flow-programmers",
+      image: "",
+    },
+    {
       title:
         "Last.fm’s Independence: What Developers Should Know About the Platform’s Future",
       description:
@@ -97,6 +115,12 @@ export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
   ],
   biotech: [
     {
+      title: "Finding CRISPR Off-Targets With Computation First",
+      description: "Editing the wrong locus is the failure mode. Guide design is now a search-and-score problem, and the wet lab confirms what the pipeline ranks.",
+      link: "/crispr-off-target-detection-computation",
+      image: "",
+    },
+    {
       title: "5 Ways AI Can Help Farmland Restoration",
       description:
         "Explore how artificial intelligence can play a crucial role in restoring farmlands and promoting sustainable agriculture practices.",
@@ -119,6 +143,54 @@ export const SECTION_ARTICLES: Record<SectionId, SectionArticle[]> = {
     },
   ],
   finance: [
+    {
+      title: "Scanning for Bollinger Bandwidth Squeezes",
+      description: "Compression precedes expansion. A bandwidth squeeze scan finds coiled charts systematically, if you define compression before you look for it.",
+      link: "/bollinger-bandwidth-squeeze-scanner",
+      image: "",
+    },
+    {
+      title: "Why Correlations Break Exactly When You Need Them",
+      description: "Diversification is estimated on calm data and needed in storms. The breakdown is not bad luck; it is the structure of the estimate.",
+      link: "/why-correlations-break-regime-shifts",
+      image: "",
+    },
+    {
+      title: "Your Backtest Is Overfit: Deflated Sharpe and the Multiple-Testing Problem",
+      description: "Test enough variants and one will look great by chance. The fix is not a better strategy; it is honest accounting of how many tries you spent finding it.",
+      link: "/backtest-overfitting-deflated-sharpe",
+      image: "",
+    },
+    {
+      title: "Reading a Limit Order Book: Microstructure for Builders",
+      description: "The book is the market. Price, spread, and depth are outputs of a queueing system you can model with engineering instincts.",
+      link: "/limit-order-book-mechanics",
+      image: "",
+    },
+    {
+      title: "ETF Creation and Redemption: The Mechanism Behind the Price",
+      description: "ETFs track their holdings through an arbitrage loop run by authorized participants. Understanding the loop explains premiums, discounts, and when they matter.",
+      link: "/etf-creation-redemption-mechanics",
+      image: "",
+    },
+    {
+      title: "VIX Futures Term Structure: Contango, Backwardation, and What It Costs",
+      description: "Volatility futures usually slope upward, and that slope is a carrying cost on every long-vol position. The curve shape is the trade before the trade.",
+      link: "/vix-term-structure-contango",
+      image: "",
+    },
+    {
+      title: "Post-Earnings Announcement Drift: The Slow-Motion Anomaly",
+      description: "Markets underreact to earnings surprises, then catch up over weeks. PEAD is one of the oldest, most documented anomalies in the literature.",
+      link: "/post-earnings-announcement-drift",
+      image: "",
+    },
+    {
+      title: "The 200-Day Regime Filter: What It Does and Does Not Protect Against",
+      description: "Above the 200-day, hold risk; below it, step aside. The simplest regime filter in finance works on a specific kind of pain and fails on another.",
+      link: "/regime-filter-200-day-average",
+      image: "",
+    },
     {
       title: "How To Invest In Whisky",
       description:
