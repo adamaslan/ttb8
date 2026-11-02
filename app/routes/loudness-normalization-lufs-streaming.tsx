@@ -2,7 +2,7 @@ import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 
 const TITLE = "LUFS and the End of the Loudness War: What Streaming Normalization Changed";
-const DESCRIPTION = "Streaming platforms normalize playback loudness, which removed the incentive to master everything at maximum smash. Dynamics are back on the menu.";
+const DESCRIPTION = "Streaming platforms normalize playback loudness, which diminished - but did not abolish - the incentive to master at maximum smash. Where normalization applies, dynamics are back on the menu.";
 
 const ASCII_ART = `
 ╔══════════════════════════════════════════════════════╗
