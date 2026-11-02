@@ -858,7 +858,7 @@ export default function Art2() {
                 Tech World - Helpful
               </div>
               <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
-                -14 LUFS TARGET → DYNAMICS SURVIVE
+                NORMALIZED → DYNAMICS SURVIVE
               </div>
               <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 LUFS and the End of the Loudness War: What Streaming Normalization Changed
@@ -872,7 +872,7 @@ export default function Art2() {
                 Tech World - Helpful
               </div>
               <div aria-hidden="true" className="m-2 flex h-44 items-center justify-center rounded-2xl border border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-sm text-green-300 sm:text-base">
-                32-BIT FLOAT → NO CLIP, EVER
+                32-BIT FLOAT → NO CONVERTER CLIPPING
               </div>
               <h2 className="pb-4 text-left text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 Field Recording in the City: Gear, Gain Staging, and Usable Chaos
