@@ -10,6 +10,12 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production",
+      description: "Free-form prompting for JSON breaks in boring, expensive ways. Schema-constrained decoding changes the failure mode from silent corruption to a visible retry.",
+      link: "/structured-outputs-json-schema-llms",
+      image: "",
+    },
+    {
       title: "Jev Turns Ambiguous Input Into Decisions Your Code Can Use",
       description: "TypeSafe's Jev returns typed choices, scores, and probabilities. See where that interface helps and how to test it.",
       link: "/jev-typed-decisions-for-software",
