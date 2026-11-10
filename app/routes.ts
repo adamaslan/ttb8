@@ -68,4 +68,5 @@ export default [index("routes/_index.tsx"),
   route("biotech", "./routes/biotech.tsx"),
   route("finance", "./routes/finance.tsx"),
   route("smartbidder-diageo", "./routes/smartbidder-diageo.tsx"),
+  route("structured-outputs-json-schema-llms", "./routes/structured-outputs-json-schema-llms.tsx"),
 ] satisfies RouteConfig;
