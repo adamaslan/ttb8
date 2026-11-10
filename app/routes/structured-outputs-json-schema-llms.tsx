@@ -2,7 +2,7 @@ import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
 
 const TITLE = "Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production";
-const DESCRIPTION = "Free-form prompting for JSON breaks in boring, expensive ways. Schema-constrained decoding changes the failure mode from silent corruption to a visible retry.";
+const DESCRIPTION = "Schema-constrained decoding enforces JSON shape for completed responses. It does not guarantee correct values; handle refusals and incomplete output separately.";
 
 const ASCII_ART = `
 ╔══════════════════════════════════════════════════════╗
@@ -55,14 +55,18 @@ export default function StructuredOutputsJsonSchemaLlmsArticle() {
             <pre>{`// Illustrative schema contract, not a complete SDK request
 response_format = {
   "type": "json_schema",
-  "schema": {
-    "type": "object",
-    "properties": {
-      "total_amount": {"type": "number"},
-      "currency": {"enum": ["USD", "EUR", "GBP"]},
-      "line_items": {"type": "array", "items": {"type": "object"}}
-    },
-    "required": ["total_amount", "currency"]
+  "json_schema": {
+    "name": "invoice_total",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "total_amount": {"type": "number"},
+        "currency": {"type": "string", "enum": ["USD", "EUR", "GBP"]}
+      },
+      "required": ["total_amount", "currency"],
+      "additionalProperties": false
+    }
   }
 }`}</pre>
           </div>
