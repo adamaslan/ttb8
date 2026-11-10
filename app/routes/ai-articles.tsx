@@ -10,6 +10,12 @@ export const meta: MetaFunction = () => {
 export default function AiArticles() {
   const articles = [
     {
+      title: "Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production",
+      description: "Schema-constrained decoding enforces JSON shape for completed responses. It does not guarantee correct values; handle refusals and incomplete output separately.",
+      link: "/structured-outputs-json-schema-llms",
+      image: "",
+    },
+    {
       title: "Jev Turns Ambiguous Input Into Decisions Your Code Can Use",
       description: "TypeSafe's Jev returns typed choices, scores, and probabilities. See where that interface helps and how to test it.",
       link: "/jev-typed-decisions-for-software",
@@ -268,7 +274,9 @@ export default function AiArticles() {
                 <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
               ) : (
                 <div aria-hidden="true" className="flex h-48 items-center justify-center border-b border-green-900 bg-gradient-to-br from-gray-950 to-green-950/50 px-4 font-mono text-center text-sm text-green-300">
-                  STATE → JUDGMENT → ACTION
+                  {article.link === "/structured-outputs-json-schema-llms"
+                    ? "TEXT → SCHEMA → VALID JSON"
+                    : "STATE → JUDGMENT → ACTION"}
                 </div>
               )}
               <div className="p-4">
