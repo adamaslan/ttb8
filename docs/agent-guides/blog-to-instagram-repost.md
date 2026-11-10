@@ -21,7 +21,8 @@ so it can be repeated for future articles.
 2. **Pick a fun angle.** Translate the core idea into one vivid metaphor
    the image and caption can share. For this article: the decoder as an
    enforcer — first a nightclub bouncer, then a noir detective
-   interrogating bad JSON.
+   interrogating bad JSON, then the detective became a woman with sexy
+   nerd vibes (glasses, leather jacket, circuit-board tee).
 3. **Generate the image.** Vertical 4:5 portrait (1408×1760), matching the
    angle. Keep it bold and eye-catching; avoid readable text in generated
    images (it garbles). Save the working file under
@@ -44,12 +45,14 @@ so it can be repeated for future articles.
      review.
    - v3: noir detective interrogating crumpled JSON under a red lamp —
      the version shown for approval.
+   - v4: same noir scene, but the detective is a woman with sexy nerd
+     vibes — published version.
 
 ## Assets for this post
 
-- Image (v3): `workspace/blog-ig-integration/media-generation-structured-outputs-spicy-noir-0-875fd679-f684-42fc-b19b-b3cc132c21b1.jpg`
+- Image (v4, published): `workspace/blog-ig-integration/media-generation-structured-outputs-woman-detec-0-cbf35de0-0f36-43ed-b607-3c93c6f49498.jpg`
 - Caption: `workspace/blog-ig-integration/structured-outputs-ig-caption.txt`
-- Published Instagram post: _pending approval — add URL after publish_
+- Published Instagram post: https://www.instagram.com/p/DflDFWgjuaU/
 
 ## Repeating this for the next article
 
