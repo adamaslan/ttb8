@@ -2,6 +2,17 @@ import { type RouteConfig, index, route } from "@react-router/dev/routes";
 
 export default [index("routes/_index.tsx"),
 
+  route("voice-ai-own-the-stack-not-the-subscription", "./routes/voice-private-ai-series.tsx", {id: "voice-ai-own-the-stack-not-the-subscription"}),
+  route("qwen3-tts-reference-voice-first-prototype", "./routes/voice-private-ai-series.tsx", {id: "qwen3-tts-reference-voice-first-prototype"}),
+  route("voice-ai-asr-tts-agent-pipeline", "./routes/voice-private-ai-series.tsx", {id: "voice-ai-asr-tts-agent-pipeline"}),
+  route("voice-ai-evaluation-beyond-sounds-like-me", "./routes/voice-private-ai-series.tsx", {id: "voice-ai-evaluation-beyond-sounds-like-me"}),
+  route("voice-memos-approve-the-audio-before-send", "./routes/voice-private-ai-series.tsx", {id: "voice-memos-approve-the-audio-before-send"}),
+  route("private-ai-start-with-a-threat-model", "./routes/voice-private-ai-series.tsx", {id: "private-ai-start-with-a-threat-model"}),
+  route("confidential-ai-tee-attestation-is-not-a-logo", "./routes/voice-private-ai-series.tsx", {id: "confidential-ai-tee-attestation-is-not-a-logo"}),
+  route("private-rag-permissions-before-vector-search", "./routes/voice-private-ai-series.tsx", {id: "private-rag-permissions-before-vector-search"}),
+  route("local-ai-offline-is-a-test-not-an-assumption", "./routes/voice-private-ai-series.tsx", {id: "local-ai-offline-is-a-test-not-an-assumption"}),
+  route("private-ai-vendor-checklist-data-rights-exit", "./routes/voice-private-ai-series.tsx", {id: "private-ai-vendor-checklist-data-rights-exit"}),
+
   route("how-to-invest-in-whisky", "./routes/how-to-invest-in-whisky.tsx"),
   route("how-to-use-the-pie-menu-in-blender", "./routes/how-to-use-the-pie-menu-in-blender.tsx"),
   route("dextego-10-things-ai-sales-coaching", "./routes/dextego-10-things-ai-sales-coaching.tsx"),
