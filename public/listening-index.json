@@ -25,20 +25,6 @@
       ]
     },
     {
-      "path": "/weirdinternetfacts",
-      "title": "Tasty Tech Bytes",
-      "themes": [
-        "Technology"
-      ]
-    },
-    {
-      "path": "/nab-2023-audio-video-gear",
-      "title": "Tasty Tech Bytes",
-      "themes": [
-        "Audio & culture"
-      ]
-    },
-    {
       "path": "/threekeys-to-getting-a-frontend-or-fullstackjob",
       "title": "The 3 Keys To Getting Your Dream Frontend or Full Stack Engineer Job",
       "themes": [
@@ -167,31 +153,10 @@
       ]
     },
     {
-      "path": "/snapstate-persistent-state-for-ai-agent-workflows",
-      "title": "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
-      "themes": [
-        "AI"
-      ]
-    },
-    {
       "path": "/guides/continuous-pentesting-ci",
       "title": "Pensar Apex: Continuous Adversarial Pentesting Built Into Your CI Pipeline",
       "themes": [
         "AI",
-        "Security"
-      ]
-    },
-    {
-      "path": "/continuous-pentesting-ci-guide",
-      "title": "Pensar Apex: Continuous Adversarial Pentesting Built Into Your CI Pipeline",
-      "themes": [
-        "Security"
-      ]
-    },
-    {
-      "path": "/pensar-continuous-pentesting-ci",
-      "title": "Pensar Apex: Continuous Adversarial Pentesting Built Into Your CI Pipeline",
-      "themes": [
         "Security"
       ]
     },
@@ -275,46 +240,7 @@
       ]
     },
     {
-      "path": "/robinhood-agentic-trading-ai-agents-get-market-access",
-      "title": "Robinhood Launches Agentic Trading: AI Agents Can Now Execute Your Trades",
-      "themes": [
-        "AI",
-        "Finance & business"
-      ]
-    },
-    {
-      "path": "/robinhood-agentic-trading-ai-agents-market-access",
-      "title": "Robinhood Launches Agentic Trading: AI Agents Can Now Execute Your Trades",
-      "themes": [
-        "AI",
-        "Finance & business"
-      ]
-    },
-    {
-      "path": "/robinhood-ai-agent-trading-mcp-developers",
-      "title": "Robinhood Launches Agentic Trading: AI Agents Can Now Execute Your Trades",
-      "themes": [
-        "AI",
-        "Finance & business",
-        "Code & development"
-      ]
-    },
-    {
       "path": "/vscode-bug-github-dev-token-stealing-one-click",
-      "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
-      "themes": [
-        "Security"
-      ]
-    },
-    {
-      "path": "/vscode-github-dev-oauth-token-stealing-one-click",
-      "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
-      "themes": [
-        "Security"
-      ]
-    },
-    {
-      "path": "/vscode-github-dev-oauth-token-stealing-one-click-v2",
       "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
       "themes": [
         "Security"
@@ -328,37 +254,7 @@
       ]
     },
     {
-      "path": "/snapstate-persistent-state-ai-agents-workflow-memory",
-      "title": "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
-      "themes": [
-        "AI"
-      ]
-    },
-    {
-      "path": "/how-solo-dev-built-1990s-fps-cat-game-without-ai",
-      "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
-      "themes": [
-        "AI",
-        "3D & games"
-      ]
-    },
-    {
-      "path": "/handcrafted-magic-behind-catlantean-3d-no-ai",
-      "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
-      "themes": [
-        "AI",
-        "3D & games"
-      ]
-    },
-    {
       "path": "/how-one-dev-built-catlantean-3d-by-hand",
-      "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
-      "themes": [
-        "3D & games"
-      ]
-    },
-    {
-      "path": "/how-solo-dev-built-1990s-fps-cat-game-entirely-by-hand",
       "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
       "themes": [
         "3D & games"
@@ -373,13 +269,6 @@
     },
     {
       "path": "/guides/three-webstorm-shortcuts",
-      "title": "The Three WebStorm Shortcuts to Rule Them All",
-      "themes": [
-        "Code & development"
-      ]
-    },
-    {
-      "path": "/three-essential-webstorm-shortcuts",
       "title": "The Three WebStorm Shortcuts to Rule Them All",
       "themes": [
         "Code & development"
@@ -424,13 +313,6 @@
     {
       "path": "/articles/markets-at-a-crossroads-signals-and-fundamentals-pull-apart",
       "title": "Markets at a Crossroads: Signals and Fundamentals Pull Apart",
-      "themes": [
-        "Finance & business"
-      ]
-    },
-    {
-      "path": "/articles/review-2026-04-27",
-      "title": "1 Week to 10 Years",
       "themes": [
         "Finance & business"
       ]
