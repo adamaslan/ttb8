@@ -12,6 +12,7 @@ import { rootAuthLoader } from "@clerk/react-router/server";
 import type { Route } from "./+types/root";
 import "./app.css";
 import Nav from "./components/Navbar";
+import ArticleAudio from "./components/ArticleAudio";
 
 export async function loader(args: Route.LoaderArgs) {
   return rootAuthLoader(args);
@@ -79,7 +80,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
       }}
     >
       <Nav />
-      <Outlet />
+      <ArticleAudio><Outlet /></ArticleAudio>
     </ClerkProvider>
   );
 }
