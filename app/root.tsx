@@ -80,6 +80,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
       }}
     >
       <Nav />
+        <p className="mx-auto max-w-3xl px-4 py-3"><a href="/listen.html" className="underline">Listen: Play all or by theme</a></p>
       <ArticleAudio><Outlet /></ArticleAudio>
     </ClerkProvider>
   );
