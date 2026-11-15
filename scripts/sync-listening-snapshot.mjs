@@ -14,6 +14,9 @@ for(const [,id,key,label] of types){
  const entry=snapshot[key];if(!entry)continue;
  const d=entry.data,date=entry.doc_id.split(':')[1]??'today';
  const text=k=>typeof d[k]==='string'&&d[k]?d[k]:undefined;
+ // Match entryToArticle's rendered body fields. A title-only review is not narration.
+ const body=text('body')||text('summary')||text('brief')||text('ai_summary');
+ if(!body?.trim())continue;
  const slug=text('slug')||`${id}-${date}`;
  manifest.articles.push({path:'/articles/'+slug,title:text('title')||text('blog_title')||`${label} - ${date}`,themes:id==='ai-summary'?['AI','Finance & business']:['Finance & business']});
 }
