@@ -1,3 +1,4 @@
+import { voicePrivateArticles } from "../lib/voice-private-ai";
 import { Link } from "react-router";
 import analytics from "/analytics1.jpeg";
 import banner from "/old-comp1.jpeg";
@@ -63,6 +64,23 @@ export default function Art2() {
         Covering Tech in NYC and Beyond
       </p>
       
+      <section aria-labelledby="voice-private-series" className="my-8 rounded-xl border border-gray-800 bg-gray-950 p-4 sm:p-6">
+        <p className="font-mono text-xs uppercase tracking-widest text-green-400">New field guides / November 2026</p>
+        <h2 id="voice-private-series" className="mt-2 text-2xl font-bold text-white">Voice AI and Private AI</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-400">Ten practical guides to voice ownership, reliable audio workflows and verifiable data boundaries.</p>
+        <div className="mt-5 grid gap-6 lg:grid-cols-2">
+          {["Voice AI", "Private AI"].map((category) => <div key={category}>
+            <h3 className="mb-3 font-mono text-sm font-bold text-green-300">{category} / 5 articles</h3>
+            <ul className="space-y-3">{voicePrivateArticles.filter((article) => article.category === category).map((article) => <li key={article.slug}>
+              <Link to={`/${article.slug}`} className="block rounded-lg border border-gray-800 p-3 transition-colors hover:border-green-700 hover:bg-gray-900">
+                <h4 className="text-base font-semibold text-white">{article.title}</h4>
+                <p className="mt-1 text-sm leading-relaxed text-gray-400">{article.description}</p>
+              </Link>
+            </li>)}</ul>
+          </div>)}
+        </div>
+      </section>
+
       {/* Part 1 — Hero rail: 5 cards (2 left, big middle, 2 right). See docs/agent-guides/homepage-grid.md */}
       <section className="grid grid-cols-1 gap-4 md:grid-cols-4 md:grid-rows-2">
         {/* L1 */}
