@@ -27,9 +27,9 @@ export function voiceMenu(select, synth) {
     select.replaceChildren(new Option('System default', ''));
     voices.forEach((v, i) => select.add(new Option(`${v.name} (${v.lang})${v.localService ? ' - device' : ' - network'}`, String(i + 1))));
     // Resolve selection by stable voice URI rather than changing array positions.
-    const chosen = voices.findIndex(v => v.voiceURI === old);
+    const chosen = voices.findIndex((v, i) => (v.voiceURI || String(i + 1)) === old);
     [...select.options].slice(1).forEach((o, i) => { o.value = voices[i].voiceURI || String(i + 1); });
-    select.value = chosen >= 0 ? voices[chosen].voiceURI : '';
+    select.value = chosen >= 0 ? (voices[chosen].voiceURI || String(chosen + 1)) : '';
   };
   update(); synth.addEventListener?.('voiceschanged', update);
   return {selected: () => voices.find((v, i) => (v.voiceURI || String(i + 1)) === select.value), dispose: () => synth.removeEventListener?.('voiceschanged', update)};
