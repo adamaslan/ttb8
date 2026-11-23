@@ -23,11 +23,15 @@ export function voiceMenu(select, synth) {
   let voices = [];
   const update = () => {
     const old = select.value;
-    voices = synth.getVoices?.() || [];
+    const previous = voices.find((v, i) => (v.voiceURI || String(i + 1)) === old);
+    voices = [...(synth.getVoices?.() || [])];
     select.replaceChildren(new Option('System default', ''));
     voices.forEach((v, i) => select.add(new Option(`${v.name} (${v.lang})${v.localService ? ' - device' : ' - network'}`, String(i + 1))));
-    // Resolve selection by stable voice URI rather than changing array positions.
-    const chosen = voices.findIndex((v, i) => (v.voiceURI || String(i + 1)) === old);
+    // Preserve a URI-less voice by its unique metadata, never by a changed array index.
+    const matches = previous ? voices.map((v, i) => ({v, i})).filter(({v}) => previous.voiceURI
+      ? v.voiceURI === previous.voiceURI
+      : !v.voiceURI && v.name === previous.name && v.lang === previous.lang && v.localService === previous.localService) : [];
+    const chosen = matches.length === 1 ? matches[0].i : -1;
     [...select.options].slice(1).forEach((o, i) => { o.value = voices[i].voiceURI || String(i + 1); });
     select.value = chosen >= 0 ? (voices[chosen].voiceURI || String(chosen + 1)) : '';
   };
