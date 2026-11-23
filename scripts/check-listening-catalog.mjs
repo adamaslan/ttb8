@@ -1,6 +1,7 @@
 // Usage: node scripts/check-listening-catalog.mjs https://your-preview.example
 // Audit the queue's actual no-redirect contract, not a follow-redirect HTTP check.
 import {readFile} from 'node:fs/promises';
+import {editorialText} from './listening-editorial-text.mjs';
 const origin=new URL(process.argv[2]);
 if(!['http:','https:'].includes(origin.protocol)||origin.username||origin.password||origin.pathname!=='/'||origin.search||origin.hash)throw new Error('Pass an HTTP(S) origin without credentials, path, query or fragment');
 const manifest=JSON.parse(await readFile(new URL('../public/listening-index.json',import.meta.url),'utf8'));
@@ -11,8 +12,7 @@ const results=await Promise.all(manifest.articles.map(async a=>{
   const r=await fetch(url,{redirect:'manual',credentials:'omit',signal:AbortSignal.timeout(15000)});
   const type=r.headers.get('content-type')||'';
   const html=await r.text();
-  const main=html.match(/<main(?:\s[^>]*)?>([\s\S]*?)<\/main>/i)?.[1]||'';
-  const text=main.replace(/<(script|style|pre)\b[^>]*>[\s\S]*?<\/\1>/gi,'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+  const text=editorialText(html,manifest.selector);
   return {path:a.path,status:r.status,location:r.headers.get('location'),type,editorial_chars:text.length,pass:r.status===200&&type.includes('text/html')&&text.length>=100};
  }catch(error){return {path:a.path,pass:false,error:String(error)}}
 }));
