@@ -127,8 +127,11 @@ async function main() {
     } catch { if (generation === token) stop('This article could not load. Press Play to retry or Next article to skip it.'); }
     finally { clearTimeout(timer); }
   }
-  function playSelected() {
+  function playAll() {
     if (state === 'finished') { index = 0; load(); return; }
+    playSelected();
+  }
+  function playSelected() {
     if (loadedPath !== queue[index].path) { load(); return; }
     cancel(); part = 0; speak(); // First real utterance stays inside this button's tap handler.
   }
@@ -146,7 +149,7 @@ async function main() {
     const option = document.createElement('option'); option.value = theme; option.textContent = theme; $('theme').append(option);
   }
   $('theme').onchange = () => { stop(); queue = manifest.articles.filter(a => !$('theme').value || a.themes.includes($('theme').value)); index = 0; render(); if (supported) load(); };
-  $('play').onclick = playSelected;
+  $('play').onclick = playAll;
   $('stop').onclick = () => stop();
   $('next').onclick = () => { if (index < queue.length - 1) { index++; load(); } };
   $('previous').onclick = () => { if (index > 0) { index--; load(); } };
