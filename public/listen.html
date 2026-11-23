@@ -5,8 +5,9 @@
 </style></head><body><main>
 <a href="/">Back to magazine</a>
 <h1 id="site">Article listening queue</h1>
-<p>Play all articles in catalog order, or choose a theme. Text loads first; tap Play queue when ready. The next article plays here without opening another page.</p>
-<label>Theme <select id="theme" aria-label="Listening theme"><option value="">All articles</option></select></label>
+<p>Play all articles in catalog order, or choose a site category or editorial theme. Text loads first; tap Play queue when ready. The next article plays here without opening another page.</p>
+<label>Category <select id="category" aria-label="Listening category"><option value="">All categories</option></select></label>
+<label>Editorial theme <select id="theme" aria-label="Listening theme"><option value="">All articles</option></select></label>
 <div class="player" aria-label="Listening queue player">
 <p id="position"></p><p id="now">Choose Play all or a starting article.</p>
 <a id="read" hidden>Read current article</a>
@@ -16,6 +17,6 @@
 <p id="status" role="status">Loading article index...</p>
 <p class="note">Browser/OS voices may use network services. Voice quality, actual speed and background playback vary by device. Keep this page open. Speech may need another tap between articles on some browsers. Code blocks, navigation and related-story cards are not narrated. Time remaining is a rough text-based estimate at 180 words/minute at 1x, not a measured audio duration. Changing speed repeats the current short part. Leaving this page stops the queue.</p>
 </div>
-<h2>Queue</h2><p class="note">Themes are editorial groupings. Each article appears once in Play all; an article can belong to more than one theme. No listening history is saved.</p><ol id="articles"></ol>
+<h2>Queue</h2><p class="note">Categories match the badges displayed on the actual articles. Themes are separate editorial groupings. Each article appears once in Play all; an article can belong to more than one theme. No listening history is saved.</p><ol id="articles"></ol>
 <noscript>This listening queue requires JavaScript and a browser speech voice. Article text is still available from the magazine homepage.</noscript>
 <script type="module" src="/listening-queue.js"></script></main></body></html>
