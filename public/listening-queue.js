@@ -159,7 +159,7 @@ async function main() {
   queue = filterArticles(manifest.articles, $('category').value, $('theme').value);
   const filter = () => {
     stop(); queue = filterArticles(manifest.articles, $('category').value, $('theme').value); index = 0; render();
-    if (!queue.length) { status.textContent = 'No articles match this category and theme. Choose another filter.'; $('play').disabled = true; $('next').disabled = true; $('previous').disabled = true; return; }
+    if (!queue.length) { loadedPath = null; parts = []; part = 0; state = 'idle'; $('now').textContent = 'No article selected'; $('read').hidden = true; $('read').removeAttribute('href'); controls(); status.textContent = 'No articles match this category and theme. Choose another filter.'; $('play').disabled = true; $('next').disabled = true; $('previous').disabled = true; return; }
     if (supported) load();
   };
   $('theme').onchange = filter;
