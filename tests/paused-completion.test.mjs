@@ -16,6 +16,13 @@ for(const [name,path,pattern] of [
 test('finished queue Play all returns to first article without bypassing text-ready tap',()=>{
  const source=readFileSync(new URL('../public/listening-queue.js',import.meta.url),'utf8');
  const c={state:'finished',index:1,queue:[{path:'/first'},{path:'/last'}],loadedPath:'/last',part:5,calls:[],load(){c.calls.push(['load',c.index])},cancel(){c.calls.push(['cancel'])},speak(){c.calls.push(['speak'])}};vm.createContext(c);
- vm.runInContext('('+source.match(/function playSelected\(\) \{([\s\S]*?)\n  \}/)[0]+')()',c);
+ vm.runInContext('('+source.match(/function playAll\(\) \{([\s\S]*?)\n  \}/)[0]+')()',c);
  assert.equal(c.index,0);assert.deepEqual(c.calls,[['load',0]]);
+});
+
+test('finished named-article selection keeps the selected article instead of resetting the queue',()=>{
+ const source=readFileSync(new URL('../public/listening-queue.js',import.meta.url),'utf8');
+ const c={state:'finished',index:1,queue:[{path:'/first'},{path:'/last'}],loadedPath:'/last',part:5,calls:[],load(){c.calls.push(['load',c.index])},cancel(){c.calls.push(['cancel'])},speak(){c.calls.push(['speak'])}};vm.createContext(c);
+ vm.runInContext('('+source.match(/function playSelected\(\) \{([\s\S]*?)\n  \}/)[0]+')()',c);
+ assert.equal(c.index,1);assert.equal(c.part,0);assert.deepEqual(c.calls,[['cancel'],['speak']]);
 });
