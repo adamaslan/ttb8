@@ -96,7 +96,7 @@ export function mountArticleListener(source, dark = false) {
       if (token !== generation) return;
       clearTimeout(startTimer); startedAt = null; elapsed = 0; active = null;
       index++;
-      speak();
+      if (state !== 'paused') speak();
     };
     utterance.onerror = event => {
       if (token !== generation) return;
