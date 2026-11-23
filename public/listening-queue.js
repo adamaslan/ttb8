@@ -30,6 +30,9 @@ export function articleText(doc, selector, title) {
   if (body.length < 25) throw new Error('Article text is empty or incomplete');
   return body.startsWith(title) ? body : title + '\n' + body;
 }
+export function filterArticles(articles, category, theme) {
+  return articles.filter(a => (!category || a.category === category) && (!theme || a.themes.includes(theme)));
+}
 async function main() {
   const $ = id => document.getElementById(id), status = $('status');
   let manifest;
@@ -41,7 +44,7 @@ async function main() {
     const seen = new Set();
     for (const a of manifest.articles) {
       publicPath(a.path, location.origin);
-      if (!a.title || !Array.isArray(a.themes) || seen.has(a.path)) throw new Error('Invalid article index');
+      if (!a.title || !Array.isArray(a.themes) || typeof a.category !== 'string' || !a.category.trim() || seen.has(a.path)) throw new Error('Invalid article index');
       seen.add(a.path);
     }
   } catch { status.textContent = 'The article index could not load. Reload this page to try again.'; $('play').disabled = true; return; }
@@ -66,14 +69,14 @@ async function main() {
   }
   const clock = setInterval(remaining, 1000);
   function controls() {
-    $('play').disabled = !supported || state === 'loading';
+    $('play').disabled = !supported || !queue.length || state === 'loading';
     $('play').textContent = state === 'loading' ? 'Loading text...' : state === 'ready' ? 'Play queue' : state === 'blocked' ? 'Retry voice' : ['playing','paused','starting'].includes(state) ? 'Restart article' : 'Play all';
     $('pause').disabled = !['playing','paused'].includes(state);
     $('pause').textContent = state === 'paused' ? 'Resume' : 'Pause';
     $('stop').disabled = ['idle','ready','finished'].includes(state);
     $('previous').disabled = !supported || index <= 0;
     $('next').disabled = !supported || index >= queue.length - 1;
-    $('position').textContent = `Article ${index + 1} of ${queue.length} · ${$('theme').value || 'All articles'} · catalog order`;
+    $('position').textContent = `Article ${queue.length ? index + 1 : 0} of ${queue.length} · ${$('category').value || 'All categories'} · ${$('theme').value || 'All themes'} · catalog order`;
     remaining();
   }
   function cancel() {
@@ -148,7 +151,19 @@ async function main() {
   for (const theme of [...new Set(manifest.articles.flatMap(a => a.themes))].sort()) {
     const option = document.createElement('option'); option.value = theme; option.textContent = theme; $('theme').append(option);
   }
-  $('theme').onchange = () => { stop(); queue = manifest.articles.filter(a => !$('theme').value || a.themes.includes($('theme').value)); index = 0; render(); if (supported) load(); };
+  for (const category of [...new Set(manifest.articles.map(a => a.category))].sort()) {
+    const option = document.createElement('option'); option.value = category; option.textContent = category; $('category').append(option);
+  }
+  const requestedCategory = new URL(location.href).searchParams.get('category');
+  if (requestedCategory && [...$('category').options].some(o => o.value === requestedCategory)) $('category').value = requestedCategory;
+  queue = filterArticles(manifest.articles, $('category').value, $('theme').value);
+  const filter = () => {
+    stop(); queue = filterArticles(manifest.articles, $('category').value, $('theme').value); index = 0; render();
+    if (!queue.length) { status.textContent = 'No articles match this category and theme. Choose another filter.'; $('play').disabled = true; $('next').disabled = true; $('previous').disabled = true; return; }
+    if (supported) load();
+  };
+  $('theme').onchange = filter;
+  $('category').onchange = filter;
   $('play').onclick = playAll;
   $('stop').onclick = () => stop();
   $('next').onclick = () => { if (index < queue.length - 1) { index++; load(); } };
