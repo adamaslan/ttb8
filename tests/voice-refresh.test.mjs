@@ -14,6 +14,9 @@ for (const path of ['app/components/speech-support.js','public/speech-support.js
     const menu=voiceMenu(select,synth);
     select.value='2';assert.equal(menu.selected().name,'Device B');
     update();assert.equal(select.value,'2');assert.equal(menu.selected().name,'Device B');
+    voices.reverse();update();assert.equal(menu.selected().name,'Device B','no-URI reorder must preserve the chosen device voice');
+    voices=voices.filter(v=>v.name!=='Device B');update();assert.equal(select.value,'','removed fallback voice returns to system default');
+    voices=[{name:'Same',lang:'en-US',voiceURI:''}];update();select.value='1';voices=[voices[0],{...voices[0]}];update();assert.equal(select.value,'','ambiguous fallback identity must return to default');
     voices=[{name:'Stable A',lang:'en-US',voiceURI:'a'},{name:'Stable B',lang:'en-US',voiceURI:'b'}];update();select.value='b';voices.reverse();update();assert.equal(select.value,'b');assert.equal(menu.selected().name,'Stable B');
     voices=voices.filter(v=>v.voiceURI!=='b');update();assert.equal(select.value,'');menu.dispose();
   });
