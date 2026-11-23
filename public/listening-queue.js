@@ -42,6 +42,12 @@ async function main() {
   } catch { status.textContent = 'The article index could not load. Reload this page to try again.'; $('play').disabled = true; return; }
   document.title = manifest.site + ' - Listen'; $('site').textContent = manifest.site + ': Listen';
   if (manifest.dark) document.body.classList.add('dark');
+  const rateKey = 'article-listener.speed';
+  const supportedRate = value => [...$('speed').options].some(option => option.value === value);
+  try {
+    const savedRate = localStorage.getItem(rateKey);
+    if (supportedRate(savedRate)) $('speed').value = savedRate;
+  } catch { /* Storage may be unavailable; the current queue still works. */ }
   let queue = manifest.articles, index = 0, parts = [], part = 0, token = 0, active = null, request = null, state = 'idle', loadedPath = null;
   let startTimer = null, startedAt = null, elapsed = 0;
   const synth = window.speechSynthesis, supported = !!synth && 'SpeechSynthesisUtterance' in window;
@@ -144,6 +150,8 @@ async function main() {
     controls();
   };
   $('speed').onchange = () => {
+    if (!supportedRate($('speed').value)) $('speed').value = '1';
+    try { localStorage.setItem(rateKey, $('speed').value); } catch { /* Keep the current rate in memory. */ }
     if (!['playing','paused','starting'].includes(state)) { remaining(); return; }
     const paused = state === 'paused'; cancel();
     if (paused) { state = 'paused'; controls(); status.textContent = 'Speed changed. Resume repeats the current short part.'; }
