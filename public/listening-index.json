@@ -8,98 +8,112 @@
       "title": "3 Ways to Invest in Whiskey",
       "themes": [
         "Finance & business"
-      ]
+      ],
+      "category": "Lifestyle"
     },
     {
       "path": "/how-to-use-the-pie-menu-in-blender",
       "title": "The Pie Menu Rocks in Blender",
       "themes": [
         "3D & games"
-      ]
+      ],
+      "category": "3D/Design"
     },
     {
       "path": "/dextego-10-things-ai-sales-coaching",
       "title": "10 Things You Need to Know About Dextego: The Future of AI Sales Coaching",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/threekeys-to-getting-a-frontend-or-fullstackjob",
       "title": "The 3 Keys To Getting Your Dream Frontend or Full Stack Engineer Job",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Career"
     },
     {
       "path": "/vuejs-independant-javascript-framework",
       "title": "VueJS as the Most Indie Yet Established Javascript Framework",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "JavaScript"
     },
     {
       "path": "/astro-the-most-innovative-javascript-framework",
       "title": "Astro.js as the Most Innovative and Modern Javascript Framework",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "JavaScript"
     },
     {
       "path": "/the-art-of-the-clean-install",
       "title": "The Art of the Clean Install",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/what-is-rag",
       "title": "What is RAG (Retrieval-Augmented Generation)?",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "Tutorial"
     },
     {
       "path": "/what-are-the-best-free-text-to-speech-tools",
       "title": "What are the Best Free Text-to-Speech Tools?",
       "themes": [
         "Technology"
-      ]
+      ],
+      "category": "Tools"
     },
     {
       "path": "/10-essential-pytorch-elements-in-a-rnn",
       "title": "10 Essential PyTorch Elements in RNNs",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI"
     },
     {
       "path": "/10_Essential_PyTorch_Elements_in_LSTMs",
       "title": "10 Essential PyTorch Elements in LSTMs",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI"
     },
     {
       "path": "/10_Ways_to_Optimize_SQLite_Before_Migrating_to_PostgreSQL",
       "title": "10 Ways to Optimize SQLite Before Migrating to PostgreSQL",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Databases"
     },
     {
       "path": "/introduction-to-neural-networks",
       "title": "Introduction to Neural Networks",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI"
     },
     {
       "path": "/dspy101",
       "title": "DSPy 101 Tutorial: Prompting Guide",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "Tutorial"
     },
     {
       "path": "/create-your-own-huggingface-space-easy",
@@ -107,14 +121,16 @@
       "themes": [
         "AI",
         "Code & development"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/the-ultimate-guide-to-flyers-in-blender-with-the-node-editor",
       "title": "40 Step Geometry Nodes Pipeline: Clarity, Flexibility, and Precision",
       "themes": [
         "3D & games"
-      ]
+      ],
+      "category": "3D/Design"
     },
     {
       "path": "/using-airpods-and-audacity-hack",
@@ -122,35 +138,40 @@
       "themes": [
         "Code & development",
         "Audio & culture"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/threejs-and-web3",
       "title": "ThreeJS and Web3: Exploring the Intersection",
       "themes": [
         "3D & games"
-      ]
+      ],
+      "category": "Web3"
     },
     {
       "path": "/databricks-dspy-jetblue-ai-chatbot",
       "title": "JetBlue Optimizes Databricks LLM Pipelines with DSPy",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI"
     },
     {
       "path": "/5-ways-ai-can-help-farmland-restoration",
       "title": "5 Ways AI Can Help Farmland Restoration",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/5-ways-to-enhance-rag-efficiency-with-dspy",
       "title": "Five Ways to Enhance RAG Efficiency with DSPy",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI"
     },
     {
       "path": "/guides/continuous-pentesting-ci",
@@ -158,70 +179,80 @@
       "themes": [
         "AI",
         "Security"
-      ]
+      ],
+      "category": "AI Security"
     },
     {
       "path": "/first-pentest-free-tools-intro",
       "title": "Your First Pentest: A Practical Intro Using Free Tools",
       "themes": [
         "Security"
-      ]
+      ],
+      "category": "Security 101"
     },
     {
       "path": "/easy-domain-verification-with-google",
       "title": "The Easy Way to Verify Domain Ownership with Google",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/lies-about-javascript",
       "title": "Sweet Little JavaScript Lies About Javascript",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "JavaScript"
     },
     {
       "path": "/ibm-anderon-quantum-foundry",
       "title": "IBM's Anderon Quantum Foundry Is a $2B Bet on 300mm Qubits",
       "themes": [
         "Technology"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/walking-boosts-creativity-study",
       "title": "Take a Walk Before You Brainstorm: The Study Behind the Old Advice",
       "themes": [
         "Audio & culture"
-      ]
+      ],
+      "category": "Tech World - Helpful"
     },
     {
       "path": "/ipi-signal-report",
       "title": "IPI Signal Report: Hourly Technical Confluence & Bollinger Scan",
       "themes": [
         "Finance & business"
-      ]
+      ],
+      "category": "Finance - Signal Scan"
     },
     {
       "path": "/sndk-signal-report",
       "title": "SNDK Signal Report: MA Stairstep Meets a Stretched 200SMA",
       "themes": [
         "Finance & business"
-      ]
+      ],
+      "category": "Finance / Signal Scan"
     },
     {
       "path": "/cloudflare-flagship-simplifies-feature-flags",
       "title": "Cloudflare Flagship Simplifies Feature Flag Management for Developers",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "CloudFlare"
     },
     {
       "path": "/cloudflare-flagship-feature-flags-made-easy",
       "title": "Cloudflare Flagship: The Developer's Secret Weapon for Effortless Feature Flags",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "CloudFlare"
     },
     {
       "path": "/lastfm-goes-independent-what-developers-need-to-know",
@@ -229,7 +260,8 @@
       "themes": [
         "Code & development",
         "Audio & culture"
-      ]
+      ],
+      "category": "Tech World"
     },
     {
       "path": "/robinhood-agentic-trading",
@@ -237,49 +269,56 @@
       "themes": [
         "AI",
         "Finance & business"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/vscode-bug-github-dev-token-stealing-one-click",
       "title": "How a VSCode Bug in GitHub.dev Lets Attackers Steal OAuth Tokens in One Click",
       "themes": [
         "Security"
-      ]
+      ],
+      "category": "Security Alert"
     },
     {
       "path": "/snapstate-persistent-state-for-ai-agents",
       "title": "SnapState: Keep Your AI Agents from Forgetting with Persistent Workflow State",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/how-one-dev-built-catlantean-3d-by-hand",
       "title": "From Blender to Raycasting: How One Dev Built a 1990s FPS Cat Game by Hand",
       "themes": [
         "3D & games"
-      ]
+      ],
+      "category": "Game Dev"
     },
     {
       "path": "/lore-open-source-version-control-scalability",
       "title": "Lore – Open Source Version Control Built for Massive Scale",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/guides/three-webstorm-shortcuts",
       "title": "The Three WebStorm Shortcuts to Rule Them All",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "Dev Tools"
     },
     {
       "path": "/jev-typed-decisions-for-software",
       "title": "Jev Turns Ambiguous Input Into Decisions Your Code Can Use",
       "themes": [
         "Code & development"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/smartbidder-diageo",
@@ -287,18 +326,21 @@
       "themes": [
         "AI",
         "Finance & business"
-      ]
+      ],
+      "category": "AI News"
     },
     {
       "path": "/structured-outputs-json-schema-llms",
       "title": "Getting Reliable JSON Out of LLMs: Structured Outputs That Survive Production",
       "themes": [
         "AI"
-      ]
+      ],
+      "category": "AI Tips / Tutorials"
     },
     {
       "path": "/articles/price-leads-signals-dont-follow-2026-04-27",
       "title": "When Price Leads and Signals Don't Follow",
+      "category": "Market Story",
       "themes": [
         "Finance & business"
       ]
@@ -306,6 +348,7 @@
     {
       "path": "/articles/blog-2026-04-27",
       "title": "1 Week to 10 Years",
+      "category": "Daily Blog",
       "themes": [
         "Finance & business"
       ]
@@ -313,6 +356,7 @@
     {
       "path": "/articles/markets-at-a-crossroads-signals-and-fundamentals-pull-apart",
       "title": "Markets at a Crossroads: Signals and Fundamentals Pull Apart",
+      "category": "Correlations",
       "themes": [
         "Finance & business"
       ]
@@ -320,6 +364,7 @@
     {
       "path": "/articles/morning-2026-04-27",
       "title": "Morning Brief - 2026-04-27",
+      "category": "Morning Brief",
       "themes": [
         "Finance & business"
       ]
@@ -327,6 +372,7 @@
     {
       "path": "/articles/macro-2026-04-27",
       "title": "Macro Pulse - 2026-04-27",
+      "category": "Macro",
       "themes": [
         "Finance & business"
       ]
@@ -334,6 +380,7 @@
     {
       "path": "/articles/ai-summary-2026-04-27",
       "title": "AI Summary - 2026-04-27",
+      "category": "AI Summary",
       "themes": [
         "AI",
         "Finance & business"
