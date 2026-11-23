@@ -14,14 +14,19 @@ export function publicPath(path, origin) {
   if (!path.startsWith('/') || path.startsWith('//') || url.origin !== origin || url.search || url.hash) throw new Error('Not a same-site article path');
   return url.href;
 }
+export const ignoredArticleSelector = 'script,style,noscript,nav,site-navbar,footer,button,select,input,textarea,form,iframe,video,audio,pre,[data-article-listener],[data-no-read],[aria-hidden="true"],[hidden],.top-header,.post-related,#bottomdiv';
+export const articleBlockSelector = 'p,div,section,article,h1,h2,h3,h4,li,tr,blockquote,figcaption';
+export function normalizeArticleBody(text) {
+  return text.replace(/[\t ]+/g, ' ').replace(/\n\s*\n/g, '\n').replace(/[-_]{4,}/g, '').trim();
+}
 export function articleText(doc, selector, title) {
   const source = doc.querySelector(selector);
   if (!source) throw new Error('Article content was not found');
   const copy = source.cloneNode(true);
-  copy.querySelectorAll('script,style,noscript,nav,site-navbar,footer,button,select,input,textarea,form,iframe,video,audio,pre,[data-article-listener],[data-no-read],[aria-hidden="true"],[hidden],.top-header,.post-related,#bottomdiv').forEach(n => n.remove());
+  copy.querySelectorAll(ignoredArticleSelector).forEach(n => n.remove());
   copy.querySelectorAll('br').forEach(n => n.replaceWith('\n'));
-  copy.querySelectorAll('p,div,section,article,h1,h2,h3,h4,li,tr,blockquote,figcaption').forEach(n => n.append('\n'));
-  const body = copy.textContent.replace(/[\t ]+/g, ' ').replace(/\n\s*\n/g, '\n').replace(/[-_]{4,}/g, '').trim();
+  copy.querySelectorAll(articleBlockSelector).forEach(n => n.append('\n'));
+  const body = normalizeArticleBody(copy.textContent);
   if (body.length < 25) throw new Error('Article text is empty or incomplete');
   return body.startsWith(title) ? body : title + '\n' + body;
 }
