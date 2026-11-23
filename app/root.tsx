@@ -12,6 +12,7 @@ import { rootAuthLoader } from "@clerk/react-router/server";
 import type { Route } from "./+types/root";
 import "./app.css";
 import Nav from "./components/Navbar";
+import ArticleAudio from "./components/ArticleAudio";
 
 export async function loader(args: Route.LoaderArgs) {
   return rootAuthLoader(args);
@@ -79,7 +80,8 @@ export default function App({ loaderData }: Route.ComponentProps) {
       }}
     >
       <Nav />
-      <Outlet />
+        <p className="mx-auto max-w-3xl px-4 py-3"><a href="/listen.html" className="underline">Listen: Play all or by theme</a></p>
+      <ArticleAudio><Outlet /></ArticleAudio>
     </ClerkProvider>
   );
 }
