@@ -99,7 +99,7 @@ async function main() {
       status.textContent = `Voice started: article ${index + 1} of ${queue.length}, part ${part + 1} of ${parts.length} at ${$('speed').value}x. If silent, check device volume/output or try another voice.`;
     };
     u.onresume = () => { if (generation === token) { startedAt = performance.now(); status.textContent = 'Voice resumed. If silent, Stop and retry.'; } };
-    u.onend = () => { if (generation !== token) return; clearTimeout(startTimer); active = null; startedAt = null; elapsed = 0; part++; speak(); };
+    u.onend = () => { if (generation !== token) return; clearTimeout(startTimer); active = null; startedAt = null; elapsed = 0; part++; if (state !== 'paused') speak(); };
     u.onerror = event => { if (generation === token) blocked(voiceError(event.error)); };
     startTimer = setTimeout(() => { if (generation === token) blocked('The voice did not start. Text is ready: tap Retry voice to retry directly, or choose another voice.'); }, 6000);
     try { synth.resume(); synth.speak(u); } catch { blocked('The voice could not start. Text is ready: choose a voice and tap Retry voice.'); }
@@ -123,6 +123,7 @@ async function main() {
     finally { clearTimeout(timer); }
   }
   function playSelected() {
+    if (state === 'finished') { index = 0; load(); return; }
     if (loadedPath !== queue[index].path) { load(); return; }
     cancel(); part = 0; speak(); // First real utterance stays inside this button's tap handler.
   }
