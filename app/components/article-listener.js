@@ -34,6 +34,14 @@ export function mountArticleListener(source, dark = false) {
   const stop = panel.querySelector('[data-stop]');
   const speed = panel.querySelector('select[aria-label="Reading speed"]');
   const status = panel.querySelector('[data-status]');
+  // Remember only a supported rate in this browser, never a voice or article text.
+  const rateKey = 'article-listener.speed';
+  const supportedRate = value => [...speed.options].some(option => option.value === value);
+  try {
+    const savedRate = localStorage.getItem(rateKey);
+    if (supportedRate(savedRate)) speed.value = savedRate;
+  } catch { /* Storage may be unavailable; playback still works for this article. */ }
+
   if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
     play.disabled = true;
     speed.disabled = true; voiceSelect.disabled = true;
@@ -116,6 +124,8 @@ export function mountArticleListener(source, dark = false) {
   };
   stop.onclick = () => reset();
   speed.onchange = () => {
+    if (!supportedRate(speed.value)) speed.value = '1';
+    try { localStorage.setItem(rateKey, speed.value); } catch { /* Keep the current rate in memory. */ }
     if (['idle','finished'].includes(state)) { remaining(); return; }
     const paused = state === 'paused';
     generation++; clearTimeout(startTimer); startedAt = null; elapsed = 0;
